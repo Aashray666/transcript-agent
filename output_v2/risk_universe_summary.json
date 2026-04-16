@@ -1,0 +1,356 @@
+{
+  "total_risks": 58,
+  "mapped_count": 56,
+  "unmapped_count": 2,
+  "human_review_count": 2,
+  "risks": [
+    {
+      "risk_id": "RISK_001",
+      "client_description": "5G Monetization Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_002",
+      "client_description": "Cyber Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_003",
+      "client_description": "Regulatory Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_004",
+      "client_description": "Competition Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_005",
+      "client_description": "Energy Cost Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_006",
+      "client_description": "Talent Acquisition Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_007",
+      "client_description": "Infrastructure Resilience Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_008",
+      "client_description": "Supplier Dependency Risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_009",
+      "client_description": "AI model errors, bias in decision-making, customer data exposure, and AI governance risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_010",
+      "client_description": "Free-to-use disruption",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_011",
+      "client_description": "Data privacy risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_012",
+      "client_description": "Network outage risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_013",
+      "client_description": "Regulatory compliance risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_014",
+      "client_description": "Geopolitical tension and infrastructure attacks",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_015",
+      "client_description": "Currency risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_016",
+      "client_description": "Weather event risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_017",
+      "client_description": "Software outage risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_018",
+      "client_description": "Legacy system risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_019",
+      "client_description": "Change management risk",
+      "unmapped": true,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_020",
+      "client_description": "Data incident risk and Third-party vendor risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_021",
+      "client_description": "Complexity risk, timeline risk, and cost implications risk in cloud transformation",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_022",
+      "client_description": "Governance risk, operational dependencies risk, and regulatory approval risk in infrastructure sharing arrangement",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_023",
+      "client_description": "Regulatory risk due to European data regulations",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_024",
+      "client_description": "Regulatory risk due to 5G-specific regulations and product liability risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_025",
+      "client_description": "Compliance risk due to carbon disclosure requirements",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_026",
+      "client_description": "Regulatory risk due to spectrum policy",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_027",
+      "client_description": "Financing risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_028",
+      "client_description": "Capital expenditure risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_029",
+      "client_description": "Vendor supply chain disruption",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_030",
+      "client_description": "Trade restriction risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_031",
+      "client_description": "Software update failure",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_032",
+      "client_description": "Inconsistent third-party managed service providers",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_033",
+      "client_description": "OTT players collaborating directly with operators or building their own infrastructure",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_034",
+      "client_description": "Content war and direct-to-consumer move by content producers",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_035",
+      "client_description": "Hyperscalers moving deeper into network infrastructure",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_036",
+      "client_description": "External cyber attack risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_037",
+      "client_description": "Insider and third-party access risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_038",
+      "client_description": "Digital disruption risk and technology obsolescence risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_039",
+      "client_description": "IoT security risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_040",
+      "client_description": "SLA breaches risk",
+      "unmapped": true,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_041",
+      "client_description": "Customer trust and reputational damage risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_042",
+      "client_description": "Regulatory notification obligations risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_043",
+      "client_description": "Regulatory scrutiny risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_044",
+      "client_description": "Litigation and penalty risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_045",
+      "client_description": "Geopolitical and government relations risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_046",
+      "client_description": "National security risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_047",
+      "client_description": "Capital pressure risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_048",
+      "client_description": "Delayed rollout risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_049",
+      "client_description": "Spectrum commitments and regulatory obligations risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_050",
+      "client_description": "Enterprise customer acquisition risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_051",
+      "client_description": "Revenue risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_052",
+      "client_description": "Refinancing risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_053",
+      "client_description": "Change management failure",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_054",
+      "client_description": "Reputational risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_055",
+      "client_description": "Customer retention risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_056",
+      "client_description": "Existential business model risk due to free-to-use connectivity model",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_057",
+      "client_description": "Electronic waste risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_058",
+      "client_description": "Third-party and supply chain risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    }
+  ]
+}

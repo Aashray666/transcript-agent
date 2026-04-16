@@ -1,0 +1,104 @@
+{
+  "total_risks": 16,
+  "mapped_count": 14,
+  "unmapped_count": 2,
+  "human_review_count": 2,
+  "risks": [
+    {
+      "risk_id": "RISK_001",
+      "client_description": "EV transition risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_002",
+      "client_description": "Tariffs and trade policy",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_003",
+      "client_description": "Supply chain risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_004",
+      "client_description": "Software and technology risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_005",
+      "client_description": "Dealer network disruption",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_006",
+      "client_description": "Workforce transformation",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_007",
+      "client_description": "Regulatory compliance",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_008",
+      "client_description": "Geopolitical risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_009",
+      "client_description": "Product safety and recall risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_010",
+      "client_description": "Financial risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_011",
+      "client_description": "Labour and industrial relations",
+      "unmapped": true,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_012",
+      "client_description": "Raw material dependency",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_013",
+      "client_description": "Logistics and port infrastructure disruption risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_014",
+      "client_description": "Cyber and technology risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_016",
+      "client_description": "Competition and market risk",
+      "unmapped": false,
+      "registry_match_count": 3
+    },
+    {
+      "risk_id": "RISK_017",
+      "client_description": "Operational risk",
+      "unmapped": true,
+      "registry_match_count": 3
+    }
+  ]
+}

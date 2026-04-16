@@ -1,0 +1,83 @@
+2026-04-15 16:41:12,849 | riskmapper.pipeline | INFO | Pipeline started | sector=Automotive
+2026-04-15 16:41:13,314 | riskmapper.pipeline | INFO | Step 1: Loading risk registry
+2026-04-15 16:41:15,880 | riskmapper.risk_registry_loader | INFO | Registry loaded | sector=Automotive | entries=73 | collection=risk_registry
+2026-04-15 16:41:15,881 | riskmapper.pipeline | INFO | Step 1 complete | entries=73 | 2.57s
+2026-04-15 16:41:15,881 | riskmapper.pipeline | INFO | Step 2: Parsing transcript
+2026-04-15 16:41:15,883 | riskmapper.transcript_parser | INFO | Parsing transcript | sector=Automotive | length=23717 chars
+2026-04-15 16:41:15,884 | riskmapper.transcript_preprocessor | INFO | Transcript preprocessed | raw_chars=23717 | clean_chars=20573 | reduction=13%
+2026-04-15 16:41:15,886 | riskmapper.transcript_parser | INFO | Split transcript into 15 chunks
+2026-04-15 16:41:20,205 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_1 | input_tokens=1436 | output_tokens=1016 | latency=4.32s
+2026-04-15 16:41:20,208 | riskmapper.transcript_parser | INFO | Chunk 1/15 parsed | mentions_in_chunk=8 | total_so_far=8
+2026-04-15 16:41:38,442 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_2 | input_tokens=1206 | output_tokens=663 | latency=18.23s
+2026-04-15 16:41:38,445 | riskmapper.transcript_parser | INFO | Chunk 2/15 parsed | mentions_in_chunk=7 | total_so_far=15
+2026-04-15 16:41:56,361 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_3 | input_tokens=1261 | output_tokens=787 | latency=17.91s
+2026-04-15 16:41:56,363 | riskmapper.transcript_parser | INFO | Chunk 3/15 parsed | mentions_in_chunk=9 | total_so_far=24
+2026-04-15 16:42:13,630 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_4 | input_tokens=1056 | output_tokens=471 | latency=17.26s
+2026-04-15 16:42:13,633 | riskmapper.transcript_parser | INFO | Chunk 4/15 parsed | mentions_in_chunk=5 | total_so_far=29
+2026-04-15 16:42:31,243 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_5 | input_tokens=1104 | output_tokens=510 | latency=17.61s
+2026-04-15 16:42:31,246 | riskmapper.transcript_parser | INFO | Chunk 5/15 parsed | mentions_in_chunk=5 | total_so_far=34
+2026-04-15 16:42:49,162 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_6 | input_tokens=1056 | output_tokens=431 | latency=17.91s
+2026-04-15 16:42:49,165 | riskmapper.transcript_parser | INFO | Chunk 6/15 parsed | mentions_in_chunk=4 | total_so_far=38
+2026-04-15 16:43:06,845 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_7 | input_tokens=1093 | output_tokens=460 | latency=17.68s
+2026-04-15 16:43:06,848 | riskmapper.transcript_parser | INFO | Chunk 7/15 parsed | mentions_in_chunk=5 | total_so_far=43
+2026-04-15 16:43:24,360 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_8 | input_tokens=1037 | output_tokens=333 | latency=17.51s
+2026-04-15 16:43:24,363 | riskmapper.transcript_parser | INFO | Chunk 8/15 parsed | mentions_in_chunk=3 | total_so_far=46
+2026-04-15 16:43:42,601 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_9 | input_tokens=1097 | output_tokens=561 | latency=18.24s
+2026-04-15 16:43:42,604 | riskmapper.transcript_parser | INFO | Chunk 9/15 parsed | mentions_in_chunk=5 | total_so_far=51
+2026-04-15 16:44:01,481 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_10 | input_tokens=1074 | output_tokens=350 | latency=18.87s
+2026-04-15 16:44:01,484 | riskmapper.transcript_parser | INFO | Chunk 10/15 parsed | mentions_in_chunk=3 | total_so_far=54
+2026-04-15 16:44:20,363 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_11 | input_tokens=1249 | output_tokens=1311 | latency=18.88s
+2026-04-15 16:44:20,366 | riskmapper.transcript_parser | INFO | Chunk 11/15 parsed | mentions_in_chunk=15 | total_so_far=69
+2026-04-15 16:44:37,326 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_12 | input_tokens=1042 | output_tokens=263 | latency=16.96s
+2026-04-15 16:44:37,329 | riskmapper.transcript_parser | INFO | Chunk 12/15 parsed | mentions_in_chunk=2 | total_so_far=71
+2026-04-15 16:44:54,921 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_13 | input_tokens=1102 | output_tokens=440 | latency=17.59s
+2026-04-15 16:44:54,924 | riskmapper.transcript_parser | INFO | Chunk 13/15 parsed | mentions_in_chunk=6 | total_so_far=77
+2026-04-15 16:45:12,727 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_14 | input_tokens=1078 | output_tokens=650 | latency=17.80s
+2026-04-15 16:45:12,730 | riskmapper.transcript_parser | INFO | Chunk 14/15 parsed | mentions_in_chunk=7 | total_so_far=84
+2026-04-15 16:45:30,765 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=transcript_parsing_chunk_15 | input_tokens=1088 | output_tokens=1008 | latency=18.03s
+2026-04-15 16:45:30,768 | riskmapper.transcript_parser | INFO | Chunk 15/15 parsed | mentions_in_chunk=9 | total_so_far=93
+2026-04-15 16:45:30,769 | riskmapper.transcript_parser | INFO | Transcript parsed | total_mentions=93 | sector=Automotive
+2026-04-15 16:45:30,770 | riskmapper.pipeline | INFO | Step 2 complete | mentions=93 | 254.89s
+2026-04-15 16:45:30,771 | riskmapper.pipeline | INFO | Step 3: Deduplicating risk mentions
+2026-04-15 16:45:30,772 | riskmapper.deduplicator | INFO | Pass 1 | core=81 | cascade_only=12
+2026-04-15 16:45:30,773 | riskmapper.deduplicator | INFO | Pass 2 | deduplicating 81 core mentions via LLM
+2026-04-15 16:45:49,659 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=deduplication | input_tokens=3915 | output_tokens=987 | latency=18.88s
+2026-04-15 16:45:49,663 | riskmapper.deduplicator | INFO | Deduplication complete | raw=93 | core=81 | cascade_filtered=12 | output=17
+2026-04-15 16:45:49,664 | riskmapper.pipeline | INFO | Step 3 complete | input=93 | output=17 | 18.89s
+2026-04-15 16:45:49,664 | riskmapper.pipeline | INFO | Step 4: Mapping risks to registry
+2026-04-15 16:46:06,601 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_001 | input_tokens=582 | output_tokens=84 | latency=16.54s
+2026-04-15 16:46:23,324 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_002 | input_tokens=588 | output_tokens=82 | latency=15.63s
+2026-04-15 16:46:39,958 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_003 | input_tokens=574 | output_tokens=82 | latency=15.70s
+2026-04-15 16:46:56,841 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_004 | input_tokens=569 | output_tokens=84 | latency=16.52s
+2026-04-15 16:47:13,635 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_005 | input_tokens=581 | output_tokens=82 | latency=16.44s
+2026-04-15 16:47:31,081 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_006 | input_tokens=579 | output_tokens=83 | latency=17.09s
+2026-04-15 16:47:48,363 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_007 | input_tokens=587 | output_tokens=84 | latency=16.92s
+2026-04-15 16:48:05,000 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_008 | input_tokens=577 | output_tokens=82 | latency=16.27s
+2026-04-15 16:48:21,930 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_009 | input_tokens=565 | output_tokens=83 | latency=16.57s
+2026-04-15 16:48:40,520 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_010 | input_tokens=577 | output_tokens=85 | latency=18.23s
+2026-04-15 16:48:57,161 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_011 | input_tokens=579 | output_tokens=82 | latency=16.27s
+2026-04-15 16:49:13,828 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_012 | input_tokens=573 | output_tokens=84 | latency=16.31s
+2026-04-15 16:49:30,387 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_013 | input_tokens=583 | output_tokens=83 | latency=16.20s
+2026-04-15 16:49:46,939 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_014 | input_tokens=579 | output_tokens=83 | latency=16.20s
+2026-04-15 16:50:03,934 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_015 | input_tokens=573 | output_tokens=82 | latency=16.65s
+2026-04-15 16:50:20,601 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_016 | input_tokens=569 | output_tokens=83 | latency=16.31s
+2026-04-15 16:50:37,242 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=registry_mapping_RISK_017 | input_tokens=587 | output_tokens=82 | latency=16.29s
+2026-04-15 16:50:37,245 | riskmapper.registry_mapper | INFO | Registry mapping complete | total=17 | unmapped=2
+2026-04-15 16:50:37,246 | riskmapper.pipeline | INFO | Step 4 complete | total=17 | unmapped=2 | 287.58s
+2026-04-15 16:50:37,246 | riskmapper.pipeline | INFO | Step 5: Validating risk universe
+2026-04-15 16:50:37,247 | riskmapper.post_validator | INFO | Validating risk universe | 17 risks
+2026-04-15 16:50:54,921 | riskmapper.llm_wrapper | INFO | LLM call completed | model=llama-3.3-70b-versatile | step=post_validation | input_tokens=1273 | output_tokens=269 | latency=17.67s
+2026-04-15 16:50:54,923 | riskmapper.post_validator | INFO | Validation complete | quality=6/10 | corrections=4
+2026-04-15 16:50:54,924 | riskmapper.post_validator | INFO | Merging RISK_015 into RISK_003: RISK_003 and RISK_015 describe the same underlying supply chain risk
+2026-04-15 16:50:54,925 | riskmapper.post_validator | INFO | Adding cascade link RISK_014 → RISK_003: RISK_014's cascade context mentions a supplier risk, which is related to RISK_003
+2026-04-15 16:50:54,927 | riskmapper.post_validator | INFO | Adding cascade link RISK_009 → RISK_014: RISK_009's cascade context mentions an ADAS software recall, which is related to RISK_014
+2026-04-15 16:50:54,927 | riskmapper.post_validator | INFO | Adding cascade link RISK_013 → RISK_014: RISK_013's cascade context mentions a semiconductor shortage, which is related to RISK_014
+2026-04-15 16:50:54,928 | riskmapper.post_validator | INFO | Removed 1 merged risks | final count: 16
+2026-04-15 16:50:54,929 | riskmapper.pipeline | INFO | Step 5 complete | risks_after_validation=16 | 17.68s
+2026-04-15 16:50:54,930 | riskmapper.pipeline | INFO | Step 6: Generating human review queue
+2026-04-15 16:50:54,955 | riskmapper.human_review_queue | INFO | Human review queue written | count=2 | path=output_auto\human_review_queue.json
+2026-04-15 16:50:54,956 | riskmapper.pipeline | INFO | Step 6 complete | review_count=2 | 0.03s
+2026-04-15 16:50:54,957 | riskmapper.pipeline | INFO | Step 7: Building output files
+2026-04-15 16:50:54,995 | riskmapper.output_builder | INFO | Output written | total=16 | mapped=14 | unmapped=2 | review=2 | dir=output_auto
+2026-04-15 16:50:54,997 | riskmapper.pipeline | INFO | Step 7 complete | 0.04s
+2026-04-15 16:50:54,998 | riskmapper.pipeline | INFO | Pipeline complete | total_risks=16 | mapped=14 | unmapped=2 | review=2 | total_time=582.15s

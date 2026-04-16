@@ -1,0 +1,824 @@
+[
+  {
+    "risk_id": "RISK_001",
+    "client_description": "EV transition risk",
+    "verbatim_evidence": [
+      "First is EV transition risk. We've committed heavily to electrification — new platforms, battery supply agreements, retooling three plants — and the market isn't moving at the pace we planned for.",
+      "Consumer adoption in our core markets has slowed significantly.",
+      "We're now having internal conversations about whether to slow the transition roadmap which creates its own set of risks with regulators and investors.",
+      "stranded asset risk on ICE",
+      "we have manufacturing plants, tooling, and supply agreements built around internal combustion engines that may have a shorter useful life than their book value implies",
+      "we haven't done a formal impairment assessment on that scenario yet",
+      "EV adoption falling further behind our projections",
+      "They erode your position quarter by quarter and the temptation is to keep them lower on the register because nothing dramatic has happened yet.",
+      "Slow-build risks — EV adoption falling further behind our projections"
+    ],
+    "question_source": [
+      "Q1",
+      "Q2",
+      "Q18"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNREGISTERED"
+    ],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_021",
+        "risk_name": "Large investment in accelerated EV parity – making EV costing the same as internal combustion engines vehicles",
+        "primary_impact": "Strategy",
+        "confidence": "HIGH",
+        "similarity_score": 0.0848
+      },
+      {
+        "registry_risk_id": "REG_AUT_016",
+        "risk_name": "Shortage of charging stations is a risk for growth of electric vehicles",
+        "primary_impact": "Strategy",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_063",
+        "risk_name": "The lack of market acceptance for electric vehicles",
+        "primary_impact": "Society and People",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_002",
+    "client_description": "Tariffs and trade policy",
+    "verbatim_evidence": [
+      "Second is tariffs and trade policy. The US tariff environment post-2025 has been extremely disruptive.",
+      "The 25% tariffs on auto imports that came into effect have directly hit our cost structure.",
+      "And the uncertainty is almost as damaging as the tariffs themselves because we can't plan supply chain decisions confidently.",
+      "Tariffs are the obvious one.",
+      "either broader US tariffs or retaliatory measures from the EU or China — would hit us hard and fast.",
+      "a sudden tariff announcement",
+      "These are all scenarios where we could be in crisis within 24 to 48 hours with very little warning.",
+      "Overnight risks — a sudden tariff announcement"
+    ],
+    "question_source": [
+      "Q1",
+      "Q4",
+      "Q18"
+    ],
+    "risk_type": "EVENT_DRIVEN",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_033",
+        "risk_name": "Potential increased tariffs resulting in increased costs of raw materials",
+        "primary_impact": "Production & Operations",
+        "confidence": "HIGH",
+        "similarity_score": 0.0674
+      },
+      {
+        "registry_risk_id": "REG_AUT_064",
+        "risk_name": "Political tensions, trade disputes, and tariffs can disrupt global automotive supply chains and markets",
+        "primary_impact": "Society and People",
+        "confidence": "HIGH",
+        "similarity_score": 0.0424
+      },
+      {
+        "registry_risk_id": "REG_AUT_044",
+        "risk_name": "Competitive and price pressure due to aggressive policies and poor effective pricing",
+        "primary_impact": "Growth & Competition",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_003",
+    "client_description": "Supply chain risk",
+    "verbatim_evidence": [
+      "Battery cells are our most acute concentration risk right now.",
+      "That single event fundamentally changed how we think about supply chain concentration.",
+      "If any of those suppliers had a major quality or financial event the impact on our vehicle programmes would be immediate.",
+      "a battery supplier disruption due to geopolitical event",
+      "It reinforced how exposed we are through our supply chain's cyber posture, not just our own.",
+      "So our lithium concentration risk is actually one level further removed — it's their suppliers we're exposed to, not just them directly.",
+      "We're trying to rebalance the ownership structure and governance to protect ourselves better but the negotiation is complex and there's a real risk of disruption to operations during the transition.",
+      "Battery raw material prices — specifically lithium and cobalt — are volatile and tied to mining output, Chinese processing capacity, and demand from multiple industries competing for the same supply.",
+      "the geopolitical dimension of that concentration is something we're actively trying to reduce",
+      "The semiconductor shortage was the closest we've come and we were not prepared for it.",
+      "Overnight risks — a battery supplier disruption due to geopolitical event",
+      "China controls a significant portion of the processing capacity for these materials and that concentration is a strategic vulnerability we haven't fully resolved.",
+      "Third is supply chain — specifically battery raw materials. We are dependent on lithium, cobalt, and nickel sourced heavily from a small number of geographies.",
+      "These are all scenarios where we could be in crisis within 24 to 48 hours with very little warning."
+    ],
+    "question_source": [
+      "Q1",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q9",
+      "Q10",
+      "Q17",
+      "Q18"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNDERPREPARED"
+    ],
+    "cascade_context": "triggered supply chain disruption",
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_013",
+        "risk_name": "Suppliers may fail to deliver components according to schedules, prices, quality and volumes that are acceptable",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "HIGH",
+        "similarity_score": 0.0826
+      },
+      {
+        "registry_risk_id": "REG_AUT_032",
+        "risk_name": "Reliance on single suppliers",
+        "primary_impact": "Production & Operations",
+        "confidence": "HIGH",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_018",
+        "risk_name": "Product testing risk",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_004",
+    "client_description": "Software and technology risk",
+    "verbatim_evidence": [
+      "Fourth is software and technology risk. Modern vehicles are essentially software platforms now.",
+      "Our capability to develop, update, and secure vehicle software is lagging behind pure-play EV competitors and that gap is becoming a competitive risk.",
+      "We also have cybersecurity exposure in connected vehicles that we're actively working on but it's not where it needs to be.",
+      "AI liability in vehicles",
+      "the legal and liability framework for when those systems fail is genuinely unclear",
+      "we're accumulating liability exposure we can't fully quantify yet",
+      "The capital commitment is large and the technology risk — cell chemistry is still evolving — means we could be investing in a chemistry that's partially obsolete in five years.",
+      "Tesla's software and over-the-air update model has set a consumer expectation that we're still catching up to",
+      "Customers now expect vehicles to improve after purchase and our ability to deliver that is still limited",
+      "And our internal software development capability — we're trying to build it but we're competing with Google, Amazon, and Apple for the same talent.",
+      "The gap between where we need to be on software and where we are today is a genuine strategic risk.",
+      "Cyber — controls exist but they're not uniform."
+    ],
+    "question_source": [
+      "Q1",
+      "Q2",
+      "Q6",
+      "Q11",
+      "Q12",
+      "Q16"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNREGISTERED"
+    ],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_068",
+        "risk_name": "Increasing cyber attacks and security threats",
+        "primary_impact": "Technology",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_042",
+        "risk_name": "Compromised information and data due to lack of IT risk awareness and policies",
+        "primary_impact": "Reputation & Ethics",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_018",
+        "risk_name": "Product testing risk",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_005",
+    "client_description": "Dealer network disruption",
+    "verbatim_evidence": [
+      "Fifth would be dealer network disruption. The shift to direct-to-consumer models by some competitors — particularly EV-native brands — is creating pressure on our traditional dealer model.",
+      "We've had some very difficult conversations with dealer groups about the future of the relationship.",
+      "The direct-to-consumer model from EV natives is disrupting dealer economics",
+      "If consumers increasingly expect to buy directly, our dealer network — which represents significant capital and relationship investment — becomes a liability rather than an asset"
+    ],
+    "question_source": [
+      "Q1",
+      "Q11"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_027",
+        "risk_name": "Loss of dealerships and importers can lead to unserved demand and lower unit sales",
+        "primary_impact": "Customers",
+        "confidence": "HIGH",
+        "similarity_score": 0.0192
+      },
+      {
+        "registry_risk_id": "REG_AUT_025",
+        "risk_name": "Customer are priced out of the automotive industry due to increasing prices of vehicles",
+        "primary_impact": "Customers",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_015",
+        "risk_name": "Automotive industry is evolving into a transportation service",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_006",
+    "client_description": "Workforce transformation",
+    "verbatim_evidence": [
+      "Sixth is workforce transformation. We're shutting down or retooling internal combustion engine production lines and the workforce implications are significant — retraining, redundancies, union negotiations.",
+      "In Germany and the UK particularly this is a live and sensitive issue.",
+      "workforce transition creating persistent labour relations friction",
+      "They erode your position quarter by quarter and the temptation is to keep them lower on the register because nothing dramatic has happened yet.",
+      "Slow-build risks — workforce transition creating persistent labour relations friction"
+    ],
+    "question_source": [
+      "Q1",
+      "Q18"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_065",
+        "risk_name": "Talent attraction and retention in areas such as software development, data analytics, cybersecurity, and electric vehicle engineering",
+        "primary_impact": "Society and People",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_015",
+        "risk_name": "Automotive industry is evolving into a transportation service",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_032",
+        "risk_name": "Reliance on single suppliers",
+        "primary_impact": "Production & Operations",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_007",
+    "client_description": "Regulatory compliance",
+    "verbatim_evidence": [
+      "Seventh I'd add regulatory compliance — specifically emissions regulations. Euro 7 standards, the US EPA rules, and equivalent standards in other markets are all tightening.",
+      "Our ICE vehicle lineup has a defined compliance window and managing that transition without stranding assets is genuinely complex.",
+      "regulatory compliance",
+      "we will always be one of the most regulated industries in the world, whether it's safety standards, emissions, or increasingly software and data regulations",
+      "The new emissions standards coming into effect create a very tight compliance window for our remaining ICE models.",
+      "The cost of compliance per vehicle is significant and we're having to decide which models to carry forward and which to discontinue.",
+      "US CAFE standards and EPA emissions rules — the regulatory posture has shifted and we're watching that carefully in terms of what it means for our North American ICE lineup.",
+      "And the EU Corporate Sustainability Reporting Directive — CSRD — is imposing significant new disclosure obligations on us.",
+      "Our data infrastructure isn't ready for the granularity of reporting required.",
+      "Product safety — strong controls."
+    ],
+    "question_source": [
+      "Q1",
+      "Q3",
+      "Q7",
+      "Q16"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_055",
+        "risk_name": "Regulatory risk associated with non-compliance with laws, rules, regulations, prescribed practices or ethical standards within jurisdiction of operation",
+        "primary_impact": "Compliance",
+        "confidence": "HIGH",
+        "similarity_score": 0.4994
+      },
+      {
+        "registry_risk_id": "REG_AUT_056",
+        "risk_name": "Complying with regulations such as the General Data Protection Regulation",
+        "primary_impact": "Compliance",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.414
+      },
+      {
+        "registry_risk_id": "REG_AUT_052",
+        "risk_name": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
+        "primary_impact": "Compliance",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.2715
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_008",
+    "client_description": "Geopolitical risk",
+    "verbatim_evidence": [
+      "I'd add geopolitical risk around our China operations. We have a significant joint venture in China — it's been one of our most profitable operations historically — but the market there has deteriorated sharply.",
+      "Local EV brands, particularly BYD and others, have taken enormous market share.",
+      "And the geopolitical dimension between China and Western markets adds uncertainty to the long-term viability of that JV structure.",
+      "The China JV situation could deteriorate rapidly if US-China trade relations escalate further.",
+      "a China JV forced restructuring triggered by policy change",
+      "These are all scenarios where we could be in crisis within 24 to 48 hours with very little warning.",
+      "Overnight risks — a China JV forced restructuring triggered by policy change"
+    ],
+    "question_source": [
+      "Q1",
+      "Q4",
+      "Q18"
+    ],
+    "risk_type": "EVENT_DRIVEN",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_060",
+        "risk_name": "Climate neutrality by 2050",
+        "primary_impact": "Compliance",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_064",
+        "risk_name": "Political tensions, trade disputes, and tariffs can disrupt global automotive supply chains and markets",
+        "primary_impact": "Society and People",
+        "confidence": "HIGH",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_046",
+        "risk_name": "Communicable diseases and pandemics",
+        "primary_impact": "Health, Safety, Environment",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_009",
+    "client_description": "Product safety and recall risk",
+    "verbatim_evidence": [
+      "product safety and recall risk",
+      "the consequences of a safety failure — reputational, financial, regulatory — are always present",
+      "We had a product recall in 2024 — a software defect in an ADAS feature across approximately 180,000 vehicles.",
+      "The ADAS software recall in 2024 is the clearest example.",
+      "it became simultaneously a regulatory event, a communications crisis, a legal liability issue, and a customer trust problem.",
+      "a product safety event requiring immediate recall",
+      "These are all scenarios where we could be in crisis within 24 to 48 hours with very little warning.",
+      "Overnight risks — a product safety event requiring immediate recall"
+    ],
+    "question_source": [
+      "Q3",
+      "Q5",
+      "Q14",
+      "Q18"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": "ADAS software recall",
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_018",
+        "risk_name": "Product testing risk",
+        "primary_impact": "Strategy",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.1218
+      },
+      {
+        "registry_risk_id": "REG_AUT_039",
+        "risk_name": "Brand protection",
+        "primary_impact": "Reputation & Ethics",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_040",
+        "risk_name": "Unintended or accidental patent and intellectual property right infringements",
+        "primary_impact": "Reputation & Ethics",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": [
+      "RISK_014"
+    ]
+  },
+  {
+    "risk_id": "RISK_010",
+    "client_description": "Financial risk",
+    "verbatim_evidence": [
+      "cyclicality",
+      "automotive demand is fundamentally tied to economic conditions, consumer confidence, and credit availability",
+      "Currency is our biggest structural exposure",
+      "Any significant shift in major currency pairs hits our reported margins directly",
+      "Commodity prices — steel, aluminium, and increasingly battery raw materials — are a significant variable cost exposure",
+      "We have hedging programs but they don't fully cover us beyond 12-18 months",
+      "Capital availability for the EV transition is a real concern",
+      "if credit conditions tighten or our credit rating comes under pressure the cost of financing that programme increases meaningfully",
+      "Treasury hedging — the instruments themselves work, they're tested through normal market operations.",
+      "the policy parameters haven't been stress-tested against a scenario as severe as what we saw in 2023-2024."
+    ],
+    "question_source": [
+      "Q3",
+      "Q8",
+      "Q17"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNDERPREPARED"
+    ],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_011",
+        "risk_name": "Residual value risk on leases and finance assets",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0847
+      },
+      {
+        "registry_risk_id": "REG_AUT_007",
+        "risk_name": "Higher credit risk due to customer insolvency",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_002",
+        "risk_name": "Costs associated with downgrade in credit ratings",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_011",
+    "client_description": "Labour and industrial relations",
+    "verbatim_evidence": [
+      "labour and industrial relations",
+      "we operate with large, heavily unionised workforces in multiple countries",
+      "Currency and commodity hedging — we have formal treasury programmes with board-approved parameters."
+    ],
+    "question_source": [
+      "Q3",
+      "Q16"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_064",
+        "risk_name": "Political tensions, trade disputes, and tariffs can disrupt global automotive supply chains and markets",
+        "primary_impact": "Society and People",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_032",
+        "risk_name": "Reliance on single suppliers",
+        "primary_impact": "Production & Operations",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_062",
+        "risk_name": "Economic slow down and increased unemployment influencing consumer spending",
+        "primary_impact": "Society and People",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": true,
+    "human_review": true,
+    "human_review_reason": "No confident registry match found",
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_012",
+    "client_description": "Raw material dependency",
+    "verbatim_evidence": [
+      "raw material dependency",
+      "we will always be exposed to commodity price volatility",
+      "Semiconductors — the 2023 experience taught us we were too concentrated in specific chip families from a small number of fabs.",
+      "Software platforms — we're using a small number of third-party software providers for vehicle operating systems and ADAS components."
+    ],
+    "question_source": [
+      "Q3",
+      "Q9"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_029",
+        "risk_name": "Shortage of raw materials and transportation",
+        "primary_impact": "Production & Operations",
+        "confidence": "HIGH",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_033",
+        "risk_name": "Potential increased tariffs resulting in increased costs of raw materials",
+        "primary_impact": "Production & Operations",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_001",
+        "risk_name": "High energy and raw material costs",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_013",
+    "client_description": "Logistics and port infrastructure disruption risk",
+    "verbatim_evidence": [
+      "And currency — we manufacture in euros and sell globally.",
+      "logistics — we rely on specific port infrastructure and rail connections for just-in-time delivery.",
+      "The exposure to port disruptions, particularly in Europe, is something the pandemic made very visible",
+      "Supply chain continuity — not adequately tested.",
+      "we've never stress-tested what a multi-node simultaneous disruption looks like."
+    ],
+    "question_source": [
+      "Q4",
+      "Q9",
+      "Q17"
+    ],
+    "risk_type": "EVENT_DRIVEN",
+    "flags": [
+      "UNDERPREPARED"
+    ],
+    "cascade_context": "triggered by semiconductor shortage",
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_005",
+        "risk_name": "Increasing freight costs",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_029",
+        "risk_name": "Shortage of raw materials and transportation",
+        "primary_impact": "Production & Operations",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_031",
+        "risk_name": "Interruption in production at key plants due to natural or other disasters, labour unrest and plant failure",
+        "primary_impact": "Production & Operations",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": [
+      "RISK_014"
+    ]
+  },
+  {
+    "risk_id": "RISK_014",
+    "client_description": "Cyber and technology risk",
+    "verbatim_evidence": [
+      "We had a significant semiconductor shortage event in 2023 — we were forced to halt production at two plants for a combined six weeks because we couldn't source specific microcontrollers.",
+      "And last year we had a ransomware incident at one of our tier-one suppliers.",
+      "The cyber posture of our supply chain is genuinely opaque.",
+      "The ransomware event at our tier-one supplier last year was the first time we really understood how little visibility we had.",
+      "Our cyber incident response plan — partially tested.",
+      "we've never tested the connected vehicle response scenario or a manufacturing OT incident.",
+      "a cyber attack on vehicle systems",
+      "These are all scenarios where we could be in crisis within 24 to 48 hours with very little warning.",
+      "Overnight risks — a cyber attack on vehicle systems"
+    ],
+    "question_source": [
+      "Q5",
+      "Q10",
+      "Q17",
+      "Q18"
+    ],
+    "risk_type": "BOTH",
+    "flags": [
+      "CASCADE_SIGNAL",
+      "UNDERPREPARED"
+    ],
+    "cascade_context": "Ransomware event at tier-one supplier triggered a realization of lack of visibility into supply chain cyber posture",
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_068",
+        "risk_name": "Increasing cyber attacks and security threats",
+        "primary_impact": "Technology",
+        "confidence": "HIGH",
+        "similarity_score": 0.4022
+      },
+      {
+        "registry_risk_id": "REG_AUT_042",
+        "risk_name": "Compromised information and data due to lack of IT risk awareness and policies",
+        "primary_impact": "Reputation & Ethics",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_070",
+        "risk_name": "Cyber attacks on applications of vehicle functions due to digitisation and connectivity",
+        "primary_impact": "Technology",
+        "confidence": "HIGH",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": [
+      "RISK_003"
+    ]
+  },
+  {
+    "risk_id": "RISK_016",
+    "client_description": "Competition and market risk",
+    "verbatim_evidence": [
+      "The complexity of that program — new battery architecture, new software stack, new manufacturing process — all at once is significant execution risk.",
+      "We're behind schedule on the software validation and that's causing tension with the launch timeline.",
+      "The EU's 2035 ICE ban — there's still political uncertainty around whether it holds, whether there are carve-outs, and on what timeline.",
+      "Chinese EV manufacturers are the most significant structural threat",
+      "BYD in particular — they're vertically integrated in a way we're not, their cost structure is fundamentally different, and they're beginning to enter European and other markets aggressively",
+      "Tech companies entering the automotive space — whether directly or through partnerships — remain a threat",
+      "The vehicle software stack is increasingly where value is created and captured, and technology companies have structural advantages in software development that we don't",
+      "If European tariffs on Chinese EVs hold they're contained somewhat, but that's a policy decision not a competitive solution",
+      "The speed and scale of Chinese EV penetration in the European market was not something we had formally assessed at the level it deserved twelve months ago.",
+      "BYD and others broke that pattern and we were caught reacting rather than prepared.",
+      "The regulatory uncertainty around the 2035 ICE ban also surprised us — we had treated it as settled policy and built plans around it.",
+      "The political reopening of that debate in Europe created genuine uncertainty in our investment planning that we hadn't stress-tested for.",
+      "Chinese competition gradually taking market share",
+      "They erode your position quarter by quarter and the temptation is to keep them lower on the register because nothing dramatic has happened yet.",
+      "Slow-build risks — Chinese competition gradually taking market share"
+    ],
+    "question_source": [
+      "Q6",
+      "Q7",
+      "Q11",
+      "Q15",
+      "Q18"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNDERPREPARED",
+      "UNREGISTERED"
+    ],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_044",
+        "risk_name": "Competitive and price pressure due to aggressive policies and poor effective pricing",
+        "primary_impact": "Growth & Competition",
+        "confidence": "HIGH",
+        "similarity_score": 0.2031
+      },
+      {
+        "registry_risk_id": "REG_AUT_003",
+        "risk_name": "Increased competition in automobile financing",
+        "primary_impact": "Profitability & Liquidity",
+        "confidence": "MEDIUM",
+        "similarity_score": 0.0781
+      },
+      {
+        "registry_risk_id": "REG_AUT_018",
+        "risk_name": "Product testing risk",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0661
+      }
+    ],
+    "unmapped": false,
+    "human_review": false,
+    "human_review_reason": null,
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_017",
+    "client_description": "Operational risk",
+    "verbatim_evidence": [
+      "Data privacy regulations affecting connected vehicles are also emerging.",
+      "We collect significant data from connected vehicles and the regulatory requirements around consent, storage, and cross-border data transfer are tightening across multiple jurisdictions.",
+      "Warranty and recall provisions — these are financial liabilities that can crystallize quickly and at scale if a product quality issue emerges",
+      "as we experienced with the ADAS recall",
+      "Supply chain concentration — partially controlled.",
+      "EV transition execution — limited formal risk controls.",
+      "China JV — governance controls are being strengthened as part of the restructuring but we're in the middle of that process.",
+      "Product safety processes — tested constantly, embedded in operations.",
+      "we've never tested the connected vehicle response scenario or a manufacturing OT incident."
+    ],
+    "question_source": [
+      "Q7",
+      "Q8",
+      "Q16",
+      "Q17"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNDERPREPARED"
+    ],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_018",
+        "risk_name": "Product testing risk",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_055",
+        "risk_name": "Regulatory risk associated with non-compliance with laws, rules, regulations, prescribed practices or ethical standards within jurisdiction of operation",
+        "primary_impact": "Compliance",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_057",
+        "risk_name": "Digitisation of operational processes to foresee compliance gap and better align to ESG requirement to avoid Greenwashing",
+        "primary_impact": "Compliance",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": true,
+    "human_review": true,
+    "human_review_reason": "No confident registry match found",
+    "cascade_links": []
+  }
+]

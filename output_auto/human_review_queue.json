@@ -1,0 +1,98 @@
+[
+  {
+    "risk_id": "RISK_011",
+    "client_description": "Labour and industrial relations",
+    "verbatim_evidence": [
+      "labour and industrial relations",
+      "we operate with large, heavily unionised workforces in multiple countries",
+      "Currency and commodity hedging — we have formal treasury programmes with board-approved parameters."
+    ],
+    "question_source": [
+      "Q3",
+      "Q16"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_064",
+        "risk_name": "Political tensions, trade disputes, and tariffs can disrupt global automotive supply chains and markets",
+        "primary_impact": "Society and People",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_032",
+        "risk_name": "Reliance on single suppliers",
+        "primary_impact": "Production & Operations",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_062",
+        "risk_name": "Economic slow down and increased unemployment influencing consumer spending",
+        "primary_impact": "Society and People",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": true,
+    "human_review": true,
+    "human_review_reason": "No confident registry match found",
+    "cascade_links": []
+  },
+  {
+    "risk_id": "RISK_017",
+    "client_description": "Operational risk",
+    "verbatim_evidence": [
+      "Data privacy regulations affecting connected vehicles are also emerging.",
+      "We collect significant data from connected vehicles and the regulatory requirements around consent, storage, and cross-border data transfer are tightening across multiple jurisdictions.",
+      "Warranty and recall provisions — these are financial liabilities that can crystallize quickly and at scale if a product quality issue emerges",
+      "as we experienced with the ADAS recall",
+      "Supply chain concentration — partially controlled.",
+      "EV transition execution — limited formal risk controls.",
+      "China JV — governance controls are being strengthened as part of the restructuring but we're in the middle of that process.",
+      "Product safety processes — tested constantly, embedded in operations.",
+      "we've never tested the connected vehicle response scenario or a manufacturing OT incident."
+    ],
+    "question_source": [
+      "Q7",
+      "Q8",
+      "Q16",
+      "Q17"
+    ],
+    "risk_type": "INHERENT",
+    "flags": [
+      "UNDERPREPARED"
+    ],
+    "cascade_context": null,
+    "registry_matches": [
+      {
+        "registry_risk_id": "REG_AUT_018",
+        "risk_name": "Product testing risk",
+        "primary_impact": "Strategy",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_055",
+        "risk_name": "Regulatory risk associated with non-compliance with laws, rules, regulations, prescribed practices or ethical standards within jurisdiction of operation",
+        "primary_impact": "Compliance",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      },
+      {
+        "registry_risk_id": "REG_AUT_057",
+        "risk_name": "Digitisation of operational processes to foresee compliance gap and better align to ESG requirement to avoid Greenwashing",
+        "primary_impact": "Compliance",
+        "confidence": "LOW",
+        "similarity_score": 0.0
+      }
+    ],
+    "unmapped": true,
+    "human_review": true,
+    "human_review_reason": "No confident registry match found",
+    "cascade_links": []
+  }
+]
