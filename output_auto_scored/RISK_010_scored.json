@@ -1,0 +1,69 @@
+{
+  "risk_id": "RISK_010",
+  "client_description": "Financial risk",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline",
+    "justification": "The client's annual revenue is EUR 78.4 billion, and a significant shift in major currency pairs could hit their reported margins directly. With a cost base currency mismatch of approximately 30%, the risk of revenue decline is substantial. Considering the evidence of 'cyclicality' and 'automotive demand is fundamentally tied to economic conditions, consumer confidence, and credit availability', a moderate to high revenue decline is possible.",
+    "table_criteria_matched": "6-12% = High",
+    "evidence_quantity": "6-12%",
+    "quantity_source": "Client statement on cyclicality and currency exposure"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client has hedging programs but they don't fully cover beyond 12-18 months, indicating some level of control but with significant gaps. External market intelligence indicates trends such as high financing costs, challenging production environments, and tightening emissions regulations, which could drive this risk.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's financial risk is driven by cyclicality, currency exposure, and commodity prices. The evidence suggests a moderate to high revenue decline is possible, with a likelihood of occurrence rated as possible.",
+  "client_context_used": "Annual revenue, revenue trend, EBITDA margin, net debt to EBITDA ratio, and top 5 currencies by revenue exposure",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive industry financial risk 2025 2026",
+      "Currency fluctuation impact on automotive manufacturing 2026",
+      "Automotive sector debt refinancing trends Europe 2025 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "European Commission's plans to scrap the strict 2035 deadline for banning new combustion engines"
+    ],
+    "market_trends": [
+      "high financing costs and prices continuing to weigh on affordability in the European automotive industry",
+      "challenging production environment in major global auto markets",
+      "tightening emissions regulations in Europe"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.transportenvironment.org/articles/europes-automotive-industry-at-a-crossroads",
+      "https://arxiv.org/html/2501.01781v2",
+      "https://oldfieldpartners.com/publications/investing-in-the-european-automotive-industry-in-an-age-of-disruption/",
+      "https://storemaxpapis.com/article/global-chip-crisis-how-europe-s-auto-industry-is-affected",
+      "https://protopapaswines.com/article/europe-s-auto-industry-future-electric-despite-eu-climbdown",
+      "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-industry-outlook.html",
+      "https://globalinsightwire.com/central-bank-policies-impact-on-2026-manufacturing/",
+      "https://koreapartsinfo.com/2026/03/16/global-industry-briefing-war-currency-pressure-and-auto-supply-chain-shifts/",
+      "https://www.fitchratings.com/research/corporate-finance/global-automotive-outlook-2026-10-12-2025",
+      "https://www.brookings.edu/articles/the-impact-of-us-tariffs-on-north-american-auto-manufacturing-and-implications-for-usmca/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks such as RISK_001 (EV transition risk) and RISK_008 (Geopolitical risk), which also have high inherent risk scores.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "RISK_017"
+    ],
+    "downstream_risks": [
+      "RISK_001",
+      "RISK_008"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

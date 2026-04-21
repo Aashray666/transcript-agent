@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "name": "ERM Likelihood Assessment Framework",
+    "version": "1.0",
+    "description": "Multi-factor likelihood scoring methodology for enterprise risk assessment. Decomposes likelihood into 5 evidence-based factors, each scored 1-5, then weighted to produce a composite score.",
+    "applicable_sectors": ["all"]
+  },
+
+  "likelihood_levels": [
+    {
+      "score": 1,
+      "level": "Rare",
+      "description": "Could occur only in exceptional circumstances. No history at the client or close peers. Strong, tested controls in place. External environment is stable.",
+      "frequency_indicator": "Less than once in 10+ years",
+      "probability_12_month": "<5%",
+      "typical_signals": [
+        "No historical occurrence at client or direct peers",
+        "Strong controls in place and regularly tested",
+        "External environment stable or improving",
+        "Low sector base rate",
+        "Below-average client-specific exposure"
+      ]
+    },
+    {
+      "score": 2,
+      "level": "Unlikely",
+      "description": "Not expected to occur but possible. Limited or distant history. Reasonable controls in place. Minor external pressures.",
+      "frequency_indicator": "Once in 5-10 years",
+      "probability_12_month": "5-20%",
+      "typical_signals": [
+        "Occurred at peers but not at client, or occurred at client >5 years ago",
+        "Controls exist and are partially tested",
+        "Minor external pressures present",
+        "Uncommon but documented in sector",
+        "Average client-specific exposure"
+      ]
+    },
+    {
+      "score": 3,
+      "level": "Possible",
+      "description": "Could occur within the assessment period. Some history or emerging external pressures. Controls exist but are incomplete or untested.",
+      "frequency_indicator": "Once in 2-5 years",
+      "probability_12_month": "20-50%",
+      "typical_signals": [
+        "Has occurred at client within last 5 years, or occurs periodically at peers",
+        "Controls exist but are incomplete, untested, or have known gaps",
+        "Moderate external pressures or worsening trend",
+        "Occurs periodically across the sector",
+        "Above-average client-specific exposure"
+      ]
+    },
+    {
+      "score": 4,
+      "level": "Likely",
+      "description": "Will probably occur within the assessment period. Recent history or strong external drivers. Controls are weak, incomplete, or not calibrated for current conditions.",
+      "frequency_indicator": "Once in 1-2 years",
+      "probability_12_month": "50-80%",
+      "typical_signals": [
+        "Has occurred at client within last 2 years, or occurs frequently at peers",
+        "Controls are weak, incomplete, or explicitly flagged as inadequate",
+        "Significant external pressures or rapid change",
+        "Common across the sector",
+        "Significantly above-average client-specific exposure"
+      ]
+    },
+    {
+      "score": 5,
+      "level": "Almost Certain",
+      "description": "Expected to occur, possibly multiple times. Ongoing or imminent. No effective controls or controls explicitly acknowledged as insufficient.",
+      "frequency_indicator": "Multiple times per year or continuous",
+      "probability_12_month": ">80%",
+      "typical_signals": [
+        "Currently occurring or has occurred multiple times recently",
+        "No effective controls, or client explicitly states they are underprepared",
+        "Extreme external pressure or imminent trigger event",
+        "Industry-wide / systemic issue",
+        "Extreme or concentrated client-specific exposure"
+      ]
+    }
+  ],
+
+  "scoring_factors": [
+    {
+      "factor_id": "F1",
+      "name": "Historical Frequency",
+      "weight": 0.25,
+      "description": "Has this risk materialized for this client or close peers in the past 3-5 years?",
+      "data_sources": [
+        "Interview Q5 (past risk events and near-misses)",
+        "Interview Q14 (cascade examples)",
+        "Interview Q15 (risks that materialized but weren't on register)",
+        "Questionnaire A7 (recent material events)",
+        "Questionnaire C3 (supply disruptions)",
+        "Questionnaire D3 (cyber incidents)"
+      ],
+      "scoring_guide": {
+        "1": "Never occurred at client or close peers in last 5 years",
+        "2": "Occurred at peers but not at client, or occurred at client >5 years ago",
+        "3": "Occurred once at client within last 3-5 years, contained with moderate impact",
+        "4": "Occurred at client within last 2 years, or occurred multiple times at peers recently",
+        "5": "Currently occurring, or has occurred multiple times at client recently"
+      }
+    },
+    {
+      "factor_id": "F2",
+      "name": "Control Effectiveness",
+      "weight": 0.25,
+      "description": "Does the client have controls in place for this risk? Are they tested and effective?",
+      "data_sources": [
+        "Interview Q16 (controls in place and gaps)",
+        "Interview Q17 (control testing status)",
+        "Questionnaire C6 (business continuity plans)",
+        "Questionnaire D2 (cyber security posture)",
+        "Questionnaire A8 (risk management maturity)"
+      ],
+      "scoring_guide": {
+        "1": "Strong, mature controls that are regularly tested and proven effective. Client expresses high confidence.",
+        "2": "Controls exist and are partially tested. Client has reasonable confidence but acknowledges some gaps.",
+        "3": "Controls exist on paper but are untested, or have known gaps. Client acknowledges incomplete coverage.",
+        "4": "Controls are weak, incomplete, or explicitly flagged as inadequate. Client acknowledges underprepared.",
+        "5": "No controls in place, or controls are acknowledged as ineffective. Client explicitly states they are underprepared. UNDERPREPARED flag present."
+      }
+    },
+    {
+      "factor_id": "F3",
+      "name": "External Environment & Velocity",
+      "weight": 0.20,
+      "description": "Is the external environment making this risk more or less likely? How fast is it changing?",
+      "data_sources": [
+        "Interview Q4 (event-driven risks sensitive to external changes)",
+        "Interview Q7 (regulatory/policy changes being tracked)",
+        "Interview Q18 (overnight vs slow-build risks)",
+        "Market research / sector intelligence",
+        "Questionnaire E4 (tariff/trade impacts)",
+        "Questionnaire E6 (upcoming regulatory changes)",
+        "Questionnaire H1 (geopolitical exposure)"
+      ],
+      "scoring_guide": {
+        "1": "External environment is stable or improving for this risk. No significant external drivers.",
+        "2": "Minor external pressures exist but are manageable. Slow-moving trend.",
+        "3": "Moderate external pressures. Trend is worsening. Client is tracking developments.",
+        "4": "Significant external pressures. Rapid change. Client identifies this as event-driven or sensitive to external triggers.",
+        "5": "Extreme external pressure. Imminent trigger event. Client describes as 'overnight risk' or 'could be in crisis within 24-48 hours'."
+      }
+    },
+    {
+      "factor_id": "F4",
+      "name": "Sector Base Rate",
+      "weight": 0.15,
+      "description": "How common is this risk across the client's industry? Is it a known sector-wide issue?",
+      "data_sources": [
+        "Risk registry matches (from Phase 1)",
+        "Market research / industry reports",
+        "Sector-specific knowledge"
+      ],
+      "scoring_guide": {
+        "1": "Extremely rare in this sector. No documented cases in recent years.",
+        "2": "Uncommon but documented. Isolated incidents at individual companies.",
+        "3": "Occurs periodically across the sector. Multiple documented cases in recent years.",
+        "4": "Common across the sector. Most companies in the sector face this risk actively.",
+        "5": "Industry-wide / systemic. Affects virtually all companies in the sector. Structural to the industry."
+      }
+    },
+    {
+      "factor_id": "F5",
+      "name": "Client-Specific Exposure",
+      "weight": 0.15,
+      "description": "How exposed is THIS specific client compared to sector peers? Based on their geography, size, dependencies, and structure.",
+      "data_sources": [
+        "Questionnaire A3 (scale and footprint)",
+        "Questionnaire C2 (supply chain concentration)",
+        "Questionnaire C3 (supply chain geography)",
+        "Questionnaire B3 (currency exposure)",
+        "Questionnaire H1 (geopolitical exposure)",
+        "Interview context about specific dependencies and concentrations"
+      ],
+      "scoring_guide": {
+        "1": "Below-average exposure compared to peers. Well-diversified. Limited concentration.",
+        "2": "Average exposure. Typical for a company of this size and geography in the sector.",
+        "3": "Above-average exposure. Some concentration or dependency that increases vulnerability.",
+        "4": "Significantly above-average exposure. Notable concentration, geographic exposure, or structural vulnerability.",
+        "5": "Extreme or concentrated exposure. Client explicitly describes high dependency, concentration, or vulnerability that is worse than peers."
+      }
+    }
+  ],
+
+  "composite_calculation": {
+    "formula": "Likelihood = Round( (F1 × 0.25) + (F2 × 0.25) + (F3 × 0.20) + (F4 × 0.15) + (F5 × 0.15) )",
+    "rounding": "Standard rounding to nearest integer (1-5)",
+    "notes": [
+      "If any single factor scores 5 AND the risk has an UNDERPREPARED flag, the composite floor is 3 (Possible)",
+      "If the risk has CASCADE_SIGNAL flag and an upstream risk has Likelihood >= 4, add +0.5 to the composite before rounding",
+      "The composite is a starting point — the Scoring Agent may adjust ±1 with explicit justification if the evidence strongly warrants it"
+    ]
+  },
+
+  "cascade_adjustment_rules": {
+    "description": "Applied in the second scoring pass after all risks have initial scores",
+    "rules": [
+      {
+        "condition": "Risk has cascade_links to an upstream risk with Likelihood >= 4",
+        "adjustment": "+0.5 to composite likelihood (before rounding)",
+        "rationale": "An upstream risk that is Likely or Almost Certain increases the probability of downstream cascade risks materializing"
+      },
+      {
+        "condition": "Risk has CASCADE_SIGNAL flag and multiple downstream risks",
+        "adjustment": "No adjustment to this risk, but downstream risks get the +0.5 boost",
+        "rationale": "The cascade source risk's own likelihood is independent; it's the downstream risks that become more likely"
+      }
+    ],
+    "cap": "Adjusted likelihood cannot exceed 5"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "sector": "Automotive",
+  "version": "1.0",
+  "scale": {
+    "1": {
+      "level": "Rare",
+      "definition": "Exceptional circumstances only. No history of occurrence at the company or close peers. External environment does not suggest elevated probability.",
+      "frequency_indicator": "Has not occurred in 10+ years at the company or comparable peers",
+      "probability_12m": "<5%"
+    },
+    "2": {
+      "level": "Unlikely",
+      "definition": "Could occur but not expected. May have occurred once historically at the company or occasionally at peers. Some external factors present but not acute.",
+      "frequency_indicator": "Occurred once in the last 5-10 years at the company, or occasionally at sector peers",
+      "probability_12m": "5-20%"
+    },
+    "3": {
+      "level": "Possible",
+      "definition": "Reasonable possibility. Has occurred before at the company or regularly at peers. External environment contains active drivers. Controls exist but may have gaps.",
+      "frequency_indicator": "Occurred in the last 2-5 years at the company, or regularly at sector peers",
+      "probability_12m": "20-50%"
+    },
+    "4": {
+      "level": "Likely",
+      "definition": "Expected to occur. Has occurred recently or multiple times. External environment is actively driving this risk. Controls are insufficient or untested.",
+      "frequency_indicator": "Occurred in the last 1-2 years, or multiple times historically. Active external drivers present.",
+      "probability_12m": "50-80%"
+    },
+    "5": {
+      "level": "Almost Certain",
+      "definition": "Expected to occur imminently or is already materializing. Strong historical precedent, acute external drivers, and weak or absent controls.",
+      "frequency_indicator": "Currently materializing, or has occurred multiple times recently. External environment is acute.",
+      "probability_12m": ">80%"
+    }
+  },
+  "evidence_pillars": {
+    "historical_frequency": {
+      "weight": 0.30,
+      "description": "Has this risk materialized before for this company or peers? How often?",
+      "data_sources": ["client_interview_Q5", "questionnaire_B20_B24_C29_D39_F55", "industry_databases"],
+      "agent": "evidence_retriever + knowledge_summarizer"
+    },
+    "external_environment": {
+      "weight": 0.30,
+      "description": "What external conditions increase or decrease the probability?",
+      "data_sources": ["market_research", "regulatory_trajectory", "geopolitical_climate", "sector_reports"],
+      "agent": "market_research_agent"
+    },
+    "control_maturity": {
+      "weight": 0.25,
+      "description": "Does the company have controls? Are they tested? Are there acknowledged gaps?",
+      "data_sources": ["client_interview_Q16_Q17", "questionnaire_B23_C30-C33_H69-H75"],
+      "agent": "knowledge_summarizer"
+    },
+    "sector_expert_judgment": {
+      "weight": 0.15,
+      "description": "Given sector, size, and operating model, what is the baseline expectation?",
+      "data_sources": ["sector_knowledge", "risk_registry_base_rates", "peer_benchmarks"],
+      "agent": "scoring_agent"
+    }
+  },
+  "sector_baseline_calibration": {
+    "product_safety_recall": {
+      "baseline": 4,
+      "rationale": "Automotive recalls are frequent industry-wide. Major OEMs typically have 5-15 recall events per year."
+    },
+    "supply_chain_disruption": {
+      "baseline": 4,
+      "rationale": "Post-pandemic, post-semiconductor-crisis, supply chain events are frequent and expected."
+    },
+    "regulatory_compliance_emissions": {
+      "baseline": 3.5,
+      "rationale": "Regulatory tightening is active and ongoing. Compliance windows are defined and approaching."
+    },
+    "cyber_attack": {
+      "baseline": 3,
+      "rationale": "Automotive sector increasingly targeted. Connected vehicles expand attack surface."
+    },
+    "currency_commodity_volatility": {
+      "baseline": 4,
+      "rationale": "Structural exposure for global manufacturers. Volatility is the norm."
+    },
+    "ev_transition_execution": {
+      "baseline": 3.5,
+      "rationale": "Industry-wide challenge. Most OEMs behind their own timelines."
+    },
+    "geopolitical_trade_policy": {
+      "baseline": 3,
+      "rationale": "Elevated but episodic. Current US-China-EU tensions above historical baseline."
+    },
+    "workforce_labour_relations": {
+      "baseline": 3,
+      "rationale": "Structural in unionized manufacturing. Transformation periods elevate this."
+    },
+    "technology_obsolescence": {
+      "baseline": 3,
+      "rationale": "Pace of change is high but not immediate for most systems."
+    },
+    "natural_disaster_climate": {
+      "baseline": 2,
+      "rationale": "Location-dependent. Most automotive plants in low-risk geographies."
+    }
+  },
+  "adjustment_rules": [
+    {
+      "condition": "Client explicitly stated this has happened to them (Q5 or questionnaire incident history)",
+      "adjustment": "+1",
+      "min_score_after": 3
+    },
+    {
+      "condition": "Client stated they are underprepared for this risk (Q15 or UNDERPREPARED flag)",
+      "adjustment": "+1",
+      "min_score_after": null
+    },
+    {
+      "condition": "Client stated controls are strong and tested (Q16/Q17 or questionnaire confirmation)",
+      "adjustment": "-1",
+      "min_score_after": null
+    },
+    {
+      "condition": "Client stated controls exist but are untested (Q17 or questionnaire)",
+      "adjustment": "0",
+      "min_score_after": null
+    },
+    {
+      "condition": "Client stated no controls or acknowledged gap (Q16 or questionnaire)",
+      "adjustment": "+1",
+      "min_score_after": null
+    },
+    {
+      "condition": "Market Research Agent signals INCREASING trend",
+      "adjustment": "+1",
+      "min_score_after": null
+    },
+    {
+      "condition": "Market Research Agent signals DECREASING trend",
+      "adjustment": "-1",
+      "min_score_after": null
+    },
+    {
+      "condition": "Risk flagged CASCADE_SIGNAL with high-likelihood upstream risk (score >= 4)",
+      "adjustment": "+1",
+      "min_score_after": null
+    }
+  ],
+  "score_bounds": {
+    "minimum": 1,
+    "maximum": 5
+  },
+  "risk_rating_bands": {
+    "1-4": {"rating": "Low", "color": "Green", "action": "Monitor. Review annually."},
+    "5-9": {"rating": "Medium", "color": "Yellow", "action": "Active monitoring. Review quarterly."},
+    "10-15": {"rating": "High", "color": "Orange", "action": "Priority attention. Review monthly. Board awareness."},
+    "16-25": {"rating": "Critical", "color": "Red", "action": "Immediate action. Dedicated risk owner. Board reporting."}
+  }
+}

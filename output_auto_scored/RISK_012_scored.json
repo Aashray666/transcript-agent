@@ -1,0 +1,68 @@
+{
+  "risk_id": "RISK_012",
+  "client_description": "Raw material dependency",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Cost Structure",
+    "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+    "justification": "The client's annual revenue is EUR 78.4 billion, and they have a high dependency on raw materials such as steel, aluminum, and battery raw materials. The evidence suggests that the client is exposed to commodity price volatility, which could lead to a significant increase in raw material costs. The client's EBITDA margin is 9.2%, which indicates a moderate level of financial resilience. However, the potential cost increase due to raw material price volatility could erode this margin, leading to a high impact on the client's financial growth.",
+    "table_criteria_matched": "10-20% cost increase = High (4)",
+    "evidence_quantity": "22% of components are single-sourced, and the client has a significant spend on raw materials",
+    "quantity_source": "Client questionnaire"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client has experienced a similar risk in the past (the 2023 semiconductor shortage), and there are active external drivers such as supply chain disruptions and fluctuations in raw material prices. However, the client has some controls in place, such as hedging programs, which reduces the likelihood of this risk materializing.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred in the last 2-5 years at the company, or regularly at sector peers = Possible (3)"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client is exposed to commodity price volatility due to their high dependency on raw materials, and they have experienced a similar risk in the past. The client has some controls in place, but the likelihood of this risk materializing is still possible.",
+  "client_context_used": "Annual revenue, EBITDA margin, and spend on raw materials",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive semiconductor supply chain risks 2026",
+      "Global lithium battery raw material shortages 2025",
+      "EU automotive industry commodity price volatility 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "European Chips Act to support Europe's semiconductor ecosystem"
+    ],
+    "market_trends": [
+      "supply chain disruptions, fluctuations in raw material prices, semiconductor shortage, increasing demand for electric vehicles and lithium-ion batteries"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.datainsightsmarket.com/reports/europe-automotive-semiconductor-market-20721",
+      "https://bisi.org.uk/reports/supply-chain-vulnerabilities-in-europes-semiconductor-industry-amid-the-iran-conflict",
+      "https://halvernresearch.com/papers/global-semiconductor-supply-chain-2026/",
+      "https://www.moodys.com/web/en/us/insights/corporations/semiconductors-in-2026-why-supply-chains-are-a-major-bottleneck.html",
+      "https://www.clepa.eu/insights-updates/position-papers/reinforcing-europes-automotive-semiconductor-supply-chain/",
+      "https://www.fortuneindia.com/macro/battery-raw-material-shortages-can-derail-ev-sales-and-carbon-offset-plans/110781",
+      "https://spbess.com/news/51-2v-300ah-lithium-batteries-raw-material-shortages-price-hikes-necessity-and-future-outlook/",
+      "https://www.linkedin.com/pulse/why-global-automakers-battery-strategies-fatally-matt-fernley",
+      "https://www.torquenews.com/17995/coming-ai-battery-demand-shock-and-why-your-next-ev-might-be-delayed-data-center",
+      "https://world-nuclear.org/information-library/current-and-future-generation/lithium"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks such as RISK_003 (Supply chain risk) and RISK_008 (Geopolitical risk), which also have a high impact and possible likelihood.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "RISK_003",
+      "RISK_008"
+    ],
+    "downstream_risks": [
+      "RISK_001",
+      "RISK_002"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

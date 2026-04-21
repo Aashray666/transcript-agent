@@ -1,0 +1,93 @@
+"""Test script — score a single risk to verify the pipeline works."""
+
+import json
+import logging
+import os
+
+from riskmapper.llm_wrapper import LLMWrapper
+from riskmapper.schemas import MappedRisk
+from riskmapper.scoring.evidence_assembler import assemble_evidence
+from riskmapper.scoring.external_intelligence import gather_external_intelligence
+from riskmapper.scoring.knowledge_summarizer import extract_company_profile, summarize_knowledge
+from riskmapper.scoring.likelihood_intelligence import assess_likelihood
+from riskmapper.scoring.memory_store import MemoryStore
+from riskmapper.scoring.scoring_agent import load_impact_table_text, score_risk
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(name)s | %(message)s", datefmt="%H:%M:%S")
+logger = logging.getLogger("test")
+
+OUTPUT_DIR = "output_test"
+RISK_INDEX = 2  # RISK_003 Supply chain
+
+
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    with open("output_auto/risk_universe.json") as f:
+        all_risks = [MappedRisk.model_validate(r) for r in json.load(f)]
+    with open("auto_transcript.txt") as f:
+        transcript = f.read()
+    with open("data/questionnaires/velocityauto_questionnaire.json") as f:
+        questionnaire = json.load(f)
+    with open("data/likelihood_tables/automotive.json") as f:
+        likelihood_table = json.load(f)
+
+    impact_table_text = load_impact_table_text(
+        "data/impact_tables/Impact_Assessment_GuidBook_Automotive.xlsx", "Automotive"
+    )
+
+    llm = LLMWrapper()
+    profile = extract_company_profile(questionnaire)
+    memory = MemoryStore(profile)
+    risk = all_risks[RISK_INDEX]
+
+    logger.info("=== Testing: %s (%s) ===", risk.risk_id, risk.client_description)
+
+    logger.info("[1/5] Evidence assembly...")
+    evidence = assemble_evidence(risk, transcript, all_risks)
+    logger.info("  %d quotes, strength=%s", len(evidence.verbatim_quotes), evidence.evidence_strength)
+
+    logger.info("[2/5] Knowledge summarizer...")
+    knowledge = summarize_knowledge(evidence, questionnaire, profile, llm)
+    logger.info("  completeness=%s, %d fields", knowledge.completeness, len(knowledge.risk_relevant_context))
+
+    logger.info("[3/5] External intelligence...")
+    ext_intel = gather_external_intelligence(evidence, knowledge, llm)
+    logger.info("  signal=%s, %d sources", ext_intel.external_likelihood_signal, len(ext_intel.sources))
+
+    logger.info("[4/5] Likelihood intelligence...")
+    likelihood = assess_likelihood(evidence, knowledge, likelihood_table, memory.get_memory(), llm, external_intel=ext_intel)
+    logger.info("  composite=%d/5 (raw=%.2f)", likelihood.composite_rounded, likelihood.composite_score)
+    for fs in likelihood.factor_scores:
+        logger.info("    %s: %d/5 — %s", fs.factor, fs.score, fs.justification[:80])
+
+    logger.info("[5/5] Scoring agent...")
+    scored = score_risk(evidence, knowledge, likelihood, impact_table_text, likelihood_table, memory.get_memory(), llm, external_intel=ext_intel)
+
+    # Save
+    path = os.path.join(OUTPUT_DIR, f"{risk.risk_id}_scored.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(scored.model_dump(mode="json"), f, indent=2, ensure_ascii=False)
+
+    print(f"\n{'='*60}")
+    print(f"{scored.risk_id}: {scored.client_description}")
+    print(f"{'='*60}")
+    print(f"Impact:     {scored.impact_assessment.score}/5 ({scored.impact_assessment.level})")
+    print(f"  Dimension:  {scored.impact_assessment.dimension}")
+    print(f"  Sub-dim:    {scored.impact_assessment.sub_dimension}")
+    print(f"  Criteria:   {scored.impact_assessment.table_criteria_matched}")
+    print(f"  Why:        {scored.impact_assessment.justification[:200]}")
+    print(f"Likelihood: {scored.likelihood_assessment.score}/5 ({scored.likelihood_assessment.level})")
+    print(f"  Basis:      {scored.likelihood_assessment.evidence_basis}")
+    print(f"  Why:        {scored.likelihood_assessment.justification[:200]}")
+    print(f"Inherent:   {scored.inherent_risk_score} → {scored.risk_rating}")
+    print(f"Confidence: {scored.scoring_confidence}")
+    if scored.market_intelligence_used:
+        mi = scored.market_intelligence_used
+        print(f"Market Intel: signal={mi.external_likelihood_signal}, {len(mi.sources)} sources")
+        print(f"  Queries: {mi.search_queries}")
+    print(f"\nSaved: {path}")
+
+
+if __name__ == "__main__":
+    main()

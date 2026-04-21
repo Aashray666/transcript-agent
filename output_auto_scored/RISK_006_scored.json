@@ -1,0 +1,76 @@
+{
+  "risk_id": "RISK_006",
+  "client_description": "Workforce transformation",
+  "impact_assessment": {
+    "score": 2,
+    "level": "Low",
+    "dimension": "People, Health & Safety Impact",
+    "sub_dimension": "Labour Relations",
+    "metric": "Industrial Action / Strikes (Days)",
+    "justification": "The risk of workforce transformation is expected to cause significant labour relations friction, with a high likelihood of industrial action. The client has already experienced a 2-day warning strike in Germany and a 1-day work stoppage in the UK. With 68% of the workforce unionized overall and 82% in Germany, the potential for further industrial action is high.",
+    "table_criteria_matched": "5-10 days = High",
+    "evidence_quantity": "2 days (Germany) and 1 day (UK)",
+    "quantity_source": "Client questionnaire context"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5, indicating a high likelihood of this risk occurring. The client's history of industrial action, the high percentage of unionized workforce, and the external environment of slow-build risks all contribute to this likelihood.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred in the last 1-2 years, or multiple times historically. Active external drivers present."
+  },
+  "inherent_risk_score": 8,
+  "risk_rating": "Medium",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's workforce transformation is expected to cause significant labour relations friction, with a high likelihood of industrial action. The client has already experienced strikes and has a high percentage of unionized workforce.",
+  "client_context_used": "Workforce transformation, unionized workforce percentage, industrial action history",
+  "market_intelligence_used": {
+    "search_queries": [
+      "German automotive workforce transformation challenges 2025 2026",
+      "UK union negotiations automotive industry 2025 2026",
+      "European automotive OEM EV transition labour relations 2026"
+    ],
+    "recent_incidents": [
+      "UK automotive jobs at risk without urgent ZEV mandate reforms",
+      "Unite leader calls for greater support for automotive industry",
+      "UK Car Industry Seeks Changes to EU’s ‘Made in Europe’ Agenda",
+      "NAECI Pay Negotiations 2026 & Resulting Offer"
+    ],
+    "regulatory_developments": [
+      "Changes to trade union law under the Employment Rights Act 2025 (ERA 2025)",
+      "Proposed law that will discriminate against British automobile manufacturers and undermine €80 billion ($94 billion) of annual trade"
+    ],
+    "market_trends": [
+      "Electric vehicles and software-defined platforms introducing a new layer of technical complexity across the automotive value chain",
+      "Rapid rise of EV production offers opportunities for reskilling and transitioning to high-demand roles in battery manufacturing, software development, and charging infrastructure maintenance",
+      "Seven in ten executives expect AI agents taking independent action by the end of 2026"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://taggd.in/blogs/automotive-workforce-transformation/",
+      "https://www.linkedin.com/pulse/workforce-transformation-trends-2026-why-we-forget-pocstar-ph-d--drh4f",
+      "https://htn.co.uk/2025/02/19/panel-discussion-successful-nhs-workforce-transformation-key-factors-for-success-overcoming-challenges-ensuring-sustainable-workforce-transformation-and-securing-buy-in/",
+      "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "https://www.workforceaustralia.gov.au/",
+      "https://www.motorfinanceonline.com/news/uk-automotive-jobs-zev-mandate/",
+      "https://www.unitetheunion.org/news-events/news/2025/april/unite-leader-calls-for-greater-support-for-automotive-industry",
+      "https://www.bloomberg.com/news/articles/2026-04-15/uk-car-industry-seeks-changes-to-eu-s-made-in-europe-agenda",
+      "https://www.ecia.co.uk/industry-updates/naeci-pay-negotiations-2026-resulting-offer/",
+      "https://www.cipd.org/uk/knowledge/employment-law/employee-relations/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as RISK_001 (EV transition risk) and RISK_003 (Supply chain risk), which also have high likelihood scores due to the client's history of industrial action and the external environment of slow-build risks.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "RISK_001",
+      "RISK_003"
+    ],
+    "downstream_risks": [
+      "RISK_002",
+      "RISK_005"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

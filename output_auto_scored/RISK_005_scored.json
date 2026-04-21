@@ -1,0 +1,70 @@
+{
+  "risk_id": "RISK_005",
+  "client_description": "Dealer network disruption",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline",
+    "metric": "Revenue Decline (%)",
+    "justification": "The shift to direct-to-consumer models by some competitors, particularly EV-native brands, is creating pressure on the traditional dealer model. The client's significant investment in their traditional dealer network and their declining market share in Europe and China make them more exposed to this risk. According to the client's revenue figures, a potential loss of 6% of their total revenue (EUR 78.4 billion) due to dealer network disruption would be a significant impact.",
+    "table_criteria_matched": "6-12% = High",
+    "evidence_quantity": "6%",
+    "quantity_source": "Client questionnaire context: Annual revenue EUR 78.4 billion, Market share loss in Europe and China"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The external environment contains active drivers such as the growing demand for electric vehicles and the trend of direct-to-consumer sales disrupting traditional dealership models. However, the client has had difficult conversations with dealer groups about the future of the relationship, indicating some level of preparedness.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at peers, external environment contains active drivers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's traditional dealer model is under pressure from the shift to direct-to-consumer models by some competitors, particularly EV-native brands. The client has significant investment in their traditional dealer network and is experiencing declining market share in Europe and China.",
+  "client_context_used": "Client questionnaire context: Revenue figures, market share trends, and dealer concentration",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive dealer network disruption 2025 2026",
+      "EV native brands disrupting traditional dealer models 2026",
+      "Automotive OEM direct-to-consumer sales trends Europe 2025"
+    ],
+    "recent_incidents": [
+      "Auto production disrupted by chip shortages"
+    ],
+    "regulatory_developments": [
+      "New Mandate for Dealer Security in 2026"
+    ],
+    "market_trends": [
+      "Growing demand for electric vehicles",
+      "Direct-to-consumer sales disrupting traditional dealership models",
+      "EV sales soaring in Europe"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.fixedopsmarketing.com/mercedes-benz-oem-mandates-justin-shanken/",
+      "https://securityboulevard.com/2024/02/top-cyber-threats-automotive-dealerships-should-look-out-for/",
+      "https://www.corporatevision-news.com/issues/automotive-awards-2025/",
+      "https://www.automotiveworld.com/news/bev-sales-soar-in-europe-q1-2026-as-pump-price-shock-persists/",
+      "https://linkedinbusiness.xyz/auto-production-disrupted-by-chip-shortages.html",
+      "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/a-turning-point-for-us-auto-dealers-the-unstoppable-electric-car",
+      "https://www.chasingcars.com.au/reviews/small-suvs/gac-emzoom-2026-review/",
+      "https://m14intelligence.com/public/index.php/blog/59",
+      "https://discussion.fool.com/t/evs-if-you-build-them-will-they-sell/94331",
+      "https://www.carswithcords.net/2026/01/how-tesla-turns-ev-sales-into-profits.html"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is related to RISK_004 (Software and technology risk) and RISK_013, but the impact dimension differs. The likelihood score is consistent with the composite score from the likelihood intelligence agent.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "RISK_004"
+    ],
+    "downstream_risks": [
+      "RISK_013"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

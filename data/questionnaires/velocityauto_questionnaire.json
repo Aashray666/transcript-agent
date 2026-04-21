@@ -1,0 +1,323 @@
+{
+  "client": "VelocityAuto Group",
+  "sector": "Automotive Manufacturing",
+  "sub_sector": "OEM",
+  "completed_by": "Sanjay Kulkarni, Chief Risk Officer",
+  "date_completed": "2026-03-15",
+  "section_a_company_profile_strategy": {
+    "A1": {
+      "question": "Company legal name, headquarters location, and year of incorporation.",
+      "answer": "VelocityAuto Group AG. Headquarters: Stuttgart, Germany. Incorporated: 1948."
+    },
+    "A2": {
+      "question": "Primary industry sector and sub-sector.",
+      "answer": "Automotive — OEM. Full-line manufacturer covering passenger vehicles (sedan, SUV, crossover) and light commercial vehicles."
+    },
+    "A3": {
+      "question": "Annual revenue and 3-year trend.",
+      "answer": "EUR 78.4 billion (FY2025). Trend: FY2023 EUR 82.1B, FY2024 EUR 80.6B, FY2025 EUR 78.4B — declining, primarily due to China JV revenue contraction and EV transition investment drag."
+    },
+    "A4": {
+      "question": "EBITDA margin and 3-year trend.",
+      "answer": "9.2% (FY2025). Trend: FY2023 11.8%, FY2024 10.4%, FY2025 9.2% — declining due to EV transition costs, tariff impacts, and raw material inflation."
+    },
+    "A5": {
+      "question": "Total employees and functional split.",
+      "answer": "124,000 FTE globally. Split: Manufacturing 58%, Engineering/R&D 18%, Corporate/Admin 10%, Sales & Distribution 14%."
+    },
+    "A6": {
+      "question": "Countries with manufacturing, R&D, and sales presence.",
+      "answer": "Manufacturing: Germany (3 plants), UK (1 plant), Hungary (1 plant), China (2 plants via JV), USA (1 plant), Mexico (1 plant). R&D: Germany (HQ), UK, China, USA. Sales presence: 42 countries across Europe, North America, China, Middle East, Southeast Asia."
+    },
+    "A7": {
+      "question": "Top 5 strategic priorities for next 3-5 years.",
+      "answer": "1. Accelerate EV platform launch and scale (target 40% EV sales by 2030). 2. Secure battery supply chain through JV and diversification. 3. Build in-house software development capability for vehicle OS. 4. Restructure China JV for improved governance and risk management. 5. Achieve Euro 7 compliance across remaining ICE lineup while managing phase-out timeline."
+    },
+    "A8": {
+      "question": "Major capital investment programmes underway or planned.",
+      "answer": "1. EV Platform Programme (EUR 8.2B over 2024-2028) — new purpose-built EV architecture, 3 plant retooling. Currently 6 months behind schedule. 2. Battery Cell JV (EUR 3.1B committed) — joint venture with Asian cell manufacturer for European gigafactory. Construction underway, operational target 2028. 3. Software Centre of Excellence (EUR 1.4B over 2024-2027) — building in-house vehicle software capability. Total committed capex: approximately EUR 12.7B."
+    },
+    "A9": {
+      "question": "Revenue split by powertrain/segment.",
+      "answer": "ICE vehicles: 62%. Electric/hybrid vehicles: 14%. Parts & aftermarket: 12%. Financial services (leasing/financing): 8%. Other (licensing, mobility services): 4%."
+    },
+    "A10": {
+      "question": "Joint ventures, alliances, minority investments.",
+      "answer": "1. China JV — VelocityAuto-Dongfeng Automotive Co. Ltd. 50:50 JV. Shanghai. Passenger vehicle manufacturing and sales in China. Currently under governance restructuring. 2. Battery Cell JV — VelocityAuto-CellTech Energy GmbH. 60:40 (VA majority). Hungary. Battery cell production. Pre-operational. 3. Minority stake (12%) in LidarVision GmbH — autonomous driving sensor technology. Munich."
+    },
+    "A11": {
+      "question": "Current credit rating and recent changes.",
+      "answer": "BBB+ (S&P), Baa1 (Moody's). Stable outlook. No change in last 2 years, though S&P placed on negative watch for 3 months in Q3 2025 due to EV programme delays before reverting to stable."
+    },
+    "A12": {
+      "question": "Net debt / EBITDA ratio and target.",
+      "answer": "Current: 2.4x. Target range: 1.5x-2.0x. Above target due to EV investment programme. Expected to return to target range by 2028 as EV revenue scales."
+    }
+  },
+  "section_b_operations_supply_chain": {
+    "B13": {
+      "question": "Manufacturing plants, locations, and product lines.",
+      "answer": "9 plants total. Germany-Stuttgart: SUV/crossover (ICE+hybrid). Germany-Bremen: sedan (ICE). Germany-Zwickau: EV platform (retooling, target operational Q2 2027). UK-Sunderland: compact vehicles (ICE+hybrid). Hungary-Gyor: battery assembly + compact EV. China-Shanghai: sedan/SUV for Chinese market (JV). China-Chengdu: SUV for Chinese market (JV). USA-Chattanooga: SUV/pickup (ICE). Mexico-Puebla: compact vehicles for North American market."
+    },
+    "B14": {
+      "question": "Average capacity utilisation across plants.",
+      "answer": "72% average. Range: 58% (Zwickau, mid-retooling) to 89% (Stuttgart). China plants at 64% due to market share loss."
+    },
+    "B15": {
+      "question": "Production model and order-to-delivery lead time.",
+      "answer": "Hybrid model. Premium/configured vehicles: make-to-order (65% of volume). Standard models: make-to-stock with regional buffer. Average order-to-delivery: 8-12 weeks (Europe), 4-6 weeks (stock models)."
+    },
+    "B16": {
+      "question": "Top 5 suppliers by spend.",
+      "answer": "1. CellTech Energy (South Korea/Hungary) — battery cells — 14% of procurement — alternative: CATL (qualified but not at scale). 2. Bosch (Germany) — powertrain electronics, ADAS sensors — 9% — partial alternatives exist. 3. Continental (Germany) — tyres, brake systems, electronics — 7% — alternatives available. 4. TSMC/Infineon (Taiwan/Germany) — semiconductors — 6% — dual-sourced since 2024 but specific chip families still single-source. 5. ZF Friedrichshafen (Germany) — transmissions, chassis — 5% — limited alternatives for specific components."
+    },
+    "B17": {
+      "question": "Percentage of critical components single-sourced.",
+      "answer": "Approximately 22%. Down from 35% in 2023 post-semiconductor crisis. Remaining single-source items: specific ADAS sensor modules, certain battery management system chips, and 2 proprietary casting components."
+    },
+    "B18": {
+      "question": "Top 5 raw materials by annual spend.",
+      "answer": "1. Steel/aluminium — EUR 4.8B. 2. Battery raw materials (lithium, cobalt, nickel) — EUR 2.1B (growing rapidly). 3. Plastics/polymers — EUR 1.6B. 4. Copper — EUR 0.9B. 5. Precious metals (catalytic converters) — EUR 0.7B."
+    },
+    "B19": {
+      "question": "Hedging programmes for commodities/currencies.",
+      "answer": "Yes. Currency: rolling 12-month hedge programme covering ~70% of forecast USD and GBP exposure. Commodity: aluminium and copper hedged 6-12 months forward covering ~50% of exposure. Battery raw materials: limited hedging available — primarily managed through long-term supply agreements with price corridors. Hedge horizon: 12-18 months maximum."
+    },
+    "B20": {
+      "question": "Significant supply chain disruptions in last 3 years.",
+      "answer": "1. Semiconductor shortage (2023): Production halted at 2 plants for combined 6 weeks. Financial impact: EUR 400M+ in lost production. 2. Ransomware attack on tier-1 supplier (2025): Component supply disrupted for 3 weeks. Estimated impact: EUR 85M in delayed production. 3. Logistics disruption — Red Sea shipping rerouting (2024): 2-week delay on Asian-sourced components. Impact: EUR 30M in expedited air freight costs."
+    },
+    "B21": {
+      "question": "Logistics model.",
+      "answer": "Primary modes: Road (60% of inbound), Rail (25%), Sea (15% — primarily Asia-sourced components). Key dependencies: Port of Hamburg (primary European import hub), Port of Savannah (US operations). JIT model for 70% of components with 2-5 day buffer stock. Non-JIT buffer for semiconductors and battery cells (increased post-2023 to 4-6 weeks)."
+    },
+    "B22": {
+      "question": "Average inventory holding for critical components.",
+      "answer": "General components: 5-7 days. Semiconductors: 4-6 weeks (increased post-shortage). Battery cells: 3-4 weeks. Steel/aluminium: 2-3 weeks."
+    },
+    "B23": {
+      "question": "Business continuity plans and testing status.",
+      "answer": "BCPs exist for all 9 manufacturing plants. Last tested: Stuttgart and Chattanooga plants tested via tabletop exercise in Q4 2025. Other plants: BCPs documented but not tested in last 12 months. Multi-node simultaneous disruption scenario has never been tested."
+    },
+    "B24": {
+      "question": "Product recall history (last 5 years).",
+      "answer": "7 recalls in last 5 years. 2024: ADAS software defect — 180,000 vehicles — software root cause. 2024: Seatbelt pretensioner — 42,000 vehicles — supplier manufacturing defect. 2023: Fuel pump — 95,000 vehicles — supplier component failure. 2023: Airbag sensor — 28,000 vehicles — design issue. 2022: Brake fluid leak — 15,000 vehicles — manufacturing defect. 2022: Infotainment software crash — 120,000 vehicles — software. 2021: Steering column — 8,000 vehicles — manufacturing."
+    },
+    "B25": {
+      "question": "Warranty provision as percentage of revenue.",
+      "answer": "2.8% of revenue (EUR 2.2B provision). Above industry average of 2.3%, primarily due to ADAS recall provision in 2024."
+    }
+  },
+  "section_c_technology_cyber": {
+    "C26": {
+      "question": "IT/OT landscape age and legacy systems.",
+      "answer": "Core ERP: SAP S/4HANA — migrated 2022 (4 years old). MES: Mix — Stuttgart and Chattanooga on Siemens Opcenter (5 years old). Bremen, Sunderland, and Hungary on legacy Wonderware systems (15-18 years old). China plants on separate local systems. Legacy systems (>10 years): approximately 34 systems still in production, primarily in manufacturing OT and older plant control systems."
+    },
+    "C27": {
+      "question": "Connected/software-defined vehicles in active fleet.",
+      "answer": "Approximately 2.8 million connected vehicles on the road (models from 2021 onwards with connected services). Full software-defined architecture: approximately 180,000 (2024+ models only)."
+    },
+    "C28": {
+      "question": "OTA software update capability.",
+      "answer": "Yes. Approximately 35% of active fleet supports OTA updates (2022+ models). Full OTA (including safety-critical systems): only 2024+ models, approximately 180,000 vehicles."
+    },
+    "C29": {
+      "question": "Cybersecurity incidents in last 3 years.",
+      "answer": "1. Ransomware at tier-1 supplier (2025) — indirect impact, 3-week component disruption. 2. Attempted intrusion on corporate network (2024) — detected and blocked by SOC, no data exfiltration. 3. Phishing campaign targeting engineering staff (2024) — 3 credentials compromised, contained within 4 hours. No direct OT or connected vehicle incidents to date."
+    },
+    "C30": {
+      "question": "Dedicated cybersecurity function and headcount.",
+      "answer": "Yes. Global Cybersecurity team: 68 FTE. Includes: SOC (24/7, 22 staff), IT security (18), OT security (8), connected vehicle security (12), GRC/compliance (8). OT and connected vehicle teams are acknowledged as understaffed relative to risk."
+    },
+    "C31": {
+      "question": "Penetration testing in last 12 months.",
+      "answer": "Corporate IT: annual pentest completed Q1 2026. OT/manufacturing: last pentest was 2024 (18 months ago), limited scope (Stuttgart plant only). Connected vehicle: initial security assessment completed 2025 by external firm, but not a full red team exercise. No combined IT/OT/vehicle red team exercise conducted."
+    },
+    "C32": {
+      "question": "Cyber incident response plan and testing.",
+      "answer": "Formal CIRP exists. Last tabletop exercise: Q3 2024 — corporate IT scenario only. Connected vehicle incident scenario: plan documented but never tested. Manufacturing OT incident scenario: plan documented but never tested. Sanjay Kulkarni (CRO) has stated he cannot confirm these plans would work under real conditions."
+    },
+    "C33": {
+      "question": "Annual cybersecurity spend as % of IT budget.",
+      "answer": "8.5% of IT budget (approximately EUR 142M). Industry benchmark for automotive OEMs: 7-10%. Spend is adequate for corporate IT but underweighted toward OT and connected vehicle security."
+    },
+    "C34": {
+      "question": "Major technology transformation programmes.",
+      "answer": "1. Vehicle Software Platform (in-house OS development) — EUR 1.4B programme, 2024-2027. Currently behind schedule on validation. 2. Zwickau plant digital twin implementation — EUR 180M, 2025-2027. 3. Connected vehicle data platform — EUR 95M, 2025-2026. 4. Legacy MES replacement at Bremen and Sunderland — EUR 120M, planned 2026-2028 (not yet started)."
+    },
+    "C35": {
+      "question": "In-house vs outsourced vehicle software development.",
+      "answer": "Currently: 35% in-house, 65% outsourced to tier-1 suppliers and software vendors. Target by 2028: 60% in-house. Key outsourced areas: ADAS algorithms (Mobileye), infotainment platform (Harman), battery management software (Bosch)."
+    }
+  },
+  "section_d_regulatory_compliance": {
+    "D36": {
+      "question": "Primary regulatory bodies by jurisdiction.",
+      "answer": "Germany/EU: KBA (Federal Motor Transport Authority), EU Type Approval, European Commission (emissions). UK: DVSA. USA: NHTSA, EPA, CARB (California). China: MIIT, SAMR. UNECE (global vehicle regulations). Data protection: multiple DPAs across EU member states."
+    },
+    "D37": {
+      "question": "Emissions standards by market.",
+      "answer": "EU: Euro 6d (current), Euro 7 (effective 2027 for new type approvals). USA: EPA Tier 3, CAFE standards (tightening trajectory under review). China: China 6b (current). UK: aligned with Euro 6d, post-Brexit standards under development."
+    },
+    "D38": {
+      "question": "Fleet average CO2 vs regulatory target.",
+      "answer": "EU fleet average: 118 g/km CO2 (2025). EU target: 93.6 g/km by 2030 (based on 2021 baseline -55%). Current gap: significant. Compliance pathway depends on EV sales mix reaching 35-40% by 2028. If EV adoption slows further, pool arrangement with other OEMs may be required (costly)."
+    },
+    "D39": {
+      "question": "Regulatory fines/penalties/enforcement in last 3 years.",
+      "answer": "No material fines. One minor administrative penalty in Germany (EUR 180K) for delayed recall notification in 2024 (ADAS recall — 48-hour notification window was missed by 6 hours). One ongoing investigation by NHTSA into ADAS system performance — no findings yet."
+    },
+    "D40": {
+      "question": "ESG reporting requirements and readiness.",
+      "answer": "Subject to EU CSRD (mandatory from FY2025 reporting). Current readiness: partially ready. Scope 1 and 2 data: ready. Scope 3 data: significant gaps, particularly in supply chain emissions. TCFD-aligned reporting: in place since 2023. EU Taxonomy alignment reporting: partially ready. Data infrastructure acknowledged as not ready for required granularity."
+    },
+    "D41": {
+      "question": "Critical certifications and status.",
+      "answer": "ISO 9001: Active (all plants). IATF 16949: Active (all plants, last audit Q4 2025 — no major findings). ISO 14001: Active (all European plants, US plant). ISO 27001: Active (corporate IT only — does not cover OT or connected vehicle systems). ISO 26262 (functional safety): Certified for ADAS development process."
+    },
+    "D42": {
+      "question": "Pending/anticipated regulatory changes in next 24 months.",
+      "answer": "1. Euro 7 implementation (2027) — significant cost per vehicle for remaining ICE models. 2. EU 2035 ICE ban — political uncertainty, potential carve-outs being debated. 3. US CAFE/EPA standards — regulatory posture shifting, potential relaxation or tightening depending on political environment. 4. EU AI Act implications for ADAS/autonomous driving features. 5. EU Data Act — implications for connected vehicle data sharing. 6. CSRD detailed reporting standards — increasing granularity requirements."
+    },
+    "D43": {
+      "question": "Data privacy compliance posture.",
+      "answer": "GDPR compliant for corporate data processing. Connected vehicle data: collected in EU, USA, China. EU: GDPR-compliant consent framework in place. USA: state-by-state compliance (CCPA, etc.) — partially compliant. China: PIPL compliance — managed through JV. Cross-border data transfer: EU-US Data Privacy Framework relied upon. No formal connected vehicle data privacy impact assessment completed for all markets."
+    },
+    "D44": {
+      "question": "Regulatory change monitoring process.",
+      "answer": "Formal regulatory intelligence function within Legal department. Monitored monthly with quarterly board reporting. Covers: emissions, safety, data privacy, trade policy, ESG. Gap: connected vehicle software regulations and AI liability frameworks are monitored ad-hoc, not systematically."
+    },
+    "D45": {
+      "question": "Product liability litigation in last 5 years.",
+      "answer": "3 active cases. 1. Class action (USA) related to 2022 brake fluid recall — settlement negotiations ongoing, estimated exposure EUR 45M. 2. Individual claim (Germany) related to ADAS malfunction — early stage. 3. Class action (USA) related to alleged emissions testing discrepancy — early stage, exposure not yet quantified. No cases related to AI/autonomous driving liability to date."
+    }
+  },
+  "section_e_financial_market": {
+    "E46": {
+      "question": "Top 5 currencies by revenue exposure.",
+      "answer": "EUR: 42%. USD: 24%. CNY: 16%. GBP: 8%. Other (AED, SEK, AUD, etc.): 10%."
+    },
+    "E47": {
+      "question": "Cost base currency mismatch.",
+      "answer": "Approximately 30% of cost base is in different currency from associated revenue. Key mismatches: USD-denominated raw material purchases against EUR revenue. CNY costs in China JV against declining CNY revenue. Battery raw materials priced in USD globally."
+    },
+    "E48": {
+      "question": "3-year capex plan — committed vs discretionary.",
+      "answer": "Total 3-year capex plan: EUR 14.8B (2026-2028). Committed (contractually obligated): EUR 9.2B (62%). Discretionary (can be deferred/cancelled): EUR 5.6B (38%). Committed includes: EV platform completion, battery JV, regulatory compliance investments."
+    },
+    "E49": {
+      "question": "Top 5 customers by revenue.",
+      "answer": "1. Fleet/rental companies (aggregated): 12% of revenue. 2. Dealer Group A (European network): 8%. 3. Dealer Group B (North American network): 6%. 4. China JV retail network: 14% (but declining). 5. Government/institutional fleet: 4%. No single end-customer exceeds 3% individually. Dealer concentration is the primary customer risk."
+    },
+    "E50": {
+      "question": "Market share in top 3 markets and trend.",
+      "answer": "Europe: 8.2% (down from 9.1% in 2023). USA: 4.8% (stable). China: 3.1% (down from 5.4% in 2023 — significant decline due to local EV competition)."
+    },
+    "E51": {
+      "question": "Order book visibility.",
+      "answer": "Europe: 3-4 months of confirmed orders. USA: 2-3 months. China: 1-2 months (significantly reduced). Fleet/institutional: 6-12 months (contract-based)."
+    },
+    "E52": {
+      "question": "Significant debt maturities in next 24 months.",
+      "answer": "EUR 2.8B bond maturing Q3 2027. EUR 1.5B revolving credit facility renewal due Q1 2028. No immediate refinancing pressure but credit market conditions are being monitored given leverage above target range."
+    },
+    "E53": {
+      "question": "Insurance coverage and known gaps.",
+      "answer": "Property/BI: covered, EUR 5B limit. Product liability: covered, EUR 2B limit per occurrence. Cyber: covered, EUR 500M limit — acknowledged as potentially insufficient for a connected vehicle cyber event. D&O: covered. Known gaps: 1. Cyber coverage does not explicitly cover connected vehicle safety incidents. 2. No specific coverage for battery cell manufacturing defects at JV. 3. Trade/tariff losses are uninsurable."
+    }
+  },
+  "section_f_people_health_safety": {
+    "F54": {
+      "question": "Unionised workforce percentage and countries.",
+      "answer": "Overall: 68% unionised. Germany: 82% (IG Metall). UK: 71% (Unite). Hungary: 45%. USA: 38% (UAW — Chattanooga plant organized in 2024). China: works council structure (JV). Mexico: 52%."
+    },
+    "F55": {
+      "question": "Industrial action in last 3 years.",
+      "answer": "1. Germany (2024): 2-day warning strike at Bremen plant during wage negotiations. Impact: approximately 1,200 vehicles of lost production. 2. UK (2025): 1-day work stoppage at Sunderland over restructuring consultation process. Impact: approximately 400 vehicles. No prolonged strikes."
+    },
+    "F56": {
+      "question": "Current LTIFR.",
+      "answer": "1.8 per million hours worked (2025). Industry average: 2.1. Trend: improving (2023: 2.3, 2024: 2.0, 2025: 1.8)."
+    },
+    "F57": {
+      "question": "Voluntary employee turnover rate.",
+      "answer": "Overall: 8.2%. Engineering/R&D: 14.6% (above industry average of 11%). Manufacturing: 5.1% (below average). Software development roles: 19.3% (significantly above average — key retention challenge)."
+    },
+    "F58": {
+      "question": "Active workforce restructuring programmes.",
+      "answer": "1. ICE-to-EV workforce transition: 4,200 roles affected across German plants (2025-2028). Retraining programme for 2,800, voluntary redundancy for 1,400. 2. China JV restructuring: approximately 1,800 roles under review as part of governance restructuring. 3. Bremen plant partial retooling: 600 roles transitioning from ICE to hybrid production."
+    },
+    "F59": {
+      "question": "Top 3 critical skill gaps.",
+      "answer": "1. Vehicle software engineers (embedded systems, AUTOSAR) — 120 open positions, average time-to-fill: 7 months. 2. Battery/electrochemistry engineers — 45 open positions, competing with battery startups and cell manufacturers. 3. Cybersecurity specialists (OT/vehicle) — 22 open positions, losing candidates to tech companies offering 30-40% higher compensation."
+    },
+    "F60": {
+      "question": "Workplace fatalities or serious injuries in last 5 years.",
+      "answer": "Zero fatalities. 2 serious injuries: 1 in 2023 (robotic cell incident at Stuttgart — operator error, full recovery) and 1 in 2024 (forklift incident at Chattanooga — partial disability). Both investigated, corrective actions implemented."
+    },
+    "F61": {
+      "question": "Contract/temporary labour in manufacturing.",
+      "answer": "Approximately 12% of manufacturing workforce is contract/temporary. Higher in Hungary (22%) and Mexico (18%). Used primarily for demand flexibility and specialized maintenance."
+    }
+  },
+  "section_g_reputation_esg": {
+    "G62": {
+      "question": "Significant negative media coverage in last 3 years.",
+      "answer": "1. ADAS recall (2024): 2 weeks of sustained national media coverage in Germany and UK. International coverage for 3-4 days. Negative sentiment on social media for approximately 1 month. 2. China market share loss (2025): business press coverage, analyst downgrades. 3. Bremen restructuring announcement (2025): local/regional media, union criticism. No global reputational crisis events."
+    },
+    "G63": {
+      "question": "ESG rating and trend.",
+      "answer": "MSCI ESG: A (stable, unchanged 2 years). Sustainalytics: Medium Risk (score 24.5, improved from 27.1 in 2023). CDP Climate: B (down from A- in 2023 due to Scope 3 data gaps)."
+    },
+    "G64": {
+      "question": "Published sustainability targets.",
+      "answer": "Carbon neutrality: 2040 (Scope 1+2), 2050 (full value chain). Emissions: -50% Scope 1+2 by 2030 vs 2019 baseline. EV sales: 40% of total by 2030, 100% by 2035 (aligned with EU policy, now uncertain). Circular economy: 30% recycled content in new vehicles by 2030. 100% renewable energy in European operations by 2028."
+    },
+    "G65": {
+      "question": "Renewable energy percentage.",
+      "answer": "38% of total energy consumption from renewable sources (2025). European operations: 52%. US operations: 28%. China JV: 15%. Target: 100% European operations by 2028."
+    },
+    "G66": {
+      "question": "Whistleblower/ethics reporting mechanism.",
+      "answer": "Yes — independent third-party hotline (EthicsPoint). 142 reports received in 2025. Categories: workplace conduct (48%), procurement integrity (22%), safety concerns (18%), data privacy (12%). All investigated, 23 substantiated, 8 resulted in disciplinary action."
+    },
+    "G67": {
+      "question": "Formal ESG materiality assessment.",
+      "answer": "Yes — double materiality assessment completed Q2 2025 in preparation for CSRD reporting. Identified top material topics: climate transition, product safety, supply chain human rights, workforce transformation, data privacy."
+    },
+    "G68": {
+      "question": "Scope 1, 2, 3 carbon emissions.",
+      "answer": "Scope 1: 1.2M tonnes CO2e (2025). Scope 2 (market-based): 0.8M tonnes CO2e. Scope 3: estimated 48M tonnes CO2e (use-phase dominant, approximately 85% of Scope 3). Scope 3 data quality: low confidence — supply chain emissions estimated, not measured."
+    }
+  },
+  "section_h_governance_risk_maturity": {
+    "H69": {
+      "question": "ERM framework description.",
+      "answer": "Aligned to ISO 31000 with COSO ERM overlay for financial risk. Three lines of defence model. Risk appetite statement approved by board annually. Integrated risk and strategy process at business unit level."
+    },
+    "H70": {
+      "question": "Board risk register review frequency.",
+      "answer": "Quarterly. Full enterprise risk register reviewed by Board Risk Committee. Monthly: top 10 risks reviewed by Executive Risk Committee. Ad-hoc: emerging risks escalated as needed."
+    },
+    "H71": {
+      "question": "CRO and reporting line.",
+      "answer": "Yes — Sanjay Kulkarni, Chief Risk Officer. Reports to CEO with dotted line to Board Risk Committee Chair. Dedicated ERM team of 14 FTE."
+    },
+    "H72": {
+      "question": "Number of risks on formal register.",
+      "answer": "42 risks on the formal enterprise risk register. Last major refresh: Q3 2025. CRO has acknowledged that several emerging risks (AI liability, Chinese EV competition at current scale, stranded ICE assets) were not adequately represented at the time of last assessment."
+    },
+    "H73": {
+      "question": "Last formal enterprise risk assessment.",
+      "answer": "Q3 2025. Full assessment with board workshop. Next scheduled: Q3 2026."
+    },
+    "H74": {
+      "question": "Scenario analysis / stress testing.",
+      "answer": "Conducted annually for top 5 risks. Scenarios tested in 2025: 1. Severe semiconductor shortage (repeat of 2023). 2. EUR/USD 20% adverse move. 3. Battery raw material price spike (+80%). Not tested: multi-risk cascade scenario, connected vehicle cyber attack, China JV forced exit, tariff escalation beyond current levels."
+    },
+    "H75": {
+      "question": "Crisis management plan and testing.",
+      "answer": "Formal crisis management plan exists. Last tested: Q2 2025 — product recall scenario (tabletop). Scope: corporate communications, regulatory notification, dealer network coordination. Not tested: cyber crisis (vehicle or OT), geopolitical crisis (China JV), multi-site operational crisis. Crisis management team: 8 members, led by CEO with CRO as deputy."
+    }
+  }
+}
