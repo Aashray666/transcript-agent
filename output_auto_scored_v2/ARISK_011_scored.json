@@ -1,0 +1,69 @@
+{
+  "risk_id": "ARISK_011",
+  "client_description": "Shortage of raw materials and transportation",
+  "impact_assessment": {
+    "score": 5,
+    "level": "Severe/Catastrophic",
+    "dimension": "Operating Impact",
+    "sub_dimension": "Supply Chain",
+    "metric": "Critical Supplier Disruption (Days)",
+    "justification": "The client has experienced a semiconductor shortage, ransomware attack, and logistics disruption in the last 3 years, resulting in significant financial impacts (EUR 400M+). The client's high dependency on specific raw materials, single-sourced components, and just-in-time delivery logistics increase their exposure. The evidence suggests that the client is not adequately prepared for supply chain disruptions, with untested business continuity plans and a lack of stress-testing for multi-node simultaneous disruptions.",
+    "table_criteria_matched": "Critical Supplier Disruption (Days) >14 days = Severe/Catastrophic (5)",
+    "evidence_quantity": "42 days",
+    "quantity_source": "Client-stated semiconductor shortage duration"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "Adjusted from 3 to 4 because the client has a history of supply chain disruptions, including the semiconductor shortage, and has not fully addressed the underlying issues. The external environment, including the EU's expansion of its production base for battery raw materials and components, may reduce dependencies but also introduces new risks.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Historical Frequency: 4/5, Control Effectiveness: 3/5, External Environment: 3/5, Sector Base Rate: 4/5, Client-Specific Exposure: 3/5"
+  },
+  "inherent_risk_score": 20,
+  "risk_rating": "Critical",
+  "scoring_confidence": "HIGH",
+  "evidence_summary": "The client's high dependency on specific raw materials, single-sourced components, and just-in-time delivery logistics, combined with a history of supply chain disruptions and untested business continuity plans, increases their exposure to supply chain risks.",
+  "client_context_used": "Client-stated evidence, including the semiconductor shortage, ransomware attack, and logistics disruption, as well as the client's business continuity plans and stress-testing history.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive steel aluminium shortage 2025 2026",
+      "Global semiconductor supply chain disruption 2026 automotive",
+      "EU automotive battery raw material shortage 2025 lithium"
+    ],
+    "recent_incidents": [
+      "Semiconductor shortages and logistics disruption have exposed structural weaknesses in the automotive industry's global supply chains"
+    ],
+    "regulatory_developments": [],
+    "market_trends": [
+      "Aluminum alloys are playing an increasingly critical role in the automotive sector",
+      "The EU is expected to expand its production base for battery raw materials and components over 2022-2030, but dependencies and bottlenecks in the supply chain will remain creating vulnerabilities"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.alcircle.com/specialreport/2464/global-aluminium-market",
+      "https://www.usdanalytics.com/industry-reports/aluminum-scrap-market",
+      "https://face-aluminium.com/aluminium-in-europe-newsletter-26-november-2-december/",
+      "https://www.coherentmarketinsights.com/market-insight/aluminum-alloys-market-4655",
+      "https://aegis-hedging.com/insights/base-metals-price-dashboard/2023-04-21",
+      "https://www.globalsupplychainlawblog.com/tag/semiconductor-supply-chain/",
+      "https://www.globalsupplychainlawblog.com/tag/chip-manufacturing/",
+      "https://www.globalsupplychainlawblog.com/tag/supply-chain-management/",
+      "https://www.z2data.com/insights/5-disruptions-to-the-semiconductor-industry",
+      "https://www.indianeconomicobserver.com/news/semiconductor-crunch-logistics-disruption-exposed-auto-supply-chain-fragility-hyundai-india-md20260211220342/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, including ARISK_007 and ARISK_008, which also relate to supply chain disruptions and single-sourced components.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_005",
+      "ARISK_007"
+    ],
+    "downstream_risks": [
+      "ARISK_014",
+      "ARISK_015"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

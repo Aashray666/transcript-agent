@@ -1,0 +1,71 @@
+{
+  "risk_id": "ARISK_017",
+  "client_description": "The lack of market acceptance for electric vehicles",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline (%)",
+    "justification": "The client has committed heavily to electrification with new platforms, battery supply agreements, and retooling of three plants. However, consumer adoption in core markets has slowed significantly, which could lead to a revenue decline. Given the client's revenue is EUR 78.4B and the risk could cause a significant loss, this is considered a high impact. The evidence quantity is not directly provided, but based on the context, a 6-12% revenue decline is possible, which aligns with the 'High' level in the table.",
+    "table_criteria_matched": "6-12% revenue decline = High (4)",
+    "evidence_quantity": "6-12% of EUR 78.4B",
+    "quantity_source": "Client questionnaire and interview"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5. The client's internal conversations about slowing their transition roadmap and the slowing consumer adoption in core markets indicate a likely risk. External environment factors such as regulatory pressures also contribute to the likelihood.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred recently or multiple times, external environment is actively driving this risk, and controls are insufficient or untested = Likely (4)"
+  },
+  "inherent_risk_score": 16,
+  "risk_rating": "Critical",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client has heavily invested in electrification, but the market is not moving at the planned pace. Consumer adoption has slowed significantly, and there are internal discussions about slowing the transition roadmap.",
+  "client_context_used": "Client questionnaire and interview",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European electric vehicle market trends 2025 2026",
+      "Automotive OEM electrification challenges Europe 2026",
+      "EU automotive emissions regulation impact 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "EU Emission Rules 2026 will accelerate electric vehicle adoption",
+      "The EU Automotive Package aims to support the sector's transition to clean mobility",
+      "Euro 7 Emissions Standards 2026 will transform how vehicles are manufactured"
+    ],
+    "market_trends": [
+      "EV sales in Europe grew significantly in 2025, with 2.58 million units sold",
+      "Eight European countries have surpassed 30% EV market share",
+      "Growth is expected to continue across the UK and Europe, driven by regulation, fleet-led demand, and pricing pressures"
+    ],
+    "external_likelihood_signal": "DECREASING",
+    "sources": [
+      "https://www.globalbankingandfinance.com/ev-sales-soar-main-european-markets-drivers-shun-expensive/",
+      "https://theicct.org/publication/european-vehicle-market-statistics-2025-dec25/",
+      "https://eleport.com/ev-sales-in-europe/",
+      "https://insideevs.com/features/783139/ev-adoption-europe-conclusions-2025/",
+      "https://www.coxautoinc.eu/ev-hub/industry-ev-hub/resources/ev-trends-2026-industry-predictions-shaping-the-future-of-electric-vehicles/",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2026/01/automotive-market-trends-2026",
+      "https://www.bcg.com/publications/2026/the-2026-global-automotive-supplier-study",
+      "https://www.europesays.com/netherlands/3253/",
+      "https://www.maersk.com/insights/digitalisation/2026/01/20/supply-chain-resilience-with-electrification-and-digitalisation-for-automotive",
+      "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-industry-outlook.html"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks such as ARISK_001 and ARISK_004, which also deal with the challenges of transitioning to electric vehicles and the impact of regulatory pressures.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_001",
+      "ARISK_004"
+    ],
+    "downstream_risks": [
+      "ARISK_016"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

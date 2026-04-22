@@ -1,0 +1,73 @@
+{
+  "risk_id": "ARISK_013",
+  "client_description": "Competitive and price pressure due to aggressive policies and poor effective pricing",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Customer & Market Impact",
+    "sub_dimension": "Market Share Loss",
+    "metric": "Market Share Loss (% points)",
+    "justification": "The client's market share in Europe is 8.2%, and the risk of competitive and price pressure due to aggressive policies and poor effective pricing could lead to a loss of market share. The evidence suggests that Chinese EV manufacturers, such as BYD, are entering the European market aggressively, which could lead to a market share loss of 5-10%.",
+    "table_criteria_matched": "5-10% = High",
+    "evidence_quantity": "5-10%",
+    "quantity_source": "Client statement on competitive pressure from Chinese EV manufacturers"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood assessment is based on the composite score of 3/5, which takes into account the historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The client's underpreparedness and lack of effective controls contribute to the likelihood of this risk.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's revenue is EUR 78.4 billion, with a declining trend. The client is facing competitive pressure from Chinese EV manufacturers, such as BYD, which could lead to a market share loss. The client's market share in Europe is 8.2%, and the risk of competitive and price pressure could lead to a loss of market share.",
+  "client_context_used": "Revenue trend, market share, and competitive pressure",
+  "market_intelligence_used": {
+    "search_queries": [
+      "EU automotive competitive pricing trends 2025 2026",
+      "European electric vehicle market share 2025 2026",
+      "Automotive OEM pricing pressure Europe 2025 2026"
+    ],
+    "recent_incidents": [
+      "EV sales in Europe grew significantly in the full year of 2025, to 2,58 million units",
+      "Sales of fully electric cars in Europe's main auto markets jumped by almost a third in the first quarter of 2026"
+    ],
+    "regulatory_developments": [
+      "European countries have CO2 emission targets, with manufacturers' compliance estimates available for 2025"
+    ],
+    "market_trends": [
+      "Europe's automotive industry is facing a perfect storm in 2025, with analysts predicting a year of sluggish sales",
+      "The European passenger plug-in vehicle market recorded approximately 298,000 registrations in January 2026, representing a 22% year-on-year increase",
+      "Eight European countries have now surpassed 30% EV market share"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.towardsautomotive.com/insights/europe-automotive-market-sizing",
+      "https://obdeleven.com/automotive-trends-and-stats",
+      "https://ecarstrade.com/blog/will-used-car-prices-drop-or-rise",
+      "https://jointcharging.com/electric-vehicle-market-trends-in-the-eu-q1-2025-analysis/",
+      "https://www.newsdirectory3.com/europes-automakers-face-pummeling-in-2025-but-positives-remain/",
+      "https://alternative-fuels-observatory.ec.europa.eu/general-information/news/european-ev-market-starts-2026-20-bev-share",
+      "https://eleport.com/ev-sales-in-europe/",
+      "https://www.best-selling-cars.com/europe/2025-full-year-europe-bev-electric-car-sales-per-european-country/",
+      "https://theicct.org/publication/european-market-monitor-cars-and-vans-2025/",
+      "https://www.globalbankingandfinance.com/ev-sales-soar-main-european-markets-drivers-shun-expensive/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_001 and ARISK_002, which also relate to competitive pressure and market share loss.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "downstream_risks": [
+      "ARISK_018",
+      "ARISK_019"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

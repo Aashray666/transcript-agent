@@ -1,0 +1,70 @@
+{
+  "risk_id": "ARISK_002",
+  "client_description": "Competition from non-traditional players in automobile industry is increasing",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Customer & Market Impact",
+    "sub_dimension": "Market Position",
+    "metric": "Market Share Loss (% points)",
+    "justification": "The risk of competition from non-traditional players in the automobile industry could lead to a loss of market share. Given the client's declining revenue trend (EUR 78.4 billion) and the significant investment in EV platforms (EUR 12.7B), a market share loss of 5-10% is plausible, which aligns with the 'High' level of impact.",
+    "table_criteria_matched": "Market Share Loss (% points): 1-No Impact: <1% 2-Low: 1-2% 3-Moderate: 2-5% 4-High: 5-10% 5-Severe/Catastrophic: >10%",
+    "evidence_quantity": "5-10%",
+    "quantity_source": "Client's revenue trend and investment in EV platforms"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. This score is based on the historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. Given the evidence of increasing competition from non-traditional players and the client's exposure to this risk, a likelihood score of 3 is reasonable.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Likelihood Intelligence Agent's 5-factor composite score"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's declining revenue trend, significant investment in EV platforms, and increasing competition from non-traditional players in the automobile industry.",
+  "client_context_used": "Annual revenue, revenue trend, investment in EV platforms, and presence in multiple countries",
+  "market_intelligence_used": {
+    "search_queries": [
+      "automotive OEM competition from tech giants Europe 2026",
+      "electric vehicle market share growth Europe 2025 2026",
+      "non-traditional automotive players entering European market 2026"
+    ],
+    "recent_incidents": [
+      "European passenger plug-in vehicle market recorded approximately 298,000 registrations in January 2026, representing a 22% year-on-year increase",
+      "New car registrations: -1.2% in February 2026 year-to-date; battery-electric 18.8% market share",
+      "AITO represents the inaugural brand born from HIMA Alliance, spearheaded by tech powerhouse Huawei"
+    ],
+    "regulatory_developments": [
+      "From July 2024, the European Union's General Safety Regulation II (GSR II) mandates a suite of advanced safety technologies in all new vehicles"
+    ],
+    "market_trends": [
+      "European EV market starts 2026 with 20% BEV share",
+      "Full hybrid (HEVs) and mild hybrid electric vehicles (MHEVs) increased in market share by 1 and 3 percentage points, respectively, in January–February 2026",
+      "The market is projected to grow from USD 506.42 billion in 2026 to USD 1,224.70 billion by 2034 in the Europe Electric Car Market"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.forpressrelease.com/forpressrelease/667461/2/automotive-world-2026-concludes-with-strong-global-participation-and-milestone-opening-ceremony",
+      "https://star.global/posts/automotive-customer-experience-trends-in-2026-5-strategies-oems-can-act-on/",
+      "https://www.astuteanalytica.com/industry-report/automotive-telematics-market",
+      "https://tech-news.info/electric-vehicle-sales-showdown-meet-the-top-performing-oems-in-part-3-of-our-exclusive-series/",
+      "https://www.i40today.com/automotive-world-2026-concludes-with-strong-global-participation-and-milestone-opening-ceremony/",
+      "https://alternative-fuels-observatory.ec.europa.eu/general-information/news/european-ev-market-starts-2026-20-bev-share",
+      "https://theicct.org/publication/european-car-market-monitor-feb-2026/",
+      "https://www.acea.auto/pc-registrations/new-car-registrations-1-2-in-february-2026-year-to-date-battery-electric-18-8-market-share/",
+      "https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/",
+      "https://ev-volumes.com/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks, such as ARISK_001, which also has a high inherent risk score.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_026"
+    ],
+    "downstream_risks": [],
+    "cascade_likelihood_adjustment": null
+  }
+}

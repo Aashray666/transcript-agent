@@ -1,0 +1,76 @@
+{
+  "risk_id": "ARISK_005",
+  "client_description": "Potential increased tariffs resulting in increased costs of raw materials",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Cost Structure",
+    "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+    "justification": "The client stated that 'The 25% tariffs on auto imports that came into effect have directly hit our cost structure.' Additionally, the client has significant exposure to steel and aluminium (EUR 4.8B) and battery raw materials (EUR 2.1B). The US Tariff Rate by Country list for 2026 and the Auto Tariff Calculator 2026 show specific rates and examples for major trading partners, indicating ongoing and potentially escalating tariff pressures. The average car price increased by ~$6,000 due to auto tariffs, which suggests a significant cost increase.",
+    "table_criteria_matched": "10-20% cost increase = High (4)",
+    "evidence_quantity": "25% tariffs, EUR 4.8B steel and aluminium exposure, EUR 2.1B battery raw materials exposure",
+    "quantity_source": "Client statement, US Tariff Rate by Country list, Auto Tariff Calculator 2026"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The client has already experienced the impact of tariffs, with the 25% tariffs on auto imports directly hitting their cost structure. The external environment, including the US Tariff Rate by Country list and the Auto Tariff Calculator 2026, suggests ongoing and potentially escalating tariff pressures. The client's significant exposure to steel and aluminium and battery raw materials also increases their likelihood of being impacted by tariffs.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred recently, active external drivers, weak controls = Likely (4)"
+  },
+  "inherent_risk_score": 16,
+  "risk_rating": "Critical",
+  "scoring_confidence": "HIGH",
+  "evidence_summary": "Client statement, US Tariff Rate by Country list, Auto Tariff Calculator 2026, average car price increase due to auto tariffs",
+  "client_context_used": "Significant North American exposure, EUR 78.4B annual revenue, declining revenue trend, EBITDA margin of 9.2% and declining",
+  "market_intelligence_used": {
+    "search_queries": [
+      "US tariffs on auto imports Europe 2026",
+      "Steel aluminium tariffs impact automotive manufacturing 2025",
+      "EU automotive raw material costs increase 2026"
+    ],
+    "recent_incidents": [
+      "US auto tariffs added $30 billion in costs to the automotive industry in 2025, leading to a 10.4% increase in the average vehicle MSRP",
+      "Imported vehicles bore the brunt of these tariffs, with price hikes ranging from $5,000 to $8,900 per vehicle"
+    ],
+    "regulatory_developments": [
+      "US Tariff Rate by Country list for 2026 includes specific rates and examples for China, EU, Vietnam, and other major trading partners",
+      "Auto Tariff Calculator 2026 shows rates of 15% for Japan/Korea/EU and 25% base rate for non-USMCA content",
+      "USMCA review in July 2026 could reshape auto tariffs",
+      "EU Member States can continue to subsidize clean tech manufacturing, including batteries and raw materials, under the Clean Industrial Deal State Aid Framework (CISAF) adopted in June 2025"
+    ],
+    "market_trends": [
+      "Average car price increased by ~$6,000 due to auto tariffs",
+      "European automotive industry faces high energy prices and volatility, making manufacturing more costly relative to other global regions",
+      "Europe's reliance on Chinese battery technology and raw material processing capacity creates risks for supply security, price spikes, and carbon-intensive transportation"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521/",
+      "https://www.tariffstool.com/guides/us-tariff-rate-by-country-list-2026",
+      "https://terms.law/Trump/Auto-Tariffs/",
+      "https://www.autotrader.com/tariffs",
+      "https://www.icontainers.com/trump-tariff-tracker-us-trade-policy/",
+      "https://insight.thomsonreuters.com/sea/business/posts/u-s-steel-and-aluminium-tariffs-impact-on-trade-industries",
+      "https://aluminiummagazine.com/mag/news/aluminium-tariff-war-global-trade-shift-2025-2026.html",
+      "https://supplychaindigital.com/news/trumps-expanded-steel-aluminium-trade-tariffs-auto",
+      "https://www.fastmarkets.com/insights/steel-import-tariffs-2025-impact-on-us-traders/",
+      "https://www.catalannews.com/business/item/trump-tariffs-on-steel-and-aluminium-to-have-limited-impact-on-catalonia"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "Consistent with previously scored risks, such as ARISK_004, which also relates to tariffs and trade policy.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_004",
+      "ARISK_006"
+    ],
+    "downstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

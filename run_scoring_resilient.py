@@ -28,7 +28,14 @@ from riskmapper.scoring.schemas import ScoredRisk, ScoringPipelineSummary, Scori
 from riskmapper.scoring.scoring_agent import load_impact_table_text, score_risk
 from riskmapper.scoring.scoring_pipeline import _write_outputs, _build_summary
 
-OUTPUT_DIR = "output_auto_scored"
+OUTPUT_DIR = "output_auto_scored_v2"
+
+# Set to True to score asset risks (data/risk_universe_auto.json mapped with client evidence)
+# Set to False to score client-extracted risks (output_auto/risk_universe.json)
+SCORE_ASSET_RISKS = True
+
+ASSET_RISK_UNIVERSE = "data/asset_risk_universe.json"
+CLIENT_RISK_UNIVERSE = "output_auto/risk_universe.json"
 
 # Configure logging
 logging.basicConfig(
@@ -45,7 +52,7 @@ def get_already_scored(output_dir: str) -> set[str]:
     if not os.path.isdir(output_dir):
         return scored
     for fname in os.listdir(output_dir):
-        if fname.startswith("RISK_") and fname.endswith("_scored.json"):
+        if fname.endswith("_scored.json"):
             risk_id = fname.replace("_scored.json", "")
             scored.add(risk_id)
     return scored
@@ -64,7 +71,7 @@ def load_all_scored(output_dir: str) -> list[ScoredRisk]:
     if not os.path.isdir(output_dir):
         return scored
     for fname in sorted(os.listdir(output_dir)):
-        if fname.startswith("RISK_") and fname.endswith("_scored.json"):
+        if fname.endswith("_scored.json"):
             path = os.path.join(output_dir, fname)
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -77,8 +84,16 @@ def main():
 
     # Load inputs
     logger.info("Loading inputs...")
-    with open("output_auto/risk_universe.json", "r", encoding="utf-8") as f:
-        all_risks = [MappedRisk.model_validate(r) for r in json.load(f)]
+    risk_universe_path = ASSET_RISK_UNIVERSE if SCORE_ASSET_RISKS else CLIENT_RISK_UNIVERSE
+    logger.info("Risk universe: %s", risk_universe_path)
+    with open(risk_universe_path, "r", encoding="utf-8") as f:
+        raw_risks = json.load(f)
+    # Strip extra metadata fields (prefixed with _) for MappedRisk validation
+    for r in raw_risks:
+        for key in list(r.keys()):
+            if key.startswith("_"):
+                del r[key]
+    all_risks = [MappedRisk.model_validate(r) for r in raw_risks]
     with open("auto_transcript.txt", "r", encoding="utf-8") as f:
         transcript = f.read()
     with open("data/questionnaires/velocityauto_questionnaire.json", "r", encoding="utf-8") as f:

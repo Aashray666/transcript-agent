@@ -1,0 +1,79 @@
+{
+  "risk_id": "ARISK_023",
+  "client_description": "Product testing risk",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Regulatory & Compliance Impact",
+    "sub_dimension": "Product Safety",
+    "metric": "Product Safety Non-Compliance (%)",
+    "justification": "The risk of product safety non-compliance is high due to the potential for software defects in ADAS features, as evidenced by the 2024 recall of 180,000 vehicles. This recall resulted in a substantial financial loss and reputational damage. The client's annual revenue is EUR 78.4 billion, and a recall of this magnitude could lead to a significant revenue decline.",
+    "table_criteria_matched": "5-10% = High",
+    "evidence_quantity": "0.23% of total vehicles produced (180,000 out of approximately 78 million vehicles sold in 2024, assuming 1 vehicle per EUR 1,000 revenue)",
+    "quantity_source": "Client statement: 'We had a product recall in 2024 — a software defect in an ADAS feature across approximately 180,000 vehicles.' and 'annual revenue: EUR 78.4 billion'"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood of product safety non-compliance is possible due to the historical frequency of recalls in the automotive industry and the client's experience with a recall in 2024. However, the client has a formal crisis management plan in place, which reduces the likelihood of a severe incident.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "HIGH",
+  "evidence_summary": "The client had a product recall in 2024 due to a software defect in an ADAS feature, resulting in a substantial financial loss and reputational damage. The automotive industry has seen an increasing trend of software-related recalls.",
+  "client_context_used": "Annual revenue: EUR 78.4 billion, EBITDA margin: 9.2%, and previous product recall experience",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive product testing regulations 2026",
+      "ADAS software defect recall risks 2025 2026",
+      "Electric vehicle battery testing standards Europe 2026"
+    ],
+    "recent_incidents": [
+      "Ford recalled 255,000 SUVs over an image processing module issue",
+      "Ford recalled 254,600 SUVs due to a rearview camera software glitch",
+      "NHTSA escalated a probe into Tesla's FSD that could become the largest software recall in automotive history"
+    ],
+    "regulatory_developments": [
+      "EU Automotive Package presented, aiming to support the European automotive sector's transition to clean mobility",
+      "Update on Automotive Regulations in Europe, including the Automotive Action Plan",
+      "New EU Battery Regulation 2026, introducing uniform safety standards and sustainability measures",
+      "Expected changes in automotive EMC regulations for 2026-2027, covering UNECE Regulation 10, CISPR 25, and ISO 11452"
+    ],
+    "market_trends": [
+      "Increasing software-related recalls in the automotive industry, with roughly a third of all recalled vehicles due to software issues",
+      "Growing importance of ADAS calibration, with potential risks for dealers, insurers, and lenders",
+      "Rising demand for sustainable and environmentally friendly vehicles, driving the need for compliance with new regulations"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.hoganlovells.com/en/publications/update-on-automotive-regulations-in-europe",
+      "https://poconsusa.com/blog/automotive-emc-regulations-2026-2027-changes",
+      "https://www.globalpolicywatch.com/2026/01/the-eu-automotive-package-increased-compliance-flexibility-but-growing-made-in-the-eu-conditionality/",
+      "https://single-market-economy.ec.europa.eu/sectors/automotive-industry/legislation/motor-vehicles-trailers_en",
+      "https://carinterior.alibaba.com/tips/legal-regulations-2026",
+      "https://www.goodcarbadcar.net/when-cars-forget-how-to-see-software-recall-crisis/",
+      "https://vinscribe.com/blog/adas-calibration-risk-2026",
+      "https://fordauthority.com/2026/03/255k-ford-lincoln-suvs-recalled-over-image-processing-module-issue/",
+      "https://www.unbiasedtimes.org/article/5288",
+      "https://autosofttoday.com/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_007, which also had a high impact and likelihood score due to the potential for supply chain disruptions.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_005",
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "downstream_risks": [
+      "ARISK_012",
+      "ARISK_018",
+      "ARISK_019"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

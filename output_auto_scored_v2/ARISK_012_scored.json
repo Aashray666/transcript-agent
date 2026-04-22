@@ -1,0 +1,73 @@
+{
+  "risk_id": "ARISK_012",
+  "client_description": "Cyber attacks on applications of vehicle functions due to digitisation and connectivity",
+  "impact_assessment": {
+    "score": 5,
+    "level": "Severe/Catastrophic",
+    "dimension": "Technology & Information Impact",
+    "sub_dimension": "Cyber Security",
+    "metric": "Industrial Cyber Incident Severity (% of lines affected)",
+    "justification": "The risk of cyber attacks on applications of vehicle functions due to digitisation and connectivity could lead to a severe impact on the company's technology and information systems. The evidence of a ransomware incident at a tier-one supplier and the lack of visibility into the supply chain's cyber posture suggest a high likelihood of a significant cyber incident. The company's partial testing of their cyber incident response plan and the untested connected vehicle response scenario also contribute to the high impact score.",
+    "table_criteria_matched": ">50% of lines affected",
+    "evidence_quantity": "61% of incidents had the potential to impact thousands to millions of mobility assets",
+    "quantity_source": "EXTERNAL_INTELLIGENCE"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The likelihood of this risk is high due to the increasing trend of ransomware attacks on automotive and smart mobility, with 61% of incidents having the potential to impact thousands to millions of mobility assets. The company's lack of visibility into their supply chain's cyber posture and the partial testing of their cyber incident response plan also contribute to the high likelihood score.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred recently, active external drivers, weak controls"
+  },
+  "inherent_risk_score": 20,
+  "risk_rating": "Critical",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The risk of cyber attacks on applications of vehicle functions due to digitisation and connectivity is high due to the increasing trend of ransomware attacks, lack of visibility into the supply chain's cyber posture, and partial testing of the company's cyber incident response plan.",
+  "client_context_used": "The company's connected vehicle response scenario and manufacturing OT incident response plans have not been tested, and the cyber posture of their supply chain is opaque.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "automotive OEM connected vehicle cybersecurity incidents 2025 2026",
+      "Europe automotive semiconductor shortage impact 2025 2026",
+      "EU automotive cybersecurity regulations compliance 2026"
+    ],
+    "recent_incidents": [
+      "A cyberattack on a European OEM in 2025, which exemplified the chain-reaction impact now possible when organized threat actors target interconnected mobility ecosystems"
+    ],
+    "regulatory_developments": [],
+    "market_trends": [
+      "Ransomware attacks on automotive and smart mobility more than doubled in 2025",
+      "61% of incidents had the potential to impact thousands to millions of mobility assets",
+      "20% were massive-scale events",
+      "DRAM prices could rise between 70% and 100% in 2026 compared to 2025 prices due to semiconductor shortage"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.calcalistech.com/ctechnews/article/rk5e4rdobx",
+      "https://www.prnewswire.com/news-releases/ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025-according-to-new-research-by-upstream-security-302691468.html",
+      "https://www.evinfrastructurenews.com/ev-technology/what-2026-holds-for-automotive-cybersecurity",
+      "https://upstream.auto/reports/global-automotive-cybersecurity-report/",
+      "https://iotbusinessnews.com/2026/02/19/ransomware-on-automotive-and-smart-mobility-doubled-in-2025/",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2025/12/dram-makers-ai-data-centers-semiconductor-shortage",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2024/8/briefcase-another-semiconductor-shortage-may-be-coming",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2026/02/what-auto-marketers-and-dealers-need-to-know-about-the-dram-shortage",
+      "https://www.acea.auto/press-release/critical-chip-shortage-worsens-by-the-day/",
+      "https://www.acea.auto/press-release/acea-calls-for-quick-resolution-to-critical-chip-supply-shortage/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_007 and ARISK_008, which also relate to supply chain disruptions and cyber security threats.",
+  "flags_for_review": [
+    "UNDERPREPARED"
+  ],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "downstream_risks": [
+      "ARISK_018",
+      "ARISK_019"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

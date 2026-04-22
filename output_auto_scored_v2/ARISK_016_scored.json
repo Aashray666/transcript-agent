@@ -1,0 +1,70 @@
+{
+  "risk_id": "ARISK_016",
+  "client_description": "Shortage of charging stations is a risk for growth of electric vehicles",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline",
+    "metric": "Revenue Decline (%)",
+    "justification": "The client has committed heavily to electrification, including new platforms, battery supply agreements, and retooling three plants, which may increase their exposure to the risk of a shortage of charging stations. The evidence suggests that consumer adoption in core markets has slowed significantly, which could lead to a revenue decline. The annual revenue is EUR 78.4 billion, and a 6% decline would be approximately EUR 4.7 billion, which is a significant impact.",
+    "table_criteria_matched": "6-12% = High",
+    "evidence_quantity": "6%",
+    "quantity_source": "Client statement on slowed consumer adoption"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client has not experienced this risk before, but the external environment suggests an elevated probability due to the slow growth of public charging infrastructure in Europe.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client has committed heavily to electrification and is experiencing slowed consumer adoption in core markets. The external environment suggests an elevated probability due to the slow growth of public charging infrastructure in Europe.",
+  "client_context_used": "Annual revenue, consumer adoption slowdown, electrification commitment",
+  "market_intelligence_used": {
+    "search_queries": [
+      "electric vehicle charging infrastructure Europe 2026",
+      "lithium battery supply chain disruption Europe 2025 2026",
+      "EU automotive emissions regulation compliance 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "EU has enforced regulations requiring a 15% reduction in CO₂ emissions for new cars by 2025",
+      "Compliance with the Euro 6e-bis phase becomes mandatory for new types of vehicle from January 1, 2025 and for all new vehicles from 1st January 2025"
+    ],
+    "market_trends": [
+      "Strong growth in battery-electric vehicle registrations across Europe, driven by major markets such as Italy, France and Germany",
+      "Europe's public charging infrastructure is growing more slowly but becoming more powerful"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.evcharging-infrastructure.com/",
+      "https://www.gridx.ai/press-releases/europes-public-charging-infrastructure-is-growing-more-slowly-but-becoming-more-powerful",
+      "https://annual-ev-charging-infrastructure.com/",
+      "https://www.industryevents.com/events/6th-european-ev-charging-infrastructure-2026",
+      "https://alternative-fuels-observatory.ec.europa.eu/",
+      "https://www.csis.org/analysis/friendshoring-lithium-ion-battery-supply-chain-final-assembly-and-end-uses",
+      "https://www.fuelsandlubes.com/fli-article/lithium-battery-market-reshaped-by-evs-price-swings-and-new-chemistries/",
+      "https://www.mining.com/lithium-supply-chain-threatened-by-east-west-geopolitical-tensions-report/",
+      "https://nai500.com/blog/2025/01/global-lithium-market-at-a-crossroads-in-2025-amid-supply-cuts-and-rising-demand/",
+      "https://colitco.com/lithium-prices-climb-2026-mining-stocks/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_001 and ARISK_004, which also relate to the electrification of vehicles and the potential impact on revenue.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_001",
+      "ARISK_004"
+    ],
+    "downstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

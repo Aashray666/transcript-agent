@@ -1,0 +1,67 @@
+{
+  "risk_id": "ARISK_025",
+  "client_description": "Higher credit risk due to customer insolvency",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline",
+    "justification": "The client's revenue is EUR 78.4 billion, and a higher credit risk due to customer insolvency could lead to a significant revenue decline. The evidence suggests that the client is exposed to dealer concentration and the automotive sector's cyclicality, which could result in a revenue decline of 6-12%. The table criteria for Revenue Decline (%) states that a decline of 6-12% is considered High (score 4).",
+    "table_criteria_matched": "Revenue Decline (% of total revenue): 4-High: 6-12%",
+    "evidence_quantity": "6-12%",
+    "quantity_source": "Client questionnaire and external market intelligence"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client's exposure to dealer concentration and the automotive sector's cyclicality, combined with the external market intelligence indicating a trend of higher credit risk for small and medium-sized suppliers in Europe, suggests that the likelihood of this risk is Possible (score 3).",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Likelihood Assessment Table: 3 (Possible): Reasonable possibility. Has occurred before at the company or regularly at peers."
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's revenue is EUR 78.4 billion, and the evidence suggests that the client is exposed to dealer concentration and the automotive sector's cyclicality. The external market intelligence indicates a trend of higher credit risk for small and medium-sized suppliers in Europe.",
+  "client_context_used": "Client questionnaire and external market intelligence",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive market credit risk trends 2025 2026",
+      "Automotive customer insolvency risk in Europe and USA 2026",
+      "Credit risk exposure in European automotive industry 2025"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [],
+    "market_trends": [
+      "Higher credit risk for small and medium-sized suppliers in Europe due to decreasing automotive production",
+      "Expected contraction of automotive production in the EU and UK by 3.7% in 2025",
+      "Deteriorating outlook for the automotive sector in Europe"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://group.atradius.com/knowledge-and-research/reports/industry-trends-automotive-may-2025",
+      "https://www.acea.auto/publication/the-automobile-industry-pocket-guide-2025-2026/",
+      "https://www.fitchratings.com/research/corporate-finance/european-corporates-outlook-2026-04-12-2025",
+      "https://www.datainsightsmarket.com/reports/europe-automotive-finance-market-18763",
+      "https://atradiuscollections.com/hk/出版物/報告/industry-trends-automotive-may-2025",
+      "https://group.atradius.com/knowledge-and-research/reports/industry-trends-automotive-november-2025",
+      "https://group.atradius.com/knowledge-and-research/reports/global-metals-and-steel-industry-trends-2025-2026",
+      "https://atradius.in/knowledge-and-research/reports/industry-trends-automotive-november-2025",
+      "https://practiceguides.chambers.com/practice-guides/insolvency-2025",
+      "https://www.amundi.com/globaldistributor/article/2025-promising-year-european-credit-markets"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks, such as ARISK_015, which also has a high impact and likelihood score.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_011",
+      "ARISK_015"
+    ],
+    "downstream_risks": [
+      "ARISK_024"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "risk_id": "ARISK_020",
+  "client_description": "Talent attraction and retention in areas such as software development, data analytics, cybersecurity, and electric vehicle engineering",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "People, Health & Safety Impact",
+    "sub_dimension": "Operations Workforce",
+    "metric": "Skilled Labour Unavailability (% of workforce)",
+    "justification": "The risk of talent attraction and retention in areas such as software development, data analytics, cybersecurity, and electric vehicle engineering could lead to a significant shortage of skilled labor. The client has a high exposure to this risk due to significant workforce transformation and competition for skilled talent. The evidence shows that 92% of employers in the UK automotive sector struggle to recruit skilled staff, and Germany lists 163 shortage occupations in 2026, including roles in tech and engineering. The client's voluntary employee turnover rate is 8.2% overall, with 14.6% in Engineering/R&D and 19.3% in software development roles.",
+    "table_criteria_matched": "10-20% = High",
+    "evidence_quantity": "14.6%",
+    "quantity_source": "Client questionnaire"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client has controls in place, such as retraining programmes and voluntary redundancy packages, but there is no indication that these controls have been tested under real conditions. The external environment presents active drivers, including a severe talent shortage in the UK automotive sector and a shortage of skilled workers in Germany.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client faces a high risk of talent attraction and retention due to significant workforce transformation and competition for skilled talent. The evidence shows a severe talent shortage in the UK automotive sector and a shortage of skilled workers in Germany.",
+  "client_context_used": "Client questionnaire, evidence from client statements",
+  "market_intelligence_used": {
+    "search_queries": [
+      "Automotive software development talent shortage Germany UK 2026",
+      "Electric vehicle engineering workforce transition challenges Europe 2025",
+      "Cybersecurity skills gap automotive industry Europe 2026 trends"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [],
+    "market_trends": [
+      "UK automotive sector faces severe talent shortage with 92% of employers struggling to recruit skilled staff",
+      "Germany lists 163 shortage occupations in 2026, including roles in tech and engineering",
+      "European automotive industry faces challenges in transitioning to electrification and advanced vehicle technologies",
+      "Cybersecurity skills gap is widening, with industries such as automotive being hit hard by job cuts"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://bmmagazine.co.uk/in-business/uk-automotive-skills-shortage-2026-engineering-talent-crisis/",
+      "https://www.linkedin.com/pulse/talent-insights-engineering-manufacturing-automotive-adam-6yrze",
+      "https://yotru.com/blog/germany-shortage-occupation-list",
+      "https://www.sourcegroupinternational.com/insights/germany-tech-hiring-outlook-2026/",
+      "https://www.foley.com/insights/publications/2025/12/the-auto-industrys-talent-war-winning-the-race-for-skilled-workers/",
+      "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/a-new-era-an-action-plan-for-the-european-automotive-industry",
+      "https://www.automotivemanufacturingsolutions.com/news/automotive-industry-faces-workforce-upheaval-in-2025-reshapes-jobs-amid-shifting-tech/656572",
+      "https://eccoclimate.org/ev-transition-check-the-state-of-the-electric-transition-and-competitiveness-challenges-for-european-industry/",
+      "https://www.acea.auto/press-release/accelerating-the-race-to-reskill-europes-automotive-workforce-acea-and-adecco-group-unveil-landmark-analysis/",
+      "https://www.adeccogroup.com/our-group/media/press-releases/accelerating-the-race-to-reskill"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks, such as ARISK_004 and ARISK_007, which also have a high impact and likelihood score.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_004",
+      "ARISK_007"
+    ],
+    "downstream_risks": [
+      "ARISK_016",
+      "ARISK_017"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

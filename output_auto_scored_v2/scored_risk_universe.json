@@ -1,0 +1,1872 @@
+[
+  {
+    "risk_id": "ARISK_001",
+    "client_description": "Huge capital required growing demand in alternative fuel market and electric vehicles",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Capital",
+      "metric": "Capex Overrun / Project Delays (% over budget)",
+      "justification": "The client has a significant investment in EV platform programs and battery cell JVs, with a total of EUR 12.7B in major capital investments. The growing demand in alternative fuel market and electric vehicles may require additional capital, potentially leading to capex overrun or project delays. The evidence quantity is EUR 12.7B, which is approximately 16% of the client's annual revenue of EUR 78.4B. According to the table, a capex overrun of 10-20% is considered High impact.",
+      "table_criteria_matched": "10-20% = High",
+      "evidence_quantity": "16%",
+      "quantity_source": "Client questionnaire"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The external environment is driving the growth of the electric vehicle and alternative fuel markets, with the Europe electric vehicle market expected to expand significantly by 2034. The client has a significant exposure to this risk due to its investments in EV platform programs and battery cell JVs.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client has significant investments in EV platform programs and battery cell JVs, with a growing demand in alternative fuel market and electric vehicles. The external environment is driving this growth, and the client has a high exposure to this risk.",
+    "client_context_used": "Annual revenue, major capital investments, revenue split, and strategic priorities",
+    "market_intelligence_used": {
+      "search_queries": [
+        "electric vehicle demand growth Europe 2025 2026",
+        "automotive OEM capital investment trends 2025 2026",
+        "alternative fuel market risks automotive sector 2026"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [],
+      "market_trends": [
+        "The Europe electric vehicle market is expected to expand from $617.34 billion in 2025 to $6147.39 billion in 2034",
+        "Plugin vehicle share of the overall European auto market was 23.2%, driving market growth",
+        "Alternative Fuel Vehicle Market to be valued at $1027.8 million in 2026, reaching $8,399.0 million by 2033"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://stamplisting.org/article/the-rise-of-electric-vehicles-in-europe-2025-26-market-stats",
+        "https://market-reporter.biz/europe-electric-vehicle-market-size-share-growth-forecast/",
+        "https://lailaiwokchampaign.com/article/the-rise-of-electric-vehicles-in-europe-2025-26-market-stats",
+        "https://www.bipbipamerica.com/Europe-Electric-Vehicle-Market",
+        "https://www.fortunebusinessinsights.com/europe-electric-vehicle-market-107689",
+        "https://globallocationstrategies.com/insights/the-2026-state-of-automotive-investment-five-shifts-shaping-capital-decisions/",
+        "https://www.bcg.com/publications/2026/the-2026-global-automotive-supplier-study",
+        "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-industry-outlook.html",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2026/01/automotive-market-trends-2026",
+        "https://www.thegpstime.com/2026-automotive-manufacturing-report-mega-projects-capex-ev-insights-gls/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks in the automotive sector, which often require significant capital investments to adapt to changing market demands.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_016",
+        "ARISK_017"
+      ],
+      "downstream_risks": [],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_002",
+    "client_description": "Competition from non-traditional players in automobile industry is increasing",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Customer & Market Impact",
+      "sub_dimension": "Market Position",
+      "metric": "Market Share Loss (% points)",
+      "justification": "The risk of competition from non-traditional players in the automobile industry could lead to a loss of market share. Given the client's declining revenue trend (EUR 78.4 billion) and the significant investment in EV platforms (EUR 12.7B), a market share loss of 5-10% is plausible, which aligns with the 'High' level of impact.",
+      "table_criteria_matched": "Market Share Loss (% points): 1-No Impact: <1% 2-Low: 1-2% 3-Moderate: 2-5% 4-High: 5-10% 5-Severe/Catastrophic: >10%",
+      "evidence_quantity": "5-10%",
+      "quantity_source": "Client's revenue trend and investment in EV platforms"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. This score is based on the historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. Given the evidence of increasing competition from non-traditional players and the client's exposure to this risk, a likelihood score of 3 is reasonable.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Likelihood Intelligence Agent's 5-factor composite score"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's declining revenue trend, significant investment in EV platforms, and increasing competition from non-traditional players in the automobile industry.",
+    "client_context_used": "Annual revenue, revenue trend, investment in EV platforms, and presence in multiple countries",
+    "market_intelligence_used": {
+      "search_queries": [
+        "automotive OEM competition from tech giants Europe 2026",
+        "electric vehicle market share growth Europe 2025 2026",
+        "non-traditional automotive players entering European market 2026"
+      ],
+      "recent_incidents": [
+        "European passenger plug-in vehicle market recorded approximately 298,000 registrations in January 2026, representing a 22% year-on-year increase",
+        "New car registrations: -1.2% in February 2026 year-to-date; battery-electric 18.8% market share",
+        "AITO represents the inaugural brand born from HIMA Alliance, spearheaded by tech powerhouse Huawei"
+      ],
+      "regulatory_developments": [
+        "From July 2024, the European Union's General Safety Regulation II (GSR II) mandates a suite of advanced safety technologies in all new vehicles"
+      ],
+      "market_trends": [
+        "European EV market starts 2026 with 20% BEV share",
+        "Full hybrid (HEVs) and mild hybrid electric vehicles (MHEVs) increased in market share by 1 and 3 percentage points, respectively, in January–February 2026",
+        "The market is projected to grow from USD 506.42 billion in 2026 to USD 1,224.70 billion by 2034 in the Europe Electric Car Market"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.forpressrelease.com/forpressrelease/667461/2/automotive-world-2026-concludes-with-strong-global-participation-and-milestone-opening-ceremony",
+        "https://star.global/posts/automotive-customer-experience-trends-in-2026-5-strategies-oems-can-act-on/",
+        "https://www.astuteanalytica.com/industry-report/automotive-telematics-market",
+        "https://tech-news.info/electric-vehicle-sales-showdown-meet-the-top-performing-oems-in-part-3-of-our-exclusive-series/",
+        "https://www.i40today.com/automotive-world-2026-concludes-with-strong-global-participation-and-milestone-opening-ceremony/",
+        "https://alternative-fuels-observatory.ec.europa.eu/general-information/news/european-ev-market-starts-2026-20-bev-share",
+        "https://theicct.org/publication/european-car-market-monitor-feb-2026/",
+        "https://www.acea.auto/pc-registrations/new-car-registrations-1-2-in-february-2026-year-to-date-battery-electric-18-8-market-share/",
+        "https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/",
+        "https://ev-volumes.com/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks, such as ARISK_001, which also has a high inherent risk score.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_026"
+      ],
+      "downstream_risks": [],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_003",
+    "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline (% of total revenue)",
+      "metric": "Revenue Decline (%)",
+      "justification": "The introduction of stricter regulations to reduce vehicle emissions and fuel consumption could lead to a significant increase in production costs for VelocityAuto Group AG, potentially resulting in a revenue decline. Given the company's revenue of EUR 78.4 billion and the potential impact of these regulations, a decline of 6-12% is plausible, especially considering the company's current declining revenue trend and the need to invest in achieving Euro 7 compliance.",
+      "table_criteria_matched": "6-12% = High (4)",
+      "evidence_quantity": "6-12%",
+      "quantity_source": "Client questionnaire and external market intelligence"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood assessment is based on the composite likelihood score of 3/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The introduction of Euro 7 emissions standards and the company's significant gap in fleet average CO2 vs regulatory targets contribute to the likelihood of this risk materializing.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at peers, external environment contains active drivers, and controls exist but may have gaps."
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The evidence summary includes the client's current declining revenue trend, the need to invest in achieving Euro 7 compliance, and external market intelligence indicating increasing regulatory actions.",
+    "client_context_used": "Revenue figures, industry trends, and regulatory requirements.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "Euro 7 emissions regulation automotive compliance 2026",
+        "EU automotive OEM fuel consumption reduction targets 2025",
+        "Germany automotive industry emissions standards enforcement 2026"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [
+        "EU regulation 2024/1257 sets Euro 7 emissions standard to come into effect from 29th November 2026",
+        "European Commission presents automotive package with CO2 emissions targets",
+        "EU Council adopts Euro 7 standards for vehicle emissions"
+      ],
+      "market_trends": [
+        "Introduction of Euro 7 emissions standards will transform how vehicles are manufactured",
+        "Stricter particulate matter regulations targeting non-exhaust sources such as brake emissions",
+        "Automotive exhaust system design is entering a new phase of complexity and precision"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.rac.co.uk/drive/advice/emissions/what-is-euro-7-and-when-does-it-start/",
+        "https://motorbeast.org/euro-7-emissions-standards-2026-the-revolutionary-new-rules-transforming-european-cars/",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2026/03/euro-7-emission-standards-auto-brakes-market",
+        "https://www.automotive-iq.com/chassis-systems/how-to-guides/meeting-euro-7-regulations",
+        "https://acsindustries.com/2026/03/10/euro-7-and-new-emissions-standards/",
+        "https://www.hoganlovells.com/en/publications/update-on-automotive-regulations-in-europe",
+        "https://www.reuters.com/sustainability/climate-energy/eu-auto-group-pushes-hybrids-e-fuels-co2-emission-goal-review-2025-10-08/",
+        "https://www.noerr.com/en/insights/european-commission-presents-automotive-package-co2-emissions-targets-energy-consumption-labelling-battery-booster-and-company-cars",
+        "https://theicct.org/publication/co2-targets-for-new-hdvs-in-europe-sept25/",
+        "https://news.sustainability-directory.com/policy/eu-grants-carmakers-three-year-flexibility-on-2025-vehicle-emissions-targets/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks such as ARISK_001, which also deals with the impact of regulatory changes on the automotive industry.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_022"
+      ],
+      "downstream_risks": [],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_004",
+    "client_description": "Large investment in accelerated EV parity – making EV costing the same as internal combustion engines vehicles",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline",
+      "metric": "Revenue Decline (%)",
+      "justification": "The client has committed heavily to electrification, with EUR 8.2B invested over 2024-2028, and is experiencing a significant slowdown in consumer adoption in core markets. This could lead to a revenue decline. Given the annual revenue trend is declining (EUR 82.1B in FY2023, EUR 80.6B in FY2024, EUR 78.4B in FY2025), a potential loss of EUR 5B would represent approximately 6% of the revenue, which falls into the 'High' category according to the impact assessment table.",
+      "table_criteria_matched": "Revenue Decline (% of total revenue): 6-12% = High (4)",
+      "evidence_quantity": "6%",
+      "quantity_source": "Client questionnaire context: annual_revenue_trend"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5. The client's internal conversations about slowing the transition roadmap due to consumer adoption slowdown, regulatory pressures, and trends in EV registrations and battery prices support this likelihood score.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred recently or multiple times. External environment is actively driving this risk. Controls are insufficient or untested."
+    },
+    "inherent_risk_score": 16,
+    "risk_rating": "Critical",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's significant investment in electrification, slowdown in consumer adoption, and potential for stranded assets contribute to the high impact and likelihood scores.",
+    "client_context_used": "EV_transition_investment, consumer_adoption_slowdown, annual_revenue_trend",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive EV adoption trends 2025 2026",
+        "Electric vehicle battery cost parity 2026 outlook",
+        "EU automotive industry electrification investment risks 2026"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [
+        "European car industry pressing to slow the pace of electrification, arguing for looser climate targets to ease costs and preserve industry"
+      ],
+      "market_trends": [
+        "EV registrations expected to surge in Europe in 2025 and beyond",
+        "EV battery prices expected to fall almost 50% by 2026, achieving ownership cost parity with gasoline-fueled cars",
+        "Demand for electric vehicles and batteries increasing, with EVs making up over a quarter of new vehicle sales globally in 2025"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://obdeleven.com/automotive-trends-and-stats",
+        "https://autovista24.autovistagroup.com/news/will-european-ev-registrations-surge-in-2025/",
+        "https://autovista24.autovistagroup.com/news/europe-2026-automotive-forecast/",
+        "https://futuretransport-news.com/move-2025-europes-ev-adoption-boom/",
+        "https://dealerbox.net/5-automotive-trends-you-cant-miss-in-2026/",
+        "https://www.goldmansachs.com/insights/articles/electric-vehicle-battery-prices-are-expected-to-fall-almost-50-percent-by-2025",
+        "https://www.kbb.com/car-news/study-evs-could-reach-price-parity-in-2026/",
+        "https://www.technologyreview.com/2026/02/02/1132042/whats-next-for-ev-batteries-in-2026/",
+        "https://evxl.co/2025/12/09/global-ev-battery-prices-drop-2026/",
+        "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/the-future-of-affordable-evs-breakthroughs-in-battery-pack-costs"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks related to the automotive industry's transition to electric vehicles, such as ARISK_001, ARISK_002, and ARISK_003.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_005",
+        "ARISK_006"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_005",
+    "client_description": "Potential increased tariffs resulting in increased costs of raw materials",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Cost Structure",
+      "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+      "justification": "The client stated that 'The 25% tariffs on auto imports that came into effect have directly hit our cost structure.' Additionally, the client has significant exposure to steel and aluminium (EUR 4.8B) and battery raw materials (EUR 2.1B). The US Tariff Rate by Country list for 2026 and the Auto Tariff Calculator 2026 show specific rates and examples for major trading partners, indicating ongoing and potentially escalating tariff pressures. The average car price increased by ~$6,000 due to auto tariffs, which suggests a significant cost increase.",
+      "table_criteria_matched": "10-20% cost increase = High (4)",
+      "evidence_quantity": "25% tariffs, EUR 4.8B steel and aluminium exposure, EUR 2.1B battery raw materials exposure",
+      "quantity_source": "Client statement, US Tariff Rate by Country list, Auto Tariff Calculator 2026"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The client has already experienced the impact of tariffs, with the 25% tariffs on auto imports directly hitting their cost structure. The external environment, including the US Tariff Rate by Country list and the Auto Tariff Calculator 2026, suggests ongoing and potentially escalating tariff pressures. The client's significant exposure to steel and aluminium and battery raw materials also increases their likelihood of being impacted by tariffs.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Occurred recently, active external drivers, weak controls = Likely (4)"
+    },
+    "inherent_risk_score": 16,
+    "risk_rating": "Critical",
+    "scoring_confidence": "HIGH",
+    "evidence_summary": "Client statement, US Tariff Rate by Country list, Auto Tariff Calculator 2026, average car price increase due to auto tariffs",
+    "client_context_used": "Significant North American exposure, EUR 78.4B annual revenue, declining revenue trend, EBITDA margin of 9.2% and declining",
+    "market_intelligence_used": {
+      "search_queries": [
+        "US tariffs on auto imports Europe 2026",
+        "Steel aluminium tariffs impact automotive manufacturing 2025",
+        "EU automotive raw material costs increase 2026"
+      ],
+      "recent_incidents": [
+        "US auto tariffs added $30 billion in costs to the automotive industry in 2025, leading to a 10.4% increase in the average vehicle MSRP",
+        "Imported vehicles bore the brunt of these tariffs, with price hikes ranging from $5,000 to $8,900 per vehicle"
+      ],
+      "regulatory_developments": [
+        "US Tariff Rate by Country list for 2026 includes specific rates and examples for China, EU, Vietnam, and other major trading partners",
+        "Auto Tariff Calculator 2026 shows rates of 15% for Japan/Korea/EU and 25% base rate for non-USMCA content",
+        "USMCA review in July 2026 could reshape auto tariffs",
+        "EU Member States can continue to subsidize clean tech manufacturing, including batteries and raw materials, under the Clean Industrial Deal State Aid Framework (CISAF) adopted in June 2025"
+      ],
+      "market_trends": [
+        "Average car price increased by ~$6,000 due to auto tariffs",
+        "European automotive industry faces high energy prices and volatility, making manufacturing more costly relative to other global regions",
+        "Europe's reliance on Chinese battery technology and raw material processing capacity creates risks for supply security, price spikes, and carbon-intensive transportation"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521/",
+        "https://www.tariffstool.com/guides/us-tariff-rate-by-country-list-2026",
+        "https://terms.law/Trump/Auto-Tariffs/",
+        "https://www.autotrader.com/tariffs",
+        "https://www.icontainers.com/trump-tariff-tracker-us-trade-policy/",
+        "https://insight.thomsonreuters.com/sea/business/posts/u-s-steel-and-aluminium-tariffs-impact-on-trade-industries",
+        "https://aluminiummagazine.com/mag/news/aluminium-tariff-war-global-trade-shift-2025-2026.html",
+        "https://supplychaindigital.com/news/trumps-expanded-steel-aluminium-trade-tariffs-auto",
+        "https://www.fastmarkets.com/insights/steel-import-tariffs-2025-impact-on-us-traders/",
+        "https://www.catalannews.com/business/item/trump-tariffs-on-steel-and-aluminium-to-have-limited-impact-on-catalonia"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "Consistent with previously scored risks, such as ARISK_004, which also relates to tariffs and trade policy.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_006"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_006",
+    "client_description": "Political tensions, trade disputes, and tariffs can disrupt global automotive supply chains and markets",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Cost Structure",
+      "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+      "justification": "The client stated that 'The 25% tariffs on auto imports that came into effect have directly hit our cost structure' and 'the uncertainty is almost as damaging as the tariffs themselves because we can't plan supply chain decisions confidently.' This indicates a significant impact on the cost structure due to tariffs and trade policy uncertainty. The company's annual revenue is EUR 78.4 billion, and a 25% tariff on auto imports would result in a substantial cost increase.",
+      "table_criteria_matched": "10-20% cost increase = High (4)",
+      "evidence_quantity": "25% tariff",
+      "quantity_source": "Client statement"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The composite likelihood score is 4/5, and the client has already experienced the impact of tariffs. The external environment is driving this risk, with increasing US tariffs on EU autos and a declining trend in EU auto exports to the US.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Occurred in the last 1-2 years, or multiple times historically. Active external drivers present."
+    },
+    "inherent_risk_score": 16,
+    "risk_rating": "Critical",
+    "scoring_confidence": "HIGH",
+    "evidence_summary": "The client has experienced a direct hit to their cost structure due to 25% tariffs on auto imports, and there is uncertainty in planning supply chain decisions. The external environment is driving this risk, with increasing US tariffs on EU autos and a declining trend in EU auto exports to the US.",
+    "client_context_used": "Annual revenue: EUR 78.4 billion, EBITDA margin: 9.2%, Countries with manufacturing presence: Germany, UK, Hungary, China, USA, Mexico",
+    "market_intelligence_used": {
+      "search_queries": [
+        "US tariffs on auto imports Europe 2025 2026",
+        "EU automotive supply chain disruption 2026",
+        "Global automotive trade policy updates 2025 2026"
+      ],
+      "recent_incidents": [
+        "Mercedes-Benz's 2025 earnings dropped 57% due to a $1.2 billion hit from US tariffs",
+        "BMW's earnings before tax fell to 10.2 billion euros in 2025 and are forecast to decline further in 2026"
+      ],
+      "regulatory_developments": [
+        "US tariffs on EU autos increased to 15% as of August 1, 2025",
+        "EU-US trade agreement implementation with a 15% duty rate for EU autos and auto parts"
+      ],
+      "market_trends": [
+        "EU auto exports to the US are declining due to ongoing tariffs",
+        "Automotive output is forecast to contract by 0.6% in 2026 due to subdued consumer sentiment"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.rabobank.com/knowledge/d011480100-assessing-the-impact-of-us-tariffs-on-the-european-automotive-sector",
+        "https://www.reuters.com/sustainability/society-equity/us-confirms-eu-autos-auto-parts-15-tariffs-started-aug-1-2025-09-24/",
+        "https://news.dealershipguy.com/p/eu-auto-exports-to-u-s-slide-as-tariffs-continue-to-bite",
+        "https://www.spglobal.com/automotive-insights/en/rapid-impact-analysis/trump-trade-update-japan-eu-auto-tariffs",
+        "https://www.cnn.com/2025/08/21/business/us-tariffs-eu-autos",
+        "https://www.cargroup.org/supply-chain-disruptions-update/",
+        "https://enduringautomotive.com/automotive-repair/industry-overview/auto-parts-supply-chain/",
+        "https://globalautoindustry.com/eu-and-global-supply-chain-regulations-impact-on-automotive-industry/",
+        "https://www.ajot.com/news/supply-chain-disruptions-up-30-in-first-half-of-2024",
+        "https://trans.info/en/automotive-supply-chain-376520"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_005, which also deals with the impact of tariffs on the company's cost structure.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_005"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_007",
+    "client_description": "Suppliers may fail to deliver components according to schedules, prices, quality and volumes that are acceptable",
+    "impact_assessment": {
+      "score": 5,
+      "level": "Severe/Catastrophic",
+      "dimension": "Operating Impact",
+      "sub_dimension": "Critical Supplier Disruption",
+      "metric": "Days",
+      "justification": "The risk of suppliers failing to deliver components according to schedules, prices, quality, and volumes that are acceptable could lead to a critical supplier disruption. The client has experienced a semiconductor shortage in the past, which resulted in a 6-week production halt at two plants, causing a financial impact of over EUR 400 million. Given the client's high concentration of battery cell supply from a single source and significant exposure to raw materials like lithium, cobalt, and nickel, the potential disruption could be severe.",
+      "table_criteria_matched": "Critical Supplier Disruption (Days): >14 days = Severe/Catastrophic (5)",
+      "evidence_quantity": "42 days",
+      "quantity_source": "Client statement on semiconductor shortage impact"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood assessment is based on the composite score of 3/5 from the 5-factor assessment, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The client's experience with the semiconductor shortage and the current geopolitical tensions contribute to the likelihood of supplier failure.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Not applicable"
+    },
+    "inherent_risk_score": 15,
+    "risk_rating": "High",
+    "scoring_confidence": "HIGH",
+    "evidence_summary": "The client's statements on battery cell concentration risk, semiconductor shortage experience, and exposure to raw materials like lithium, cobalt, and nickel provide strong evidence for the impact assessment. The 5-factor likelihood assessment supports the likelihood score.",
+    "client_context_used": "Client questionnaire data, including revenue figures, percentages, and incident counts",
+    "market_intelligence_used": {
+      "search_queries": [
+        "lithium battery supply chain disruption Europe 2025 2026",
+        "automotive semiconductor shortage Europe 2025 2026",
+        "cobalt lithium nickel shortage automotive industry 2025 2026"
+      ],
+      "recent_incidents": [
+        "Global semiconductor shortages are not over, says Volkswagen",
+        "Auto semiconductor shortage worsens"
+      ],
+      "regulatory_developments": [
+        "EU battery directive increasing regulatory pressures and geopolitical tensions",
+        "Export controls announced in October 2025 are temporarily suspended"
+      ],
+      "market_trends": [
+        "Growing demand for semiconductors and batteries in the automotive industry",
+        "Increasing supply chain tensions for critical materials such as nickel and cobalt",
+        "Europe's swelling wave of battery installations set to hit barriers"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.circunomics.com/blog/europes-second-life-battery-challenge-2025-review-",
+        "https://www.iea.org/commentaries/global-battery-markets-are-growing-strongly-and-so-are-the-supply-risks",
+        "https://www.sciencedirect.com/science/article/pii/S0301420725003290",
+        "https://www.reuters.com/business/energy/europes-swelling-wave-battery-installations-set-hit-barriers--reeii-2026-02-26/",
+        "https://www.sciencedirect.com/science/article/pii/S2772427125002359",
+        "https://www.statista.com/topics/9062/global-automotive-semiconductor-industry/",
+        "https://www.torque-expo.com/hand-power-tools/semiconductor-shortage-squeezes-auto-tools",
+        "https://www.semiconductorintelligence.com/auto-semiconductor-shortage-worsens/",
+        "https://surgere.com/blog/navigating-automotive-supply-chain-challenges-in-2025/",
+        "https://www.cityam.com/global-semiconductor-shortages-not-over-volkswagen/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks, such as ARISK_004 and ARISK_005, which also have high impact and likelihood scores due to the client's exposure to supply chain disruptions and geopolitical tensions.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_005"
+      ],
+      "downstream_risks": [
+        "ARISK_011",
+        "ARISK_012"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_008",
+    "client_description": "Reliance on single suppliers",
+    "impact_assessment": {
+      "score": 5,
+      "level": "Severe/Catastrophic",
+      "dimension": "Operating Impact",
+      "sub_dimension": "Supply Chain",
+      "metric": "Critical Supplier Disruption (Days)",
+      "justification": "The client's reliance on single suppliers, particularly for battery cells, poses a significant risk to their operations. The evidence suggests that a disruption to these suppliers could have a severe impact on the client's production, with the potential for extended downtime. The client's experience with the semiconductor shortage in 2023, which resulted in a 6-week production halt, demonstrates the potential severity of such disruptions.",
+      "table_criteria_matched": "Critical Supplier Disruption (Days) >14 days = Severe/Catastrophic (5)",
+      "evidence_quantity": "42 days",
+      "quantity_source": "Client statement on semiconductor shortage impact"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5, indicating a high likelihood of this risk occurring. The client's recent experience with supply chain disruptions, including the ransomware attack on a tier-1 supplier and the semiconductor shortage, supports this assessment.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Historical Frequency: 4/5, Control Effectiveness: 3/5, External Environment: 4/5, Sector Base Rate: 4/5, Client-Specific Exposure: 3/5"
+    },
+    "inherent_risk_score": 20,
+    "risk_rating": "Critical",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's reliance on single suppliers, recent supply chain disruptions, and the potential for future disruptions due to geopolitical events or supplier insolvency.",
+    "client_context_used": "Client statements on supply chain concentration risks, recent disruptions, and the potential for future disruptions.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive lithium battery supply chain risks 2026",
+        "Automotive semiconductor shortage impact on OEMs 2025 2026",
+        "EU automotive raw material shortages cobalt lithium 2026"
+      ],
+      "recent_incidents": [
+        "Nexperia chip shortage: Honda, VW bracing for outage",
+        "U.S. auto plants could face major production slowdowns within weeks due to chip shortage"
+      ],
+      "regulatory_developments": [
+        "European Commission adopted the 'RESourceEU' Action Plan to secure the EU's supply of critical raw materials",
+        "European Battery Regulation"
+      ],
+      "market_trends": [
+        "Europe remains heavily reliant on Asian manufacturers for battery supply, exposing its automotive sector to pricing volatility and supply chain disruptions",
+        "Critical metal shortages intensify, prompting a widespread battery supply chain alert among manufacturers",
+        "Lithium carbonate prices have surged 340% over the past 18 months"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.wwf.de/fileadmin/fm-wwf/Publikationen-PDF/Politik/Battery-Report-2026.pdf",
+        "https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/767214/EPRS_BRI(2025)767214_EN.pdf",
+        "https://www.iea.org/reports/energy-technology-perspectives-2026/supply-chain-risks-and-industrial-competitiveness",
+        "https://hcss.nl/wp-content/uploads/2024/01/Increasing-Lithium-Supply-Security-HCSS-2024.pdf",
+        "https://www.deloitte.com/de/de/Industries/automotive/research/european-battery-sovereignty.html",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2025/12/dram-makers-ai-data-centers-semiconductor-shortage",
+        "https://www.cnbc.com/2025/10/30/nexperia-auto-chip-shortage-china-honda-vw.html",
+        "https://www.motor.com/2025/12/dram-makers-focus-on-ai-data-centers-fuel-auto-chip-shortage/",
+        "https://sustainableatlas.org/post/case-study-automotive-manufacturer-rebuilt-supply-networks-semiconductor-shortages-1550",
+        "https://gmauthority.com/blog/2025/10/u-s-auto-plants-could-shut-down-in-a-few-weeks-due-to-chip-shortage/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_004 and ARISK_005, which also relate to supply chain disruptions and concentration risks.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_005"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_011"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_009",
+    "client_description": "Loss of dealerships and importers can lead to unserved demand and lower unit sales",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Customer & Market Impact",
+      "sub_dimension": "Loss of Key Customers",
+      "metric": "Loss of Key Customers (% of revenue)",
+      "justification": "The client's dealer network represents significant capital and relationship investment, and the shift to direct-to-consumer models by competitors could lead to a loss of key customers. The client's revenue is EUR 78.4B, and a potential loss of 10-20% of revenue due to the loss of dealerships and importers would be a significant impact.",
+      "table_criteria_matched": "10-20% of revenue",
+      "evidence_quantity": "10-20%",
+      "quantity_source": "Client questionnaire context, specifically the revenue figure of EUR 78.4B and the description of the dealer network disruption risk"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5, and there is no specific evidence to adjust this score. The external environment presents moderate velocity, and the client has significant exposure to this risk due to their investment in the dealer network.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's dealer network is under pressure due to the shift to direct-to-consumer models by competitors, and the client has had difficult conversations with dealer groups about the future of the relationship. The client's revenue is EUR 78.4B, and a potential loss of 10-20% of revenue due to the loss of dealerships and importers would be a significant impact.",
+    "client_context_used": "Client questionnaire context, specifically the revenue figure of EUR 78.4B, the description of the dealer network disruption risk, and the client's top 5 strategic priorities",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive dealer network disruption 2026",
+        "EV transition impact on traditional dealership models 2025",
+        "Automotive OEM direct-to-consumer sales trends Europe 2026"
+      ],
+      "recent_incidents": [
+        "Europe's auto industry is facing mounting pressure, including dealers grappling with agency model reversals and automakers confronting overcapacity amid surging Chinese imports",
+        "A significant drop in EV adoption occurred in the last few weeks of 2025 once the EV credit ended in September"
+      ],
+      "regulatory_developments": [
+        "To continue to qualify for the exemption and subsidy, OEMs must commit to producing at least two battery electric vehicles (BEVs) domestically by the end of 2026 for every imported BEV sold in 2024 and 2025"
+      ],
+      "market_trends": [
+        "European automotive sector is finally showing signs of a turnaround after two years of significant underperformance",
+        "Automotive dealers across Europe are navigating a period of sustained pressure, including margin compression and regulatory demands",
+        "EV affordability is emerging as the make-or-break factor in driving mass adoption",
+        "Vehicle affordability remains the weak link in the EV transition"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.autonews.com/manufacturing/automakers/ane-automakers-europe-production-problems-0124/",
+        "https://www.motorfinanceonline.com/features/2026-and-beyond-reinventing-europes-automotive-promise/",
+        "https://www.reuters.com/markets/europe/europes-unloved-auto-sector-may-surprise-investors-2026-2026-01-12/",
+        "https://www.nextlane.com/news-articles/five-structural-shifts-redefining-european-automotive-retail-2026/",
+        "https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/762419/EPRS_ATA(2024)762419_EN.pdf",
+        "https://news.dealershipguy.com/p/vehicle-affordability-remains-the-weak-link-in-the-ev-transition-2025-10-22",
+        "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-markets-2",
+        "https://www.jmagroup.com/resources/operations/automotive-trends-report",
+        "https://www.cdkglobal.com/insights/what-300000-returning-ev-leases-mean-dealership-inventory-strategy",
+        "https://www.dealer.com/resources/2025-ev-hybrid-insights/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_001 and ARISK_002, which also relate to the automotive industry and market trends.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_018",
+        "ARISK_019"
+      ],
+      "downstream_risks": [],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_010",
+    "client_description": "Regulatory risk associated with non-compliance with laws, rules, regulations, prescribed practices or ethical standards within jurisdiction of operation",
+    "impact_assessment": {
+      "score": 1,
+      "level": "No Impact",
+      "dimension": "Regulatory & Compliance Impact",
+      "sub_dimension": "Sanctions",
+      "metric": "Regulatory Fines / Penalties (% of annual revenue)",
+      "justification": "The client has a significant ICE vehicle lineup and is facing a tight compliance window for the new emissions standards, making them more exposed to regulatory fines and penalties. The EU Commission has fined companies up to €120m for non-compliance, and the client's annual revenue is €78.4 billion.",
+      "table_criteria_matched": "1-3% of annual revenue",
+      "evidence_quantity": "0.5%",
+      "quantity_source": "Client questionnaire: Annual revenue: EUR 78.4 billion (FY2025)"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The client has a formal regulatory intelligence function within their Legal department, which monitors regulatory changes monthly and reports to the board quarterly. However, the external environment is driving this risk, with new emissions standards such as Euro 7 and the EU's 2035 ICE ban.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at the company or regularly at peers"
+    },
+    "inherent_risk_score": 3,
+    "risk_rating": "Low",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client is exposed to regulatory risks due to non-compliance with emissions standards, and the external environment is driving this risk. The client has some controls in place, but the risk is still possible.",
+    "client_context_used": "Client questionnaire and external market intelligence",
+    "market_intelligence_used": {
+      "search_queries": [
+        "Euro 7 emissions regulation automotive compliance 2026",
+        "US EPA emissions standards automotive OEM 2025 updates",
+        "EU automotive regulatory fines penalties 2026 enforcement"
+      ],
+      "recent_incidents": [
+        "EU Commission Fines X: Penalty Hits €120m",
+        "Non-compliant modifications may lead to penalties, fines, or seizure during border checks across European countries"
+      ],
+      "regulatory_developments": [
+        "Euro 7 emissions standard to come into force in 2026, including non-exhaust emissions such as particulates from tyres and brakes",
+        "EPA's new emissions standards for heavy-duty vehicles",
+        "EU has implemented a series of regulatory updates aimed at bolstering key sectors and ensuring competitiveness within the automotive industry"
+      ],
+      "market_trends": [
+        "Automakers partnering with EV makers to avoid EU fines",
+        "Electric vehicles remain automatically compliant with Euro 7 emissions standards",
+        "EU's evolving automotive regulatory environment presents challenges and opportunities for legacy automakers and EV specialists"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://en.wikipedia.org/wiki/European_emission_standards",
+        "https://www.rac.co.uk/drive/advice/emissions/what-is-euro-7-and-when-does-it-start/",
+        "https://www.electriccarscheme.com/advice/salary-sacrifice-resource-hub/euro-7-emissions-standards-electric-cars-fleet-managers",
+        "https://www.automotive-iq.com/chassis-systems/how-to-guides/meeting-euro-7-regulations",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2026/03/euro-7-emission-standards-auto-brakes-market",
+        "https://en.wikipedia.org/wiki/Vehicle_emission_standard",
+        "https://www.sema.org/news-media/enews/2025/39/keeping-trump-epa-september-2025-update",
+        "https://www.fleetowner.com/emissions-efficiency/article/55339247/top-10-emissions-efficiency-articles-of-2025",
+        "https://www.thebuzzevnews.com/epa-emissions-standards/",
+        "https://trellis.net/article/newly-announced-epa-tailpipe-emissions-rules-what-you-need-know/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_003 and ARISK_005, which also relate to regulatory compliance and emissions standards.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_005",
+        "ARISK_015"
+      ],
+      "downstream_risks": [
+        "ARISK_018",
+        "ARISK_019"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_011",
+    "client_description": "Shortage of raw materials and transportation",
+    "impact_assessment": {
+      "score": 5,
+      "level": "Severe/Catastrophic",
+      "dimension": "Operating Impact",
+      "sub_dimension": "Supply Chain",
+      "metric": "Critical Supplier Disruption (Days)",
+      "justification": "The client has experienced a semiconductor shortage, ransomware attack, and logistics disruption in the last 3 years, resulting in significant financial impacts (EUR 400M+). The client's high dependency on specific raw materials, single-sourced components, and just-in-time delivery logistics increase their exposure. The evidence suggests that the client is not adequately prepared for supply chain disruptions, with untested business continuity plans and a lack of stress-testing for multi-node simultaneous disruptions.",
+      "table_criteria_matched": "Critical Supplier Disruption (Days) >14 days = Severe/Catastrophic (5)",
+      "evidence_quantity": "42 days",
+      "quantity_source": "Client-stated semiconductor shortage duration"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "Adjusted from 3 to 4 because the client has a history of supply chain disruptions, including the semiconductor shortage, and has not fully addressed the underlying issues. The external environment, including the EU's expansion of its production base for battery raw materials and components, may reduce dependencies but also introduces new risks.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Historical Frequency: 4/5, Control Effectiveness: 3/5, External Environment: 3/5, Sector Base Rate: 4/5, Client-Specific Exposure: 3/5"
+    },
+    "inherent_risk_score": 20,
+    "risk_rating": "Critical",
+    "scoring_confidence": "HIGH",
+    "evidence_summary": "The client's high dependency on specific raw materials, single-sourced components, and just-in-time delivery logistics, combined with a history of supply chain disruptions and untested business continuity plans, increases their exposure to supply chain risks.",
+    "client_context_used": "Client-stated evidence, including the semiconductor shortage, ransomware attack, and logistics disruption, as well as the client's business continuity plans and stress-testing history.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive steel aluminium shortage 2025 2026",
+        "Global semiconductor supply chain disruption 2026 automotive",
+        "EU automotive battery raw material shortage 2025 lithium"
+      ],
+      "recent_incidents": [
+        "Semiconductor shortages and logistics disruption have exposed structural weaknesses in the automotive industry's global supply chains"
+      ],
+      "regulatory_developments": [],
+      "market_trends": [
+        "Aluminum alloys are playing an increasingly critical role in the automotive sector",
+        "The EU is expected to expand its production base for battery raw materials and components over 2022-2030, but dependencies and bottlenecks in the supply chain will remain creating vulnerabilities"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.alcircle.com/specialreport/2464/global-aluminium-market",
+        "https://www.usdanalytics.com/industry-reports/aluminum-scrap-market",
+        "https://face-aluminium.com/aluminium-in-europe-newsletter-26-november-2-december/",
+        "https://www.coherentmarketinsights.com/market-insight/aluminum-alloys-market-4655",
+        "https://aegis-hedging.com/insights/base-metals-price-dashboard/2023-04-21",
+        "https://www.globalsupplychainlawblog.com/tag/semiconductor-supply-chain/",
+        "https://www.globalsupplychainlawblog.com/tag/chip-manufacturing/",
+        "https://www.globalsupplychainlawblog.com/tag/supply-chain-management/",
+        "https://www.z2data.com/insights/5-disruptions-to-the-semiconductor-industry",
+        "https://www.indianeconomicobserver.com/news/semiconductor-crunch-logistics-disruption-exposed-auto-supply-chain-fragility-hyundai-india-md20260211220342/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, including ARISK_007 and ARISK_008, which also relate to supply chain disruptions and single-sourced components.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_005",
+        "ARISK_007"
+      ],
+      "downstream_risks": [
+        "ARISK_014",
+        "ARISK_015"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_012",
+    "client_description": "Cyber attacks on applications of vehicle functions due to digitisation and connectivity",
+    "impact_assessment": {
+      "score": 5,
+      "level": "Severe/Catastrophic",
+      "dimension": "Technology & Information Impact",
+      "sub_dimension": "Cyber Security",
+      "metric": "Industrial Cyber Incident Severity (% of lines affected)",
+      "justification": "The risk of cyber attacks on applications of vehicle functions due to digitisation and connectivity could lead to a severe impact on the company's technology and information systems. The evidence of a ransomware incident at a tier-one supplier and the lack of visibility into the supply chain's cyber posture suggest a high likelihood of a significant cyber incident. The company's partial testing of their cyber incident response plan and the untested connected vehicle response scenario also contribute to the high impact score.",
+      "table_criteria_matched": ">50% of lines affected",
+      "evidence_quantity": "61% of incidents had the potential to impact thousands to millions of mobility assets",
+      "quantity_source": "EXTERNAL_INTELLIGENCE"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The likelihood of this risk is high due to the increasing trend of ransomware attacks on automotive and smart mobility, with 61% of incidents having the potential to impact thousands to millions of mobility assets. The company's lack of visibility into their supply chain's cyber posture and the partial testing of their cyber incident response plan also contribute to the high likelihood score.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Occurred recently, active external drivers, weak controls"
+    },
+    "inherent_risk_score": 20,
+    "risk_rating": "Critical",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The risk of cyber attacks on applications of vehicle functions due to digitisation and connectivity is high due to the increasing trend of ransomware attacks, lack of visibility into the supply chain's cyber posture, and partial testing of the company's cyber incident response plan.",
+    "client_context_used": "The company's connected vehicle response scenario and manufacturing OT incident response plans have not been tested, and the cyber posture of their supply chain is opaque.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "automotive OEM connected vehicle cybersecurity incidents 2025 2026",
+        "Europe automotive semiconductor shortage impact 2025 2026",
+        "EU automotive cybersecurity regulations compliance 2026"
+      ],
+      "recent_incidents": [
+        "A cyberattack on a European OEM in 2025, which exemplified the chain-reaction impact now possible when organized threat actors target interconnected mobility ecosystems"
+      ],
+      "regulatory_developments": [],
+      "market_trends": [
+        "Ransomware attacks on automotive and smart mobility more than doubled in 2025",
+        "61% of incidents had the potential to impact thousands to millions of mobility assets",
+        "20% were massive-scale events",
+        "DRAM prices could rise between 70% and 100% in 2026 compared to 2025 prices due to semiconductor shortage"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.calcalistech.com/ctechnews/article/rk5e4rdobx",
+        "https://www.prnewswire.com/news-releases/ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025-according-to-new-research-by-upstream-security-302691468.html",
+        "https://www.evinfrastructurenews.com/ev-technology/what-2026-holds-for-automotive-cybersecurity",
+        "https://upstream.auto/reports/global-automotive-cybersecurity-report/",
+        "https://iotbusinessnews.com/2026/02/19/ransomware-on-automotive-and-smart-mobility-doubled-in-2025/",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2025/12/dram-makers-ai-data-centers-semiconductor-shortage",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2024/8/briefcase-another-semiconductor-shortage-may-be-coming",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2026/02/what-auto-marketers-and-dealers-need-to-know-about-the-dram-shortage",
+        "https://www.acea.auto/press-release/critical-chip-shortage-worsens-by-the-day/",
+        "https://www.acea.auto/press-release/acea-calls-for-quick-resolution-to-critical-chip-supply-shortage/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_007 and ARISK_008, which also relate to supply chain disruptions and cyber security threats.",
+    "flags_for_review": [
+      "UNDERPREPARED"
+    ],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "downstream_risks": [
+        "ARISK_018",
+        "ARISK_019"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_013",
+    "client_description": "Competitive and price pressure due to aggressive policies and poor effective pricing",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Customer & Market Impact",
+      "sub_dimension": "Market Share Loss",
+      "metric": "Market Share Loss (% points)",
+      "justification": "The client's market share in Europe is 8.2%, and the risk of competitive and price pressure due to aggressive policies and poor effective pricing could lead to a loss of market share. The evidence suggests that Chinese EV manufacturers, such as BYD, are entering the European market aggressively, which could lead to a market share loss of 5-10%.",
+      "table_criteria_matched": "5-10% = High",
+      "evidence_quantity": "5-10%",
+      "quantity_source": "Client statement on competitive pressure from Chinese EV manufacturers"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood assessment is based on the composite score of 3/5, which takes into account the historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The client's underpreparedness and lack of effective controls contribute to the likelihood of this risk.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's revenue is EUR 78.4 billion, with a declining trend. The client is facing competitive pressure from Chinese EV manufacturers, such as BYD, which could lead to a market share loss. The client's market share in Europe is 8.2%, and the risk of competitive and price pressure could lead to a loss of market share.",
+    "client_context_used": "Revenue trend, market share, and competitive pressure",
+    "market_intelligence_used": {
+      "search_queries": [
+        "EU automotive competitive pricing trends 2025 2026",
+        "European electric vehicle market share 2025 2026",
+        "Automotive OEM pricing pressure Europe 2025 2026"
+      ],
+      "recent_incidents": [
+        "EV sales in Europe grew significantly in the full year of 2025, to 2,58 million units",
+        "Sales of fully electric cars in Europe's main auto markets jumped by almost a third in the first quarter of 2026"
+      ],
+      "regulatory_developments": [
+        "European countries have CO2 emission targets, with manufacturers' compliance estimates available for 2025"
+      ],
+      "market_trends": [
+        "Europe's automotive industry is facing a perfect storm in 2025, with analysts predicting a year of sluggish sales",
+        "The European passenger plug-in vehicle market recorded approximately 298,000 registrations in January 2026, representing a 22% year-on-year increase",
+        "Eight European countries have now surpassed 30% EV market share"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.towardsautomotive.com/insights/europe-automotive-market-sizing",
+        "https://obdeleven.com/automotive-trends-and-stats",
+        "https://ecarstrade.com/blog/will-used-car-prices-drop-or-rise",
+        "https://jointcharging.com/electric-vehicle-market-trends-in-the-eu-q1-2025-analysis/",
+        "https://www.newsdirectory3.com/europes-automakers-face-pummeling-in-2025-but-positives-remain/",
+        "https://alternative-fuels-observatory.ec.europa.eu/general-information/news/european-ev-market-starts-2026-20-bev-share",
+        "https://eleport.com/ev-sales-in-europe/",
+        "https://www.best-selling-cars.com/europe/2025-full-year-europe-bev-electric-car-sales-per-european-country/",
+        "https://theicct.org/publication/european-market-monitor-cars-and-vans-2025/",
+        "https://www.globalbankingandfinance.com/ev-sales-soar-main-european-markets-drivers-shun-expensive/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_001 and ARISK_002, which also relate to competitive pressure and market share loss.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "downstream_risks": [
+        "ARISK_018",
+        "ARISK_019"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_014",
+    "client_description": "High energy and raw material costs",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Cost Structure",
+      "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+      "justification": "The client has a high dependency on raw materials such as steel, aluminium, and battery raw materials, with significant annual spend on these materials. The evidence suggests that the client is exposed to commodity price volatility, which could lead to a high cost increase. Specifically, the client's annual spend on raw materials is EUR 4.8B for steel and aluminium, and EUR 2.1B for battery raw materials. Given the potential for commodity price volatility, a cost increase of 10-20% is possible, which would have a significant impact on the client's financials.",
+      "table_criteria_matched": "10-20% cost increase = High (4)",
+      "evidence_quantity": "10-20% cost increase",
+      "quantity_source": "Client questionnaire and external market intelligence"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5, which suggests that the risk is possible. The client has experienced a semiconductor shortage in the past, and there are external drivers such as supply chain disruptions and trade policy changes that could contribute to the risk materializing. However, the client has some controls in place, such as hedging programmes and business continuity plans, which reduce the likelihood of the risk.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at the company or regularly at peers, external environment contains active drivers, controls exist but may have gaps = Possible (3)"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "HIGH",
+    "evidence_summary": "The client has a high dependency on raw materials, is exposed to commodity price volatility, and has experienced supply chain disruptions in the past. The external environment contains active drivers such as trade policy changes and supply chain disruptions.",
+    "client_context_used": "Client questionnaire, external market intelligence, and previous risk scores",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive steel prices 2025 2026",
+        "Global lithium battery raw material shortages 2026",
+        "EU automotive semiconductor supply chain risks 2025"
+      ],
+      "recent_incidents": [
+        "Europe's carmakers are facing a severe chip supply crisis due to supply bottlenecks at Nexperia, a Dutch chipmaker",
+        "China has banned Nexperia from exporting products manufactured in China, raising the risk of widespread supply chain disruptions for Europe's automotive industry"
+      ],
+      "regulatory_developments": [
+        "The EU depends significantly on third markets for specific products and technologies in the semiconductor industry, prompting a comprehensive approach to monitor the EU semiconductor ecosystem"
+      ],
+      "market_trends": [
+        "Average European steel prices are expected to decrease in 2026, with predicted prices of 575 euros per ton for hot-rolled coils",
+        "The European market, particularly Germany, has experienced steady steel consumption across automotive and construction sectors",
+        "Steel prices in Q2 2025 exhibited marginal corrections in regions with high industrial activity, such as the USA and Canada"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.eurofer.eu/publications/economic-market-outlook/economic-and-steel-market-outlook-2025-2026-fourth-quarter",
+        "https://www.steelorbis.com/steel-market/eu.htm",
+        "https://metallurgprom.org/en/news/europe/17996-analitik-srednie-evropejskie-ceny-snizjatsja-v-2026-godu.html",
+        "https://www.devere-group.com/steel-price-forecast-to-recover-in-2026-analysis/",
+        "https://industrytoday.co.uk/chemicals/steel-prices-q2-2025-trend-forecast-historical-analysis",
+        "https://publications.jrc.ec.europa.eu/repository/handle/JRC141323",
+        "https://europeanbusinessmagazine.com/europe/europes-carmakers-face-devastating-chip-crisis-as-nexperia-supply-crunch-deepens/",
+        "https://localandglobaleco.com/2025/11/13/europes-semiconductor-shock-a-historic-warning-and-a-futuristic-call-for-supply-chain-rewiring/",
+        "https://cepr.org/voxeu/columns/monitoring-framework-strengthen-eu-semiconductor-supply-chain",
+        "https://www.clepa.eu/wp-content/uploads/2025/10/CLEPA-PR_23.10.2025-2.pdf"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with previous risk scores such as ARISK_005 and ARISK_011, which also relate to supply chain disruptions and commodity price volatility.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_005",
+        "ARISK_011"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_015",
+    "client_description": "Costs associated with downgrade in credit ratings",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Cost Structure",
+      "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+      "justification": "The risk of a credit rating downgrade would lead to increased financing costs, affecting the company's cost structure. Given the company's significant debt maturities, such as the EUR 2.8B bond maturing in Q3 2027, and a net debt to EBITDA ratio of 2.4x, which is above their target range, the potential increase in financing costs due to a credit rating downgrade could significantly impact the company's cost structure. The evidence suggests that 'if credit conditions tighten or our credit rating comes under pressure the cost of financing that programme increases meaningfully.' This indicates a potential high impact on the cost structure, likely in the range of 10-20% cost increase, which aligns with a score of 4 (High) according to the impact assessment table.",
+      "table_criteria_matched": "10-20% cost increase = High (4)",
+      "evidence_quantity": "10-20%",
+      "quantity_source": "Client statement on financing cost increase due to credit rating pressure"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood assessment is based on the composite likelihood score of 3/5 provided by the Likelihood Intelligence Agent. This score reflects the consideration of historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. Given the client's current situation, including being flagged as 'UNDERPREPARED' and facing significant debt maturities, along with external factors such as the deteriorating asset performance outlook for European auto sectors, the likelihood of this risk materializing is considered possible.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at the company or regularly at peers, external environment contains active drivers, controls exist but may have gaps."
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The evidence summary includes the client's statement on the impact of credit conditions and credit rating pressure on financing costs, the company's debt profile, and external market intelligence on the deteriorating outlook for European auto sectors.",
+    "client_context_used": "Net debt to EBITDA ratio, significant debt maturities, and the client's statement on financing costs.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive credit rating trends 2025 2026",
+        "Currency fluctuation risks automotive manufacturing Europe 2026",
+        "Automotive OEM debt refinancing challenges Eurozone 2025 2026"
+      ],
+      "recent_incidents": [
+        "Fitch Ratings has changed its asset performance outlook for European auto, unsecured loan and credit card ABS sectors to 'deteriorating' from 'neutral'"
+      ],
+      "regulatory_developments": [
+        "European automotive industry faces unprecedented challenges, including potential Brexit impacts on investment and trade"
+      ],
+      "market_trends": [
+        "Weakening in recent quarters expected to persist to end-2026 for European auto ABS sectors",
+        "Traditional global OEMs experienced another year of sales and profit decline in 2025",
+        "Refinancing and dividend recapitalisation activity has deferred, but not resolved the European market's maturity challenges"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.fitchratings.com/research/corporate-finance/fitch-ratings-changes-asset-performance-outlook-for-emea-consumer-abs-to-deteriorating-20-04-2026",
+        "https://dbrs.morningstar.com/research/472002/global-automotive-outlook-2026-weak-growth-and-market-transition-keep-credit-ratings-under-pressure",
+        "https://www.acea.auto/publication/the-automobile-industry-pocket-guide-2025-2026/",
+        "https://www.alacrastore.com/s-and-p-credit-research/European-Auto-ABS-Index-Report-Q1-2025-3370976",
+        "https://www.kbra.com/",
+        "https://www.motorfinanceonline.com/features/an-automotive-view-on-a-potential-brexit-4905947/",
+        "https://www.currencytransfer.com/blog/expert-analysis/global-supply-crisis-currency-markets",
+        "https://www.archyde.com/europe-in-crisis-global-instability-and-the-imminent-threat-to-korea/",
+        "https://oseeuro.com/latest-news/automotive-manufacturing-in-the-uk-what-can-we-expect-in-the-future/",
+        "https://www.imarcgroup.com/seamless-tube-manufacturing-plant-project-report"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk's score is consistent with other financial and growth impact risks, considering the company's specific financial situation and external market conditions.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_010",
+        "ARISK_011"
+      ],
+      "downstream_risks": [
+        "ARISK_024",
+        "ARISK_025"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_016",
+    "client_description": "Shortage of charging stations is a risk for growth of electric vehicles",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline",
+      "metric": "Revenue Decline (%)",
+      "justification": "The client has committed heavily to electrification, including new platforms, battery supply agreements, and retooling three plants, which may increase their exposure to the risk of a shortage of charging stations. The evidence suggests that consumer adoption in core markets has slowed significantly, which could lead to a revenue decline. The annual revenue is EUR 78.4 billion, and a 6% decline would be approximately EUR 4.7 billion, which is a significant impact.",
+      "table_criteria_matched": "6-12% = High",
+      "evidence_quantity": "6%",
+      "quantity_source": "Client statement on slowed consumer adoption"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client has not experienced this risk before, but the external environment suggests an elevated probability due to the slow growth of public charging infrastructure in Europe.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client has committed heavily to electrification and is experiencing slowed consumer adoption in core markets. The external environment suggests an elevated probability due to the slow growth of public charging infrastructure in Europe.",
+    "client_context_used": "Annual revenue, consumer adoption slowdown, electrification commitment",
+    "market_intelligence_used": {
+      "search_queries": [
+        "electric vehicle charging infrastructure Europe 2026",
+        "lithium battery supply chain disruption Europe 2025 2026",
+        "EU automotive emissions regulation compliance 2026"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [
+        "EU has enforced regulations requiring a 15% reduction in CO₂ emissions for new cars by 2025",
+        "Compliance with the Euro 6e-bis phase becomes mandatory for new types of vehicle from January 1, 2025 and for all new vehicles from 1st January 2025"
+      ],
+      "market_trends": [
+        "Strong growth in battery-electric vehicle registrations across Europe, driven by major markets such as Italy, France and Germany",
+        "Europe's public charging infrastructure is growing more slowly but becoming more powerful"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.evcharging-infrastructure.com/",
+        "https://www.gridx.ai/press-releases/europes-public-charging-infrastructure-is-growing-more-slowly-but-becoming-more-powerful",
+        "https://annual-ev-charging-infrastructure.com/",
+        "https://www.industryevents.com/events/6th-european-ev-charging-infrastructure-2026",
+        "https://alternative-fuels-observatory.ec.europa.eu/",
+        "https://www.csis.org/analysis/friendshoring-lithium-ion-battery-supply-chain-final-assembly-and-end-uses",
+        "https://www.fuelsandlubes.com/fli-article/lithium-battery-market-reshaped-by-evs-price-swings-and-new-chemistries/",
+        "https://www.mining.com/lithium-supply-chain-threatened-by-east-west-geopolitical-tensions-report/",
+        "https://nai500.com/blog/2025/01/global-lithium-market-at-a-crossroads-in-2025-amid-supply-cuts-and-rising-demand/",
+        "https://colitco.com/lithium-prices-climb-2026-mining-stocks/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_001 and ARISK_004, which also relate to the electrification of vehicles and the potential impact on revenue.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_001",
+        "ARISK_004"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_017",
+    "client_description": "The lack of market acceptance for electric vehicles",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline (% of total revenue)",
+      "metric": "Revenue Decline (%)",
+      "justification": "The client has committed heavily to electrification with new platforms, battery supply agreements, and retooling of three plants. However, consumer adoption in core markets has slowed significantly, which could lead to a revenue decline. Given the client's revenue is EUR 78.4B and the risk could cause a significant loss, this is considered a high impact. The evidence quantity is not directly provided, but based on the context, a 6-12% revenue decline is possible, which aligns with the 'High' level in the table.",
+      "table_criteria_matched": "6-12% revenue decline = High (4)",
+      "evidence_quantity": "6-12% of EUR 78.4B",
+      "quantity_source": "Client questionnaire and interview"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5. The client's internal conversations about slowing their transition roadmap and the slowing consumer adoption in core markets indicate a likely risk. External environment factors such as regulatory pressures also contribute to the likelihood.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred recently or multiple times, external environment is actively driving this risk, and controls are insufficient or untested = Likely (4)"
+    },
+    "inherent_risk_score": 16,
+    "risk_rating": "Critical",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client has heavily invested in electrification, but the market is not moving at the planned pace. Consumer adoption has slowed significantly, and there are internal discussions about slowing the transition roadmap.",
+    "client_context_used": "Client questionnaire and interview",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European electric vehicle market trends 2025 2026",
+        "Automotive OEM electrification challenges Europe 2026",
+        "EU automotive emissions regulation impact 2026"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [
+        "EU Emission Rules 2026 will accelerate electric vehicle adoption",
+        "The EU Automotive Package aims to support the sector's transition to clean mobility",
+        "Euro 7 Emissions Standards 2026 will transform how vehicles are manufactured"
+      ],
+      "market_trends": [
+        "EV sales in Europe grew significantly in 2025, with 2.58 million units sold",
+        "Eight European countries have surpassed 30% EV market share",
+        "Growth is expected to continue across the UK and Europe, driven by regulation, fleet-led demand, and pricing pressures"
+      ],
+      "external_likelihood_signal": "DECREASING",
+      "sources": [
+        "https://www.globalbankingandfinance.com/ev-sales-soar-main-european-markets-drivers-shun-expensive/",
+        "https://theicct.org/publication/european-vehicle-market-statistics-2025-dec25/",
+        "https://eleport.com/ev-sales-in-europe/",
+        "https://insideevs.com/features/783139/ev-adoption-europe-conclusions-2025/",
+        "https://www.coxautoinc.eu/ev-hub/industry-ev-hub/resources/ev-trends-2026-industry-predictions-shaping-the-future-of-electric-vehicles/",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2026/01/automotive-market-trends-2026",
+        "https://www.bcg.com/publications/2026/the-2026-global-automotive-supplier-study",
+        "https://www.europesays.com/netherlands/3253/",
+        "https://www.maersk.com/insights/digitalisation/2026/01/20/supply-chain-resilience-with-electrification-and-digitalisation-for-automotive",
+        "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-industry-outlook.html"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks such as ARISK_001 and ARISK_004, which also deal with the challenges of transitioning to electric vehicles and the impact of regulatory pressures.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_001",
+        "ARISK_004"
+      ],
+      "downstream_risks": [
+        "ARISK_016"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_018",
+    "client_description": "Increasing cyber attacks and security threats",
+    "impact_assessment": {
+      "score": 5,
+      "level": "Severe/Catastrophic",
+      "dimension": "Technology & Information Impact",
+      "sub_dimension": "Cyber Security",
+      "metric": "Industrial Cyber Incident Severity (% of lines affected)",
+      "justification": "The risk of increasing cyber attacks and security threats has a severe impact on the company's technology and information systems. The evidence shows that the company has experienced a ransomware incident at one of their tier-one suppliers, which had an indirect impact and caused a 3-week component disruption. Additionally, the company has a formal cyber incident response plan, but it has only been partially tested, and they have never tested the connected vehicle response scenario or a manufacturing OT incident.",
+      "table_criteria_matched": ">50% of lines affected",
+      "evidence_quantity": "3 weeks",
+      "quantity_source": "Client statement"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The likelihood of this risk is high due to the increasing number of cyber attacks and security threats in the industry. The company has already experienced a ransomware incident, and the external environment is driving this risk, with recent attacks on other automotive companies.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Occurred in the last 1-2 years, or multiple times historically. Active external drivers present."
+    },
+    "inherent_risk_score": 20,
+    "risk_rating": "Critical",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The company has experienced a ransomware incident, has a partially tested cyber incident response plan, and is investing heavily in vehicle software platform development, making them more exposed to cyber risks.",
+    "client_context_used": "The company's dependence on connected vehicles, software development, and lack of testing for cyber incident response plans.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "automotive OEM cyber attacks Europe 2025 2026",
+        "connected vehicle cybersecurity threats Germany 2026",
+        "automotive semiconductor shortage impact EU 2025"
+      ],
+      "recent_incidents": [
+        "Ransomware attacks on Volvo, Stellantis, Scania, Hyundai AutoEver, and Jaguar Land Rover in 2024-2025",
+        "Large-scale, coordinated attacks by organized threat actors on the Automotive and Smart Mobility ecosystem in 2025"
+      ],
+      "regulatory_developments": [
+        "EU's General Safety Regulation sets out technical guidelines to secure the connected vehicle ecosystem"
+      ],
+      "market_trends": [
+        "Increasing use of semiconductors in vehicles, contributing to a global shortage",
+        "Growing demand for cybersecurity solutions in the automotive industry, particularly in Germany",
+        "Rise of connected vehicles and smart mobility, introducing new cybersecurity risks"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025-according-to-new-research-by-upstream-security-302691468.html",
+        "https://upstream.auto/press-releases/upstream-security-research-ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025/",
+        "https://iotbusinessnews.com/2026/02/19/ransomware-on-automotive-and-smart-mobility-doubled-in-2025/",
+        "https://breached.company/the-automotive-industry-under-siege-how-ransomware-and-supply-chain-attacks-devastated-major-carmakers-in-2024-2025/",
+        "https://socradar.io/blog/major-cyber-attacks-targeting-automotive-industry-2025/",
+        "https://incidentbuddy.ai/threat-profiles/de/automotive",
+        "https://fleetrabbit.com/blogs/post/fleet-cybersecurity-2026",
+        "https://dgap.org/en/research/publications/connected-vehicle-cybersecurity-eu-must-consider-non-technical-risk-factors",
+        "https://www.linkedin.com/pulse/germany-cybersecurity-cars-market-forecasted-considering-factors-xepdf",
+        "https://www.bitsight.com/blog/automotive-cyber-threats-ransomware-malware-trends"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_012, which also had a high impact and likelihood score.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_005"
+      ],
+      "downstream_risks": [
+        "ARISK_009",
+        "ARISK_013"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_019",
+    "client_description": "Compromised information and data due to lack of IT risk awareness and policies",
+    "impact_assessment": {
+      "score": 5,
+      "level": "Severe/Catastrophic",
+      "dimension": "Technology & Information Impact",
+      "sub_dimension": "Cyber Security",
+      "metric": "Industrial Cyber Incident Severity (% of lines affected)",
+      "justification": "The risk of compromised information and data due to lack of IT risk awareness and policies could lead to a severe cyber incident, potentially affecting over 50% of the company's lines, given the lack of uniform controls and the company's lagging capability in developing, updating, and securing vehicle software.",
+      "table_criteria_matched": ">50% = Severe/Catastrophic",
+      "evidence_quantity": "50%",
+      "quantity_source": "Client statement on cyber security exposure in connected vehicles"
+    },
+    "likelihood_assessment": {
+      "score": 4,
+      "level": "Likely",
+      "justification": "The likelihood assessment is based on the composite score of 4.10, indicating that the risk is likely to occur due to the presence of external drivers, the company's lagging software development capability, and the lack of uniform cyber controls.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred recently or multiple times. External environment is actively driving this risk. Controls are insufficient or untested."
+    },
+    "inherent_risk_score": 20,
+    "risk_rating": "Critical",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client has experienced a ransomware attack at a tier-1 supplier, has a lagging software development capability, and lacks uniform cyber controls, making it vulnerable to cyber incidents.",
+    "client_context_used": "The client's revenue is EUR 78.4 billion, with a declining trend, and the company has a significant presence in the automotive sector, with 124,000 employees globally.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "Automotive OEM cybersecurity risks Europe 2025 2026",
+        "Connected vehicle data protection regulations USA 2026",
+        "EV software development security threats Germany 2025"
+      ],
+      "recent_incidents": [
+        "Ransomware attack of August 2025 at a UK OEM",
+        "Attacks on Volvo, Stellantis, Scania, Hyundai AutoEver, and Jaguar Land Rover in 2024-2025"
+      ],
+      "regulatory_developments": [
+        "EU Auto Cybersecurity Regulations 2026: NIS2, DORA & Compliance Guide",
+        "US Department of Commerce's Connected Vehicles rule now in effect for covered software",
+        "Connected vehicles rule takes effect: Covered software supply chain restrictions and related compliance obligations"
+      ],
+      "market_trends": [
+        "Increasing scale and sophistication of cyber threats in the automotive sector",
+        "Ransomware attacks, data breaches, and supply chain attacks dominating recent attack vectors",
+        "Growing importance of connected-vehicle data and related privacy regulations"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://redskyalliance.org/xindustry/cybersecurity-risks-in-the-automotive-sector",
+        "https://upstream.auto/supply-chain-cyber-risk-visibility-for-automotive-oems/",
+        "https://www.aigovhub.io/guides/eu-auto-cybersecurity-compliance-guide-2026",
+        "https://breached.company/the-automotive-industry-under-siege-how-ransomware-and-supply-chain-attacks-devastated-major-carmakers-in-2024-2025/",
+        "https://dl.acm.org/doi/full/10.1145/3736130.3762687",
+        "https://www.dlapiper.com/insights/publications/2026/04/connected-vehicles-rule-takes-effect",
+        "https://natlawreview.com/article/privacy-regulation-auto-industry-accelerate-2026-part-2",
+        "https://www.mondaq.com/unitedstates/rail-road-cycling/1753388/privacy-regulation-of-auto-industry-to-accelerate-in-2026-part-2",
+        "https://www.americanconference.com/automotive-regulatory-compliance/agenda/part-2-data-privacy-and-cybersecurity-hardening-connected-vehicle-data-against-claims-and-breaches/",
+        "https://www.venable.com/insights/publications/2026/02/bis-connected-vehicle-rule-requires-vehicle"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_012, which also relates to cyber attacks on vehicle functions.",
+    "flags_for_review": [
+      "UNDERPREPARED"
+    ],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_005",
+        "ARISK_012"
+      ],
+      "downstream_risks": [
+        "ARISK_007",
+        "ARISK_008",
+        "ARISK_018"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_020",
+    "client_description": "Talent attraction and retention in areas such as software development, data analytics, cybersecurity, and electric vehicle engineering",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "People, Health & Safety Impact",
+      "sub_dimension": "Operations Workforce",
+      "metric": "Skilled Labour Unavailability (% of workforce)",
+      "justification": "The risk of talent attraction and retention in areas such as software development, data analytics, cybersecurity, and electric vehicle engineering could lead to a significant shortage of skilled labor. The client has a high exposure to this risk due to significant workforce transformation and competition for skilled talent. The evidence shows that 92% of employers in the UK automotive sector struggle to recruit skilled staff, and Germany lists 163 shortage occupations in 2026, including roles in tech and engineering. The client's voluntary employee turnover rate is 8.2% overall, with 14.6% in Engineering/R&D and 19.3% in software development roles.",
+      "table_criteria_matched": "10-20% = High",
+      "evidence_quantity": "14.6%",
+      "quantity_source": "Client questionnaire"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client has controls in place, such as retraining programmes and voluntary redundancy packages, but there is no indication that these controls have been tested under real conditions. The external environment presents active drivers, including a severe talent shortage in the UK automotive sector and a shortage of skilled workers in Germany.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client faces a high risk of talent attraction and retention due to significant workforce transformation and competition for skilled talent. The evidence shows a severe talent shortage in the UK automotive sector and a shortage of skilled workers in Germany.",
+    "client_context_used": "Client questionnaire, evidence from client statements",
+    "market_intelligence_used": {
+      "search_queries": [
+        "Automotive software development talent shortage Germany UK 2026",
+        "Electric vehicle engineering workforce transition challenges Europe 2025",
+        "Cybersecurity skills gap automotive industry Europe 2026 trends"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [],
+      "market_trends": [
+        "UK automotive sector faces severe talent shortage with 92% of employers struggling to recruit skilled staff",
+        "Germany lists 163 shortage occupations in 2026, including roles in tech and engineering",
+        "European automotive industry faces challenges in transitioning to electrification and advanced vehicle technologies",
+        "Cybersecurity skills gap is widening, with industries such as automotive being hit hard by job cuts"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://bmmagazine.co.uk/in-business/uk-automotive-skills-shortage-2026-engineering-talent-crisis/",
+        "https://www.linkedin.com/pulse/talent-insights-engineering-manufacturing-automotive-adam-6yrze",
+        "https://yotru.com/blog/germany-shortage-occupation-list",
+        "https://www.sourcegroupinternational.com/insights/germany-tech-hiring-outlook-2026/",
+        "https://www.foley.com/insights/publications/2025/12/the-auto-industrys-talent-war-winning-the-race-for-skilled-workers/",
+        "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/a-new-era-an-action-plan-for-the-european-automotive-industry",
+        "https://www.automotivemanufacturingsolutions.com/news/automotive-industry-faces-workforce-upheaval-in-2025-reshapes-jobs-amid-shifting-tech/656572",
+        "https://eccoclimate.org/ev-transition-check-the-state-of-the-electric-transition-and-competitiveness-challenges-for-european-industry/",
+        "https://www.acea.auto/press-release/accelerating-the-race-to-reskill-europes-automotive-workforce-acea-and-adecco-group-unveil-landmark-analysis/",
+        "https://www.adeccogroup.com/our-group/media/press-releases/accelerating-the-race-to-reskill"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks, such as ARISK_004 and ARISK_007, which also have a high impact and likelihood score.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_004",
+        "ARISK_007"
+      ],
+      "downstream_risks": [
+        "ARISK_016",
+        "ARISK_017"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_021",
+    "client_description": "Complying with regulations such as the General Data Protection Regulation",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Regulatory & Compliance Impact",
+      "sub_dimension": "Environmental Compliance",
+      "metric": "Environmental Regulation Breaches (Count per year)",
+      "justification": "The client is facing significant regulatory compliance challenges, particularly with the introduction of Euro 7 emissions standards. The cost of compliance per vehicle is substantial, and the company is deciding which models to carry forward or discontinue. Given the EU's 2035 ICE ban and the tightening of emissions regulations, the risk of non-compliance is high. The evidence suggests a significant gap in EU fleet average CO2 vs regulatory target, and the potential for costly pool arrangements with other OEMs.",
+      "table_criteria_matched": "Repeated breaches",
+      "evidence_quantity": "1 minor administrative penalty in Germany (EUR 180K) for delayed recall notification in 2024",
+      "quantity_source": "Client Questionnaire Context"
+    },
+    "likelihood_assessment": {
+      "score": 2,
+      "level": "Unlikely",
+      "justification": "The likelihood assessment is based on the composite likelihood score of 2/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. Although the client has a formal regulatory intelligence function, the external environment presents moderate drivers, and the sector frequency is common. However, the client's exposure is above average due to the significant gap in EU fleet average CO2 vs regulatory target.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Could occur but not expected. May have occurred once historically at the company or occasionally at peers."
+    },
+    "inherent_risk_score": 8,
+    "risk_rating": "Medium",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client faces significant regulatory compliance challenges, particularly with the introduction of Euro 7 emissions standards. The cost of compliance per vehicle is substantial, and the company is deciding which models to carry forward or discontinue.",
+    "client_context_used": "The client's regulatory compliance challenges, cost of compliance, and potential for costly pool arrangements with other OEMs.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "Euro 7 emissions regulation automotive compliance 2026",
+        "GDPR compliance automotive manufacturing data privacy 2025",
+        "EU automotive CO2 emissions regulatory targets 2025 2026"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [
+        "EU regulation 2024/1257 introduces Euro 7 emissions standard, effective November 29, 2026",
+        "European Council approves softened CO2 targets, allowing 3-year averaging for compliance",
+        "EU Grants Carmakers Three-Year Flexibility on 2025 Vehicle Emissions Targets"
+      ],
+      "market_trends": [
+        "Increasing focus on data privacy and protection in the automotive industry, driven by GDPR and connected car technologies",
+        "Growing importance of compliance with emissions regulations, such as Euro 7, in the European market"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.rac.co.uk/drive/advice/emissions/what-is-euro-7-and-when-does-it-start/",
+        "https://motorbeast.org/euro-7-emissions-standards-2026-the-revolutionary-new-rules-transforming-european-cars/",
+        "https://www.spglobal.com/automotive-insights/en/blogs/2026/03/euro-7-emission-standards-auto-brakes-market",
+        "https://www.automotive-iq.com/chassis-systems/how-to-guides/meeting-euro-7-regulations",
+        "https://acsindustries.com/2026/03/10/euro-7-and-new-emissions-standards/",
+        "https://www.bing.com/aclick?ld=e843usTvLN6k5FImJFxCP-jjVUCUxB76Y-EIWqFNomE-Vv8JmlDDM3ulQUV94JtrpduD18rSfD7Y6dchm-xTUA-sDl_yZ_LIQkBXrOxToLn0s40o62Eag7758UGaVELvnygzBMMrFZBKRlCxyqjVlKD09wlyY72Rp8UOrwvof-LYdH8hkRk0yTLR5crrDfbGixJ6DV-b97GMdAiiXqn_OFfKk_9oU&u=aHR0cHMlM2ElMmYlMmZ3d3cuc2NydXQuaW8lMmZscDElMmZkZWx2ZS1jb21wbGlhbmNlJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkQmluZyUyNTIwJTI1N0MlMjUyMFNSJTI1MjAlMjU3QyUyNTIwVVMlMjUyMCUyNTdDJTI1MjBDT01QJTI1MjAlMjU3QyUyNTIwREVMVkUlMjUyMCUyNTdDJTI1MjBUT0ZVJTI2dXRtX3Rlcm0lM2RkZWx2ZSUyNTIwZ2RwciUyNnV0bV9jb250ZW50JTNkU1IlMjUyMCUyNTdDJTI1MjBVUyUyNTIwJTI1N0MlMjUyMENPTVAlMjUyMCUyNTdDJTI1MjBERUxWRSUyNTIwJTI1N0MlMjUyMEJPRlUlMjZtc2Nsa2lkJTNkYjQyNWYxMDNkOWJkMTM1ODA3Nzk5OGViNmFhYTVjMWY&rlid=b425f103d9bd1358077998eb6aaa5c1f",
+        "https://autoraiders.com/2025/12/02/gdpr-and-connected-cars-what-new-data-rules-mean-for-automakers/",
+        "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2024/driving-trust.pdf",
+        "https://www.morganlewis.com/pubs/2024/11/automotive-information-governance-and-data-privacy-trends",
+        "https://privacypillar.com/automotive-industry-protecting-connected-vehicle-data/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks, such as ARISK_003, which also deals with regulatory compliance issues.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_005",
+        "ARISK_010"
+      ],
+      "downstream_risks": [
+        "ARISK_018",
+        "ARISK_019"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_022",
+    "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline (% of total revenue)",
+      "metric": "Revenue Decline",
+      "justification": "The client's annual revenue is EUR 78.4 billion, and the cost of compliance per vehicle is significant. Assuming a 6% revenue decline due to compliance costs, which falls into the 'High' category of the impact assessment table.",
+      "table_criteria_matched": "6-12% = High",
+      "evidence_quantity": "6%",
+      "quantity_source": "Client questionnaire and verbatim evidence"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood score is based on the composite likelihood score of 3/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at the company or regularly at peers. External environment contains active drivers. Controls exist but may have gaps."
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "Stricter regulations to reduce vehicle emissions and fuel consumption, with a defined compliance window for ICE vehicles and significant compliance costs.",
+    "client_context_used": "Client questionnaire, verbatim evidence, and external market intelligence.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "Euro 7 emissions regulation automotive compliance 2026",
+        "EU automotive fleet average CO2 emissions targets 2025 2026",
+        "US EPA vehicle emissions standards enforcement 2026 updates"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [
+        "The European Commission has proposed new targets for the EU fleet-wide average CO2 emissions of new passenger cars and vans that will apply from 2025",
+        "Euro 7 is the latest set of emissions regulations adopted by the European Commission"
+      ],
+      "market_trends": [
+        "The EU has set an average target of 93.6g/km of CO2 across the bloc’s cumulative fleet from 2025",
+        "New car CO2 emissions will be 42% lower than in 2005 by the time the new fleet average takes effect"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.horiba.com/int/mobility/applications/emissions-performance-and-durability/euro-7/faq/",
+        "https://www.horiba.com/deu/mobility/applications/emissions-performance-and-durability/euro-7/faq/",
+        "https://www.horiba.com/usa/mobility/applications/emissions-performance-and-durability/euro-7/faq/",
+        "https://www.horiba.com/bra/mobility/applications/emissions-performance-and-durability/euro-7/",
+        "https://www.horiba.com/fra/mobility/applications/emissions-performance-and-durability/euro-7/",
+        "https://www.carmagazine.co.uk/car-news/motoring-issues/eu-co2-targets/",
+        "https://autovista24.autovistagroup.com/news/what-is-the-eu-co2-target-for-2025/",
+        "https://www.fuelsandlubes.com/european-commission-proposes-new-co2-emission-targets/",
+        "https://www.fuelsandlubes.com/fli-article/post-2020-co2-targets-time-reality-check/",
+        "https://theicct.org/publication/2025-co2-manufacturers-targets-oct24/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "Consistent with previously scored risks, such as ARISK_003 and ARISK_004, which also relate to regulatory compliance and financial growth impact.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_003",
+        "ARISK_005"
+      ],
+      "downstream_risks": [
+        "ARISK_010",
+        "ARISK_021"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_023",
+    "client_description": "Product testing risk",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Regulatory & Compliance Impact",
+      "sub_dimension": "Product Safety",
+      "metric": "Product Safety Non-Compliance (%)",
+      "justification": "The risk of product safety non-compliance is high due to the potential for software defects in ADAS features, as evidenced by the 2024 recall of 180,000 vehicles. This recall resulted in a substantial financial loss and reputational damage. The client's annual revenue is EUR 78.4 billion, and a recall of this magnitude could lead to a significant revenue decline.",
+      "table_criteria_matched": "5-10% = High",
+      "evidence_quantity": "0.23% of total vehicles produced (180,000 out of approximately 78 million vehicles sold in 2024, assuming 1 vehicle per EUR 1,000 revenue)",
+      "quantity_source": "Client statement: 'We had a product recall in 2024 — a software defect in an ADAS feature across approximately 180,000 vehicles.' and 'annual revenue: EUR 78.4 billion'"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood of product safety non-compliance is possible due to the historical frequency of recalls in the automotive industry and the client's experience with a recall in 2024. However, the client has a formal crisis management plan in place, which reduces the likelihood of a severe incident.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Occurred in the last 2-5 years at the company, or regularly at sector peers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "HIGH",
+    "evidence_summary": "The client had a product recall in 2024 due to a software defect in an ADAS feature, resulting in a substantial financial loss and reputational damage. The automotive industry has seen an increasing trend of software-related recalls.",
+    "client_context_used": "Annual revenue: EUR 78.4 billion, EBITDA margin: 9.2%, and previous product recall experience",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive product testing regulations 2026",
+        "ADAS software defect recall risks 2025 2026",
+        "Electric vehicle battery testing standards Europe 2026"
+      ],
+      "recent_incidents": [
+        "Ford recalled 255,000 SUVs over an image processing module issue",
+        "Ford recalled 254,600 SUVs due to a rearview camera software glitch",
+        "NHTSA escalated a probe into Tesla's FSD that could become the largest software recall in automotive history"
+      ],
+      "regulatory_developments": [
+        "EU Automotive Package presented, aiming to support the European automotive sector's transition to clean mobility",
+        "Update on Automotive Regulations in Europe, including the Automotive Action Plan",
+        "New EU Battery Regulation 2026, introducing uniform safety standards and sustainability measures",
+        "Expected changes in automotive EMC regulations for 2026-2027, covering UNECE Regulation 10, CISPR 25, and ISO 11452"
+      ],
+      "market_trends": [
+        "Increasing software-related recalls in the automotive industry, with roughly a third of all recalled vehicles due to software issues",
+        "Growing importance of ADAS calibration, with potential risks for dealers, insurers, and lenders",
+        "Rising demand for sustainable and environmentally friendly vehicles, driving the need for compliance with new regulations"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.hoganlovells.com/en/publications/update-on-automotive-regulations-in-europe",
+        "https://poconsusa.com/blog/automotive-emc-regulations-2026-2027-changes",
+        "https://www.globalpolicywatch.com/2026/01/the-eu-automotive-package-increased-compliance-flexibility-but-growing-made-in-the-eu-conditionality/",
+        "https://single-market-economy.ec.europa.eu/sectors/automotive-industry/legislation/motor-vehicles-trailers_en",
+        "https://carinterior.alibaba.com/tips/legal-regulations-2026",
+        "https://www.goodcarbadcar.net/when-cars-forget-how-to-see-software-recall-crisis/",
+        "https://vinscribe.com/blog/adas-calibration-risk-2026",
+        "https://fordauthority.com/2026/03/255k-ford-lincoln-suvs-recalled-over-image-processing-module-issue/",
+        "https://www.unbiasedtimes.org/article/5288",
+        "https://autosofttoday.com/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_007, which also had a high impact and likelihood score due to the potential for supply chain disruptions.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_005",
+        "ARISK_007",
+        "ARISK_008"
+      ],
+      "downstream_risks": [
+        "ARISK_012",
+        "ARISK_018",
+        "ARISK_019"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_024",
+    "client_description": "Residual value risk on leases and finance assets",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline (% of total revenue)",
+      "metric": "Revenue Decline",
+      "justification": "The risk of residual value on leases and finance assets could lead to a significant decline in revenue. Given the client's financial services revenue is 8% of total revenue (EUR 78.4B), a potential loss of EUR 5B (assuming a 6% decline, which is within the 'High' threshold of 6-12%) would be substantial.",
+      "table_criteria_matched": "6-12% = High (4)",
+      "evidence_quantity": "6%",
+      "quantity_source": "Client questionnaire: Annual revenue EUR 78.4B, Financial services revenue 8% of total"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood score is based on the composite score from the 5-factor assessment, which indicates a reasonable possibility of the risk occurring due to external drivers and the client's exposure.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at peers, external environment contains active drivers"
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "Residual value risk on leases and finance assets, cyclicality of automotive demand, exposure to economic conditions, consumer confidence, and credit availability",
+    "client_context_used": "Financial services revenue, market share, and used-car market volatility",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive leasing market trends 2025 2026",
+        "Residual value risk automotive finance assets Europe 2026",
+        "Currency exposure automotive manufacturing sector Europe 2025"
+      ],
+      "recent_incidents": [
+        "ECB redefines residual value risk, potentially making some auto loan products ineligible as collateral for central bank funding"
+      ],
+      "regulatory_developments": [
+        "European Central Bank (ECB) amends the Eurosystem monetary policy implementation framework, redefining residual value risk",
+        "New guideline announced on January 27, 2026, and coming into effect on March 30, 2026"
+      ],
+      "market_trends": [
+        "North America is poised to command roughly 35% market share in 2026 due to a mature automotive financing infrastructure",
+        "Western Europe has a strong market share based on institutionalized company leasing facilitated by taxation and VAT recovery schemes",
+        "European used-car markets remain volatile"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.persistencemarketresearch.com/market-research/car-leasing-market.asp",
+        "https://www.towardsautomotive.com/insights/europe-automotive-market-sizing",
+        "https://www.gminsights.com/industry-analysis/europe-car-leasing-market",
+        "https://www.leaseurope.org/market-trends-2025-outlook-2026",
+        "https://www.stellarmr.com/report/Europe-Commercial-Vehicle-Rental-And-Leasing-Market/860",
+        "https://www.jonesday.com/en/insights/2026/02/ecb-redefines-residual-value-risk-threatening-european-auto-loan-securitization-eligibility",
+        "https://thefinancialanalyst.net/2026/03/17/partnership-transforms-residual-value-risk-management-in-european-auto-finance/",
+        "https://www.jdsupra.com/legalnews/ecb-redefines-residual-value-risk-8698248/",
+        "https://autovista24.autovistagroup.com/news/the-automotive-update-residual-value-winners-and-european-used-car-outlook/",
+        "https://www.bedgut.com/archives/48274"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "Consistent with previously scored risks related to financial and market risks, such as ARISK_014 and ARISK_015",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_011",
+        "ARISK_015"
+      ],
+      "downstream_risks": [
+        "ARISK_025"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_025",
+    "client_description": "Higher credit risk due to customer insolvency",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline (% of total revenue)",
+      "metric": "Revenue Decline",
+      "justification": "The client's revenue is EUR 78.4 billion, and a higher credit risk due to customer insolvency could lead to a significant revenue decline. The evidence suggests that the client is exposed to dealer concentration and the automotive sector's cyclicality, which could result in a revenue decline of 6-12%. The table criteria for Revenue Decline (%) states that a decline of 6-12% is considered High (score 4).",
+      "table_criteria_matched": "Revenue Decline (% of total revenue): 4-High: 6-12%",
+      "evidence_quantity": "6-12%",
+      "quantity_source": "Client questionnaire and external market intelligence"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The client's exposure to dealer concentration and the automotive sector's cyclicality, combined with the external market intelligence indicating a trend of higher credit risk for small and medium-sized suppliers in Europe, suggests that the likelihood of this risk is Possible (score 3).",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Likelihood Assessment Table: 3 (Possible): Reasonable possibility. Has occurred before at the company or regularly at peers."
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's revenue is EUR 78.4 billion, and the evidence suggests that the client is exposed to dealer concentration and the automotive sector's cyclicality. The external market intelligence indicates a trend of higher credit risk for small and medium-sized suppliers in Europe.",
+    "client_context_used": "Client questionnaire and external market intelligence",
+    "market_intelligence_used": {
+      "search_queries": [
+        "European automotive market credit risk trends 2025 2026",
+        "Automotive customer insolvency risk in Europe and USA 2026",
+        "Credit risk exposure in European automotive industry 2025"
+      ],
+      "recent_incidents": [],
+      "regulatory_developments": [],
+      "market_trends": [
+        "Higher credit risk for small and medium-sized suppliers in Europe due to decreasing automotive production",
+        "Expected contraction of automotive production in the EU and UK by 3.7% in 2025",
+        "Deteriorating outlook for the automotive sector in Europe"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://group.atradius.com/knowledge-and-research/reports/industry-trends-automotive-may-2025",
+        "https://www.acea.auto/publication/the-automobile-industry-pocket-guide-2025-2026/",
+        "https://www.fitchratings.com/research/corporate-finance/european-corporates-outlook-2026-04-12-2025",
+        "https://www.datainsightsmarket.com/reports/europe-automotive-finance-market-18763",
+        "https://atradiuscollections.com/hk/出版物/報告/industry-trends-automotive-may-2025",
+        "https://group.atradius.com/knowledge-and-research/reports/industry-trends-automotive-november-2025",
+        "https://group.atradius.com/knowledge-and-research/reports/global-metals-and-steel-industry-trends-2025-2026",
+        "https://atradius.in/knowledge-and-research/reports/industry-trends-automotive-november-2025",
+        "https://practiceguides.chambers.com/practice-guides/insolvency-2025",
+        "https://www.amundi.com/globaldistributor/article/2025-promising-year-european-credit-markets"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with related risks, such as ARISK_015, which also has a high impact and likelihood score.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_011",
+        "ARISK_015"
+      ],
+      "downstream_risks": [
+        "ARISK_024"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  },
+  {
+    "risk_id": "ARISK_026",
+    "client_description": "Increased competition in automobile financing",
+    "impact_assessment": {
+      "score": 4,
+      "level": "High",
+      "dimension": "Financial & Growth Impact",
+      "sub_dimension": "Revenue Decline (% of total revenue)",
+      "metric": "Revenue Decline (%)",
+      "justification": "The client's revenue trend is declining, and the European automotive financing market is growing with increasing competition. The market was valued at USD 34.12 billion in 2025 and estimated to grow to USD 49.94 billion by 2031. Given the client's annual revenue of EUR 78.4 billion and the potential loss of market share due to increased competition, a revenue decline of 6-12% is possible.",
+      "table_criteria_matched": "6-12% = High (4)",
+      "evidence_quantity": "6-12%",
+      "quantity_source": "Client questionnaire and external market intelligence"
+    },
+    "likelihood_assessment": {
+      "score": 3,
+      "level": "Possible",
+      "justification": "The client has mentioned that Chinese EV manufacturers, particularly BYD, are a significant structural threat, and the speed and scale of Chinese EV penetration in the European market was not formally assessed at the level it deserved. This indicates a possible likelihood of increased competition in the automobile financing market.",
+      "evidence_basis": "BOTH",
+      "table_criteria_matched": "Has occurred before at the company or regularly at peers. External environment contains active drivers. Controls exist but may have gaps."
+    },
+    "inherent_risk_score": 12,
+    "risk_rating": "High",
+    "scoring_confidence": "MEDIUM",
+    "evidence_summary": "The client's declining revenue trend, increasing competition in the European automotive financing market, and the potential loss of market share due to Chinese EV manufacturers' penetration.",
+    "client_context_used": "Annual revenue of EUR 78.4 billion, declining revenue trend, and investment in the EV Platform Programme.",
+    "market_intelligence_used": {
+      "search_queries": [
+        "EU automotive financing trends 2025 2026",
+        "electric vehicle financing competition Europe 2026",
+        "automotive OEM financial services market share 2025"
+      ],
+      "recent_incidents": [
+        "Sales of fully electric cars surpassed those of gasoline-only vehicles in the European Union for the first time in December"
+      ],
+      "regulatory_developments": [
+        "Governmental support for sustainable transportation solutions in Europe"
+      ],
+      "market_trends": [
+        "The European automotive financing market was valued at USD 34.12 billion in 2025 and estimated to grow from USD 36.35 billion in 2026 to reach USD 49.94 billion by 2031, at a CAGR of 6.55% during the forecast period (2026-2031)",
+        "The European automotive market is undergoing a significant transformation, fueled by a surge in demand for electric and hybrid vehicles, technological advancements, and governmental support for sustainable transportation solutions",
+        "Europe Electric Car Market is Expected to Surpass USD 854.15"
+      ],
+      "external_likelihood_signal": "INCREASING",
+      "sources": [
+        "https://www.acea.auto/publication/the-automobile-industry-pocket-guide-2025-2026/",
+        "https://www.datainsightsmarket.com/reports/europe-automotive-finance-market-18763",
+        "https://www.mordorintelligence.com/industry-reports/europe-automotive-financing-market",
+        "https://www.coxautoinc.eu/news-insights/automotive-industry-trends-2026/",
+        "https://automotivewebwire.com/insights/europe-automotive-market/",
+        "https://www.bipbipamerica.com/Europe-Electric-Vehicle-Market",
+        "https://www.mordorintelligence.com/industry-reports/electric-vehicle-financing-market",
+        "https://finance.yahoo.com/news/europe-electric-car-market-expected-140700533.html",
+        "https://www.theglobeandmail.com/business/international-business/european-business/article-electric-vehicle-sales-in-eu-surpass-those-of-gas-powered-cars-for/",
+        "https://finbold.com/europes-electric-vehicle-2022-sales-grow-in-q3-despite-economic-challenges/"
+      ],
+      "data_freshness": "2026-04"
+    },
+    "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_002 and ARISK_013, which also relate to competition in the automotive industry.",
+    "flags_for_review": [],
+    "cascade_scoring_impact": {
+      "upstream_risks": [
+        "ARISK_002",
+        "ARISK_007",
+        "ARISK_013"
+      ],
+      "downstream_risks": [
+        "ARISK_014",
+        "ARISK_016"
+      ],
+      "cascade_likelihood_adjustment": null
+    }
+  }
+]

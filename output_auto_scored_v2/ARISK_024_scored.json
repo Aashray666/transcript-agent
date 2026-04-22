@@ -1,0 +1,72 @@
+{
+  "risk_id": "ARISK_024",
+  "client_description": "Residual value risk on leases and finance assets",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline",
+    "justification": "The risk of residual value on leases and finance assets could lead to a significant decline in revenue. Given the client's financial services revenue is 8% of total revenue (EUR 78.4B), a potential loss of EUR 5B (assuming a 6% decline, which is within the 'High' threshold of 6-12%) would be substantial.",
+    "table_criteria_matched": "6-12% = High (4)",
+    "evidence_quantity": "6%",
+    "quantity_source": "Client questionnaire: Annual revenue EUR 78.4B, Financial services revenue 8% of total"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood score is based on the composite score from the 5-factor assessment, which indicates a reasonable possibility of the risk occurring due to external drivers and the client's exposure.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at peers, external environment contains active drivers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "Residual value risk on leases and finance assets, cyclicality of automotive demand, exposure to economic conditions, consumer confidence, and credit availability",
+  "client_context_used": "Financial services revenue, market share, and used-car market volatility",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive leasing market trends 2025 2026",
+      "Residual value risk automotive finance assets Europe 2026",
+      "Currency exposure automotive manufacturing sector Europe 2025"
+    ],
+    "recent_incidents": [
+      "ECB redefines residual value risk, potentially making some auto loan products ineligible as collateral for central bank funding"
+    ],
+    "regulatory_developments": [
+      "European Central Bank (ECB) amends the Eurosystem monetary policy implementation framework, redefining residual value risk",
+      "New guideline announced on January 27, 2026, and coming into effect on March 30, 2026"
+    ],
+    "market_trends": [
+      "North America is poised to command roughly 35% market share in 2026 due to a mature automotive financing infrastructure",
+      "Western Europe has a strong market share based on institutionalized company leasing facilitated by taxation and VAT recovery schemes",
+      "European used-car markets remain volatile"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.persistencemarketresearch.com/market-research/car-leasing-market.asp",
+      "https://www.towardsautomotive.com/insights/europe-automotive-market-sizing",
+      "https://www.gminsights.com/industry-analysis/europe-car-leasing-market",
+      "https://www.leaseurope.org/market-trends-2025-outlook-2026",
+      "https://www.stellarmr.com/report/Europe-Commercial-Vehicle-Rental-And-Leasing-Market/860",
+      "https://www.jonesday.com/en/insights/2026/02/ecb-redefines-residual-value-risk-threatening-european-auto-loan-securitization-eligibility",
+      "https://thefinancialanalyst.net/2026/03/17/partnership-transforms-residual-value-risk-management-in-european-auto-finance/",
+      "https://www.jdsupra.com/legalnews/ecb-redefines-residual-value-risk-8698248/",
+      "https://autovista24.autovistagroup.com/news/the-automotive-update-residual-value-winners-and-european-used-car-outlook/",
+      "https://www.bedgut.com/archives/48274"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "Consistent with previously scored risks related to financial and market risks, such as ARISK_014 and ARISK_015",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_011",
+      "ARISK_015"
+    ],
+    "downstream_risks": [
+      "ARISK_025"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

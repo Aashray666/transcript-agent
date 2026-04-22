@@ -1,0 +1,73 @@
+{
+  "risk_id": "ARISK_014",
+  "client_description": "High energy and raw material costs",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Cost Structure",
+    "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+    "justification": "The client has a high dependency on raw materials such as steel, aluminium, and battery raw materials, with significant annual spend on these materials. The evidence suggests that the client is exposed to commodity price volatility, which could lead to a high cost increase. Specifically, the client's annual spend on raw materials is EUR 4.8B for steel and aluminium, and EUR 2.1B for battery raw materials. Given the potential for commodity price volatility, a cost increase of 10-20% is possible, which would have a significant impact on the client's financials.",
+    "table_criteria_matched": "10-20% cost increase = High (4)",
+    "evidence_quantity": "10-20% cost increase",
+    "quantity_source": "Client questionnaire and external market intelligence"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5, which suggests that the risk is possible. The client has experienced a semiconductor shortage in the past, and there are external drivers such as supply chain disruptions and trade policy changes that could contribute to the risk materializing. However, the client has some controls in place, such as hedging programmes and business continuity plans, which reduce the likelihood of the risk.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at the company or regularly at peers, external environment contains active drivers, controls exist but may have gaps = Possible (3)"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "HIGH",
+  "evidence_summary": "The client has a high dependency on raw materials, is exposed to commodity price volatility, and has experienced supply chain disruptions in the past. The external environment contains active drivers such as trade policy changes and supply chain disruptions.",
+  "client_context_used": "Client questionnaire, external market intelligence, and previous risk scores",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive steel prices 2025 2026",
+      "Global lithium battery raw material shortages 2026",
+      "EU automotive semiconductor supply chain risks 2025"
+    ],
+    "recent_incidents": [
+      "Europe's carmakers are facing a severe chip supply crisis due to supply bottlenecks at Nexperia, a Dutch chipmaker",
+      "China has banned Nexperia from exporting products manufactured in China, raising the risk of widespread supply chain disruptions for Europe's automotive industry"
+    ],
+    "regulatory_developments": [
+      "The EU depends significantly on third markets for specific products and technologies in the semiconductor industry, prompting a comprehensive approach to monitor the EU semiconductor ecosystem"
+    ],
+    "market_trends": [
+      "Average European steel prices are expected to decrease in 2026, with predicted prices of 575 euros per ton for hot-rolled coils",
+      "The European market, particularly Germany, has experienced steady steel consumption across automotive and construction sectors",
+      "Steel prices in Q2 2025 exhibited marginal corrections in regions with high industrial activity, such as the USA and Canada"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.eurofer.eu/publications/economic-market-outlook/economic-and-steel-market-outlook-2025-2026-fourth-quarter",
+      "https://www.steelorbis.com/steel-market/eu.htm",
+      "https://metallurgprom.org/en/news/europe/17996-analitik-srednie-evropejskie-ceny-snizjatsja-v-2026-godu.html",
+      "https://www.devere-group.com/steel-price-forecast-to-recover-in-2026-analysis/",
+      "https://industrytoday.co.uk/chemicals/steel-prices-q2-2025-trend-forecast-historical-analysis",
+      "https://publications.jrc.ec.europa.eu/repository/handle/JRC141323",
+      "https://europeanbusinessmagazine.com/europe/europes-carmakers-face-devastating-chip-crisis-as-nexperia-supply-crunch-deepens/",
+      "https://localandglobaleco.com/2025/11/13/europes-semiconductor-shock-a-historic-warning-and-a-futuristic-call-for-supply-chain-rewiring/",
+      "https://cepr.org/voxeu/columns/monitoring-framework-strengthen-eu-semiconductor-supply-chain",
+      "https://www.clepa.eu/wp-content/uploads/2025/10/CLEPA-PR_23.10.2025-2.pdf"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with previous risk scores such as ARISK_005 and ARISK_011, which also relate to supply chain disruptions and commodity price volatility.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_005",
+      "ARISK_011"
+    ],
+    "downstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

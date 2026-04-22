@@ -1,0 +1,70 @@
+{
+  "risk_id": "ARISK_022",
+  "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline",
+    "justification": "The client's annual revenue is EUR 78.4 billion, and the cost of compliance per vehicle is significant. Assuming a 6% revenue decline due to compliance costs, which falls into the 'High' category of the impact assessment table.",
+    "table_criteria_matched": "6-12% = High",
+    "evidence_quantity": "6%",
+    "quantity_source": "Client questionnaire and verbatim evidence"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood score is based on the composite likelihood score of 3/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at the company or regularly at peers. External environment contains active drivers. Controls exist but may have gaps."
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "Stricter regulations to reduce vehicle emissions and fuel consumption, with a defined compliance window for ICE vehicles and significant compliance costs.",
+  "client_context_used": "Client questionnaire, verbatim evidence, and external market intelligence.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "Euro 7 emissions regulation automotive compliance 2026",
+      "EU automotive fleet average CO2 emissions targets 2025 2026",
+      "US EPA vehicle emissions standards enforcement 2026 updates"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "The European Commission has proposed new targets for the EU fleet-wide average CO2 emissions of new passenger cars and vans that will apply from 2025",
+      "Euro 7 is the latest set of emissions regulations adopted by the European Commission"
+    ],
+    "market_trends": [
+      "The EU has set an average target of 93.6g/km of CO2 across the bloc’s cumulative fleet from 2025",
+      "New car CO2 emissions will be 42% lower than in 2005 by the time the new fleet average takes effect"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.horiba.com/int/mobility/applications/emissions-performance-and-durability/euro-7/faq/",
+      "https://www.horiba.com/deu/mobility/applications/emissions-performance-and-durability/euro-7/faq/",
+      "https://www.horiba.com/usa/mobility/applications/emissions-performance-and-durability/euro-7/faq/",
+      "https://www.horiba.com/bra/mobility/applications/emissions-performance-and-durability/euro-7/",
+      "https://www.horiba.com/fra/mobility/applications/emissions-performance-and-durability/euro-7/",
+      "https://www.carmagazine.co.uk/car-news/motoring-issues/eu-co2-targets/",
+      "https://autovista24.autovistagroup.com/news/what-is-the-eu-co2-target-for-2025/",
+      "https://www.fuelsandlubes.com/european-commission-proposes-new-co2-emission-targets/",
+      "https://www.fuelsandlubes.com/fli-article/post-2020-co2-targets-time-reality-check/",
+      "https://theicct.org/publication/2025-co2-manufacturers-targets-oct24/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "Consistent with previously scored risks, such as ARISK_003 and ARISK_004, which also relate to regulatory compliance and financial growth impact.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_003",
+      "ARISK_005"
+    ],
+    "downstream_risks": [
+      "ARISK_010",
+      "ARISK_021"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

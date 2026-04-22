@@ -1,0 +1,73 @@
+{
+  "risk_id": "ARISK_018",
+  "client_description": "Increasing cyber attacks and security threats",
+  "impact_assessment": {
+    "score": 5,
+    "level": "Severe/Catastrophic",
+    "dimension": "Technology & Information Impact",
+    "sub_dimension": "Cyber Security",
+    "metric": "Industrial Cyber Incident Severity (% of lines affected)",
+    "justification": "The risk of increasing cyber attacks and security threats has a severe impact on the company's technology and information systems. The evidence shows that the company has experienced a ransomware incident at one of their tier-one suppliers, which had an indirect impact and caused a 3-week component disruption. Additionally, the company has a formal cyber incident response plan, but it has only been partially tested, and they have never tested the connected vehicle response scenario or a manufacturing OT incident.",
+    "table_criteria_matched": ">50% of lines affected",
+    "evidence_quantity": "3 weeks",
+    "quantity_source": "Client statement"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The likelihood of this risk is high due to the increasing number of cyber attacks and security threats in the industry. The company has already experienced a ransomware incident, and the external environment is driving this risk, with recent attacks on other automotive companies.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred in the last 1-2 years, or multiple times historically. Active external drivers present."
+  },
+  "inherent_risk_score": 20,
+  "risk_rating": "Critical",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The company has experienced a ransomware incident, has a partially tested cyber incident response plan, and is investing heavily in vehicle software platform development, making them more exposed to cyber risks.",
+  "client_context_used": "The company's dependence on connected vehicles, software development, and lack of testing for cyber incident response plans.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "automotive OEM cyber attacks Europe 2025 2026",
+      "connected vehicle cybersecurity threats Germany 2026",
+      "automotive semiconductor shortage impact EU 2025"
+    ],
+    "recent_incidents": [
+      "Ransomware attacks on Volvo, Stellantis, Scania, Hyundai AutoEver, and Jaguar Land Rover in 2024-2025",
+      "Large-scale, coordinated attacks by organized threat actors on the Automotive and Smart Mobility ecosystem in 2025"
+    ],
+    "regulatory_developments": [
+      "EU's General Safety Regulation sets out technical guidelines to secure the connected vehicle ecosystem"
+    ],
+    "market_trends": [
+      "Increasing use of semiconductors in vehicles, contributing to a global shortage",
+      "Growing demand for cybersecurity solutions in the automotive industry, particularly in Germany",
+      "Rise of connected vehicles and smart mobility, introducing new cybersecurity risks"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.prnewswire.com/news-releases/ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025-according-to-new-research-by-upstream-security-302691468.html",
+      "https://upstream.auto/press-releases/upstream-security-research-ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025/",
+      "https://iotbusinessnews.com/2026/02/19/ransomware-on-automotive-and-smart-mobility-doubled-in-2025/",
+      "https://breached.company/the-automotive-industry-under-siege-how-ransomware-and-supply-chain-attacks-devastated-major-carmakers-in-2024-2025/",
+      "https://socradar.io/blog/major-cyber-attacks-targeting-automotive-industry-2025/",
+      "https://incidentbuddy.ai/threat-profiles/de/automotive",
+      "https://fleetrabbit.com/blogs/post/fleet-cybersecurity-2026",
+      "https://dgap.org/en/research/publications/connected-vehicle-cybersecurity-eu-must-consider-non-technical-risk-factors",
+      "https://www.linkedin.com/pulse/germany-cybersecurity-cars-market-forecasted-considering-factors-xepdf",
+      "https://www.bitsight.com/blog/automotive-cyber-threats-ransomware-malware-trends"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_012, which also had a high impact and likelihood score.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_004",
+      "ARISK_005"
+    ],
+    "downstream_risks": [
+      "ARISK_009",
+      "ARISK_013"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

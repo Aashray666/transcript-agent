@@ -1,0 +1,71 @@
+{
+  "risk_id": "ARISK_009",
+  "client_description": "Loss of dealerships and importers can lead to unserved demand and lower unit sales",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Customer & Market Impact",
+    "sub_dimension": "Loss of Key Customers",
+    "metric": "Loss of Key Customers (% of revenue)",
+    "justification": "The client's dealer network represents significant capital and relationship investment, and the shift to direct-to-consumer models by competitors could lead to a loss of key customers. The client's revenue is EUR 78.4B, and a potential loss of 10-20% of revenue due to the loss of dealerships and importers would be a significant impact.",
+    "table_criteria_matched": "10-20% of revenue",
+    "evidence_quantity": "10-20%",
+    "quantity_source": "Client questionnaire context, specifically the revenue figure of EUR 78.4B and the description of the dealer network disruption risk"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5, and there is no specific evidence to adjust this score. The external environment presents moderate velocity, and the client has significant exposure to this risk due to their investment in the dealer network.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's dealer network is under pressure due to the shift to direct-to-consumer models by competitors, and the client has had difficult conversations with dealer groups about the future of the relationship. The client's revenue is EUR 78.4B, and a potential loss of 10-20% of revenue due to the loss of dealerships and importers would be a significant impact.",
+  "client_context_used": "Client questionnaire context, specifically the revenue figure of EUR 78.4B, the description of the dealer network disruption risk, and the client's top 5 strategic priorities",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive dealer network disruption 2026",
+      "EV transition impact on traditional dealership models 2025",
+      "Automotive OEM direct-to-consumer sales trends Europe 2026"
+    ],
+    "recent_incidents": [
+      "Europe's auto industry is facing mounting pressure, including dealers grappling with agency model reversals and automakers confronting overcapacity amid surging Chinese imports",
+      "A significant drop in EV adoption occurred in the last few weeks of 2025 once the EV credit ended in September"
+    ],
+    "regulatory_developments": [
+      "To continue to qualify for the exemption and subsidy, OEMs must commit to producing at least two battery electric vehicles (BEVs) domestically by the end of 2026 for every imported BEV sold in 2024 and 2025"
+    ],
+    "market_trends": [
+      "European automotive sector is finally showing signs of a turnaround after two years of significant underperformance",
+      "Automotive dealers across Europe are navigating a period of sustained pressure, including margin compression and regulatory demands",
+      "EV affordability is emerging as the make-or-break factor in driving mass adoption",
+      "Vehicle affordability remains the weak link in the EV transition"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.autonews.com/manufacturing/automakers/ane-automakers-europe-production-problems-0124/",
+      "https://www.motorfinanceonline.com/features/2026-and-beyond-reinventing-europes-automotive-promise/",
+      "https://www.reuters.com/markets/europe/europes-unloved-auto-sector-may-surprise-investors-2026-2026-01-12/",
+      "https://www.nextlane.com/news-articles/five-structural-shifts-redefining-european-automotive-retail-2026/",
+      "https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/762419/EPRS_ATA(2024)762419_EN.pdf",
+      "https://news.dealershipguy.com/p/vehicle-affordability-remains-the-weak-link-in-the-ev-transition-2025-10-22",
+      "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-markets-2",
+      "https://www.jmagroup.com/resources/operations/automotive-trends-report",
+      "https://www.cdkglobal.com/insights/what-300000-returning-ev-leases-mean-dealership-inventory-strategy",
+      "https://www.dealer.com/resources/2025-ev-hybrid-insights/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_001 and ARISK_002, which also relate to the automotive industry and market trends.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_018",
+      "ARISK_019"
+    ],
+    "downstream_risks": [],
+    "cascade_likelihood_adjustment": null
+  }
+}

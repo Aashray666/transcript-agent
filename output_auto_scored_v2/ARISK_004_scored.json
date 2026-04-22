@@ -1,0 +1,70 @@
+{
+  "risk_id": "ARISK_004",
+  "client_description": "Large investment in accelerated EV parity – making EV costing the same as internal combustion engines vehicles",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline",
+    "metric": "Revenue Decline (%)",
+    "justification": "The client has committed heavily to electrification, with EUR 8.2B invested over 2024-2028, and is experiencing a significant slowdown in consumer adoption in core markets. This could lead to a revenue decline. Given the annual revenue trend is declining (EUR 82.1B in FY2023, EUR 80.6B in FY2024, EUR 78.4B in FY2025), a potential loss of EUR 5B would represent approximately 6% of the revenue, which falls into the 'High' category according to the impact assessment table.",
+    "table_criteria_matched": "Revenue Decline (% of total revenue): 6-12% = High (4)",
+    "evidence_quantity": "6%",
+    "quantity_source": "Client questionnaire context: annual_revenue_trend"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5. The client's internal conversations about slowing the transition roadmap due to consumer adoption slowdown, regulatory pressures, and trends in EV registrations and battery prices support this likelihood score.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred recently or multiple times. External environment is actively driving this risk. Controls are insufficient or untested."
+  },
+  "inherent_risk_score": 16,
+  "risk_rating": "Critical",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's significant investment in electrification, slowdown in consumer adoption, and potential for stranded assets contribute to the high impact and likelihood scores.",
+  "client_context_used": "EV_transition_investment, consumer_adoption_slowdown, annual_revenue_trend",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive EV adoption trends 2025 2026",
+      "Electric vehicle battery cost parity 2026 outlook",
+      "EU automotive industry electrification investment risks 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "European car industry pressing to slow the pace of electrification, arguing for looser climate targets to ease costs and preserve industry"
+    ],
+    "market_trends": [
+      "EV registrations expected to surge in Europe in 2025 and beyond",
+      "EV battery prices expected to fall almost 50% by 2026, achieving ownership cost parity with gasoline-fueled cars",
+      "Demand for electric vehicles and batteries increasing, with EVs making up over a quarter of new vehicle sales globally in 2025"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://obdeleven.com/automotive-trends-and-stats",
+      "https://autovista24.autovistagroup.com/news/will-european-ev-registrations-surge-in-2025/",
+      "https://autovista24.autovistagroup.com/news/europe-2026-automotive-forecast/",
+      "https://futuretransport-news.com/move-2025-europes-ev-adoption-boom/",
+      "https://dealerbox.net/5-automotive-trends-you-cant-miss-in-2026/",
+      "https://www.goldmansachs.com/insights/articles/electric-vehicle-battery-prices-are-expected-to-fall-almost-50-percent-by-2025",
+      "https://www.kbb.com/car-news/study-evs-could-reach-price-parity-in-2026/",
+      "https://www.technologyreview.com/2026/02/02/1132042/whats-next-for-ev-batteries-in-2026/",
+      "https://evxl.co/2025/12/09/global-ev-battery-prices-drop-2026/",
+      "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/the-future-of-affordable-evs-breakthroughs-in-battery-pack-costs"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks related to the automotive industry's transition to electric vehicles, such as ARISK_001, ARISK_002, and ARISK_003.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_005",
+      "ARISK_006"
+    ],
+    "downstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

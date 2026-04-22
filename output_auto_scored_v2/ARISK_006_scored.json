@@ -1,0 +1,73 @@
+{
+  "risk_id": "ARISK_006",
+  "client_description": "Political tensions, trade disputes, and tariffs can disrupt global automotive supply chains and markets",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Cost Structure",
+    "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+    "justification": "The client stated that 'The 25% tariffs on auto imports that came into effect have directly hit our cost structure' and 'the uncertainty is almost as damaging as the tariffs themselves because we can't plan supply chain decisions confidently.' This indicates a significant impact on the cost structure due to tariffs and trade policy uncertainty. The company's annual revenue is EUR 78.4 billion, and a 25% tariff on auto imports would result in a substantial cost increase.",
+    "table_criteria_matched": "10-20% cost increase = High (4)",
+    "evidence_quantity": "25% tariff",
+    "quantity_source": "Client statement"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The composite likelihood score is 4/5, and the client has already experienced the impact of tariffs. The external environment is driving this risk, with increasing US tariffs on EU autos and a declining trend in EU auto exports to the US.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Occurred in the last 1-2 years, or multiple times historically. Active external drivers present."
+  },
+  "inherent_risk_score": 16,
+  "risk_rating": "Critical",
+  "scoring_confidence": "HIGH",
+  "evidence_summary": "The client has experienced a direct hit to their cost structure due to 25% tariffs on auto imports, and there is uncertainty in planning supply chain decisions. The external environment is driving this risk, with increasing US tariffs on EU autos and a declining trend in EU auto exports to the US.",
+  "client_context_used": "Annual revenue: EUR 78.4 billion, EBITDA margin: 9.2%, Countries with manufacturing presence: Germany, UK, Hungary, China, USA, Mexico",
+  "market_intelligence_used": {
+    "search_queries": [
+      "US tariffs on auto imports Europe 2025 2026",
+      "EU automotive supply chain disruption 2026",
+      "Global automotive trade policy updates 2025 2026"
+    ],
+    "recent_incidents": [
+      "Mercedes-Benz's 2025 earnings dropped 57% due to a $1.2 billion hit from US tariffs",
+      "BMW's earnings before tax fell to 10.2 billion euros in 2025 and are forecast to decline further in 2026"
+    ],
+    "regulatory_developments": [
+      "US tariffs on EU autos increased to 15% as of August 1, 2025",
+      "EU-US trade agreement implementation with a 15% duty rate for EU autos and auto parts"
+    ],
+    "market_trends": [
+      "EU auto exports to the US are declining due to ongoing tariffs",
+      "Automotive output is forecast to contract by 0.6% in 2026 due to subdued consumer sentiment"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.rabobank.com/knowledge/d011480100-assessing-the-impact-of-us-tariffs-on-the-european-automotive-sector",
+      "https://www.reuters.com/sustainability/society-equity/us-confirms-eu-autos-auto-parts-15-tariffs-started-aug-1-2025-09-24/",
+      "https://news.dealershipguy.com/p/eu-auto-exports-to-u-s-slide-as-tariffs-continue-to-bite",
+      "https://www.spglobal.com/automotive-insights/en/rapid-impact-analysis/trump-trade-update-japan-eu-auto-tariffs",
+      "https://www.cnn.com/2025/08/21/business/us-tariffs-eu-autos",
+      "https://www.cargroup.org/supply-chain-disruptions-update/",
+      "https://enduringautomotive.com/automotive-repair/industry-overview/auto-parts-supply-chain/",
+      "https://globalautoindustry.com/eu-and-global-supply-chain-regulations-impact-on-automotive-industry/",
+      "https://www.ajot.com/news/supply-chain-disruptions-up-30-in-first-half-of-2024",
+      "https://trans.info/en/automotive-supply-chain-376520"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_005, which also deals with the impact of tariffs on the company's cost structure.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_004",
+      "ARISK_005"
+    ],
+    "downstream_risks": [
+      "ARISK_007",
+      "ARISK_008"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

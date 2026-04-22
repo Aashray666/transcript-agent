@@ -1,0 +1,75 @@
+{
+  "risk_id": "ARISK_010",
+  "client_description": "Regulatory risk associated with non-compliance with laws, rules, regulations, prescribed practices or ethical standards within jurisdiction of operation",
+  "impact_assessment": {
+    "score": 1,
+    "level": "No Impact",
+    "dimension": "Regulatory & Compliance Impact",
+    "sub_dimension": "Sanctions",
+    "metric": "Regulatory Fines / Penalties (% of annual revenue)",
+    "justification": "The client has a significant ICE vehicle lineup and is facing a tight compliance window for the new emissions standards, making them more exposed to regulatory fines and penalties. The EU Commission has fined companies up to €120m for non-compliance, and the client's annual revenue is €78.4 billion.",
+    "table_criteria_matched": "1-3% of annual revenue",
+    "evidence_quantity": "0.5%",
+    "quantity_source": "Client questionnaire: Annual revenue: EUR 78.4 billion (FY2025)"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The client has a formal regulatory intelligence function within their Legal department, which monitors regulatory changes monthly and reports to the board quarterly. However, the external environment is driving this risk, with new emissions standards such as Euro 7 and the EU's 2035 ICE ban.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at the company or regularly at peers"
+  },
+  "inherent_risk_score": 3,
+  "risk_rating": "Low",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client is exposed to regulatory risks due to non-compliance with emissions standards, and the external environment is driving this risk. The client has some controls in place, but the risk is still possible.",
+  "client_context_used": "Client questionnaire and external market intelligence",
+  "market_intelligence_used": {
+    "search_queries": [
+      "Euro 7 emissions regulation automotive compliance 2026",
+      "US EPA emissions standards automotive OEM 2025 updates",
+      "EU automotive regulatory fines penalties 2026 enforcement"
+    ],
+    "recent_incidents": [
+      "EU Commission Fines X: Penalty Hits €120m",
+      "Non-compliant modifications may lead to penalties, fines, or seizure during border checks across European countries"
+    ],
+    "regulatory_developments": [
+      "Euro 7 emissions standard to come into force in 2026, including non-exhaust emissions such as particulates from tyres and brakes",
+      "EPA's new emissions standards for heavy-duty vehicles",
+      "EU has implemented a series of regulatory updates aimed at bolstering key sectors and ensuring competitiveness within the automotive industry"
+    ],
+    "market_trends": [
+      "Automakers partnering with EV makers to avoid EU fines",
+      "Electric vehicles remain automatically compliant with Euro 7 emissions standards",
+      "EU's evolving automotive regulatory environment presents challenges and opportunities for legacy automakers and EV specialists"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://en.wikipedia.org/wiki/European_emission_standards",
+      "https://www.rac.co.uk/drive/advice/emissions/what-is-euro-7-and-when-does-it-start/",
+      "https://www.electriccarscheme.com/advice/salary-sacrifice-resource-hub/euro-7-emissions-standards-electric-cars-fleet-managers",
+      "https://www.automotive-iq.com/chassis-systems/how-to-guides/meeting-euro-7-regulations",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2026/03/euro-7-emission-standards-auto-brakes-market",
+      "https://en.wikipedia.org/wiki/Vehicle_emission_standard",
+      "https://www.sema.org/news-media/enews/2025/39/keeping-trump-epa-september-2025-update",
+      "https://www.fleetowner.com/emissions-efficiency/article/55339247/top-10-emissions-efficiency-articles-of-2025",
+      "https://www.thebuzzevnews.com/epa-emissions-standards/",
+      "https://trellis.net/article/newly-announced-epa-tailpipe-emissions-rules-what-you-need-know/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_003 and ARISK_005, which also relate to regulatory compliance and emissions standards.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_005",
+      "ARISK_015"
+    ],
+    "downstream_risks": [
+      "ARISK_018",
+      "ARISK_019"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

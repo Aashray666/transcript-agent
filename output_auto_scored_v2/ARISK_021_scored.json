@@ -1,0 +1,71 @@
+{
+  "risk_id": "ARISK_021",
+  "client_description": "Complying with regulations such as the General Data Protection Regulation",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Regulatory & Compliance Impact",
+    "sub_dimension": "Environmental Compliance",
+    "metric": "Environmental Regulation Breaches (Count per year)",
+    "justification": "The client is facing significant regulatory compliance challenges, particularly with the introduction of Euro 7 emissions standards. The cost of compliance per vehicle is substantial, and the company is deciding which models to carry forward or discontinue. Given the EU's 2035 ICE ban and the tightening of emissions regulations, the risk of non-compliance is high. The evidence suggests a significant gap in EU fleet average CO2 vs regulatory target, and the potential for costly pool arrangements with other OEMs.",
+    "table_criteria_matched": "Repeated breaches",
+    "evidence_quantity": "1 minor administrative penalty in Germany (EUR 180K) for delayed recall notification in 2024",
+    "quantity_source": "Client Questionnaire Context"
+  },
+  "likelihood_assessment": {
+    "score": 2,
+    "level": "Unlikely",
+    "justification": "The likelihood assessment is based on the composite likelihood score of 2/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. Although the client has a formal regulatory intelligence function, the external environment presents moderate drivers, and the sector frequency is common. However, the client's exposure is above average due to the significant gap in EU fleet average CO2 vs regulatory target.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Could occur but not expected. May have occurred once historically at the company or occasionally at peers."
+  },
+  "inherent_risk_score": 8,
+  "risk_rating": "Medium",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client faces significant regulatory compliance challenges, particularly with the introduction of Euro 7 emissions standards. The cost of compliance per vehicle is substantial, and the company is deciding which models to carry forward or discontinue.",
+  "client_context_used": "The client's regulatory compliance challenges, cost of compliance, and potential for costly pool arrangements with other OEMs.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "Euro 7 emissions regulation automotive compliance 2026",
+      "GDPR compliance automotive manufacturing data privacy 2025",
+      "EU automotive CO2 emissions regulatory targets 2025 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "EU regulation 2024/1257 introduces Euro 7 emissions standard, effective November 29, 2026",
+      "European Council approves softened CO2 targets, allowing 3-year averaging for compliance",
+      "EU Grants Carmakers Three-Year Flexibility on 2025 Vehicle Emissions Targets"
+    ],
+    "market_trends": [
+      "Increasing focus on data privacy and protection in the automotive industry, driven by GDPR and connected car technologies",
+      "Growing importance of compliance with emissions regulations, such as Euro 7, in the European market"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.rac.co.uk/drive/advice/emissions/what-is-euro-7-and-when-does-it-start/",
+      "https://motorbeast.org/euro-7-emissions-standards-2026-the-revolutionary-new-rules-transforming-european-cars/",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2026/03/euro-7-emission-standards-auto-brakes-market",
+      "https://www.automotive-iq.com/chassis-systems/how-to-guides/meeting-euro-7-regulations",
+      "https://acsindustries.com/2026/03/10/euro-7-and-new-emissions-standards/",
+      "https://www.bing.com/aclick?ld=e843usTvLN6k5FImJFxCP-jjVUCUxB76Y-EIWqFNomE-Vv8JmlDDM3ulQUV94JtrpduD18rSfD7Y6dchm-xTUA-sDl_yZ_LIQkBXrOxToLn0s40o62Eag7758UGaVELvnygzBMMrFZBKRlCxyqjVlKD09wlyY72Rp8UOrwvof-LYdH8hkRk0yTLR5crrDfbGixJ6DV-b97GMdAiiXqn_OFfKk_9oU&u=aHR0cHMlM2ElMmYlMmZ3d3cuc2NydXQuaW8lMmZscDElMmZkZWx2ZS1jb21wbGlhbmNlJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkQmluZyUyNTIwJTI1N0MlMjUyMFNSJTI1MjAlMjU3QyUyNTIwVVMlMjUyMCUyNTdDJTI1MjBDT01QJTI1MjAlMjU3QyUyNTIwREVMVkUlMjUyMCUyNTdDJTI1MjBUT0ZVJTI2dXRtX3Rlcm0lM2RkZWx2ZSUyNTIwZ2RwciUyNnV0bV9jb250ZW50JTNkU1IlMjUyMCUyNTdDJTI1MjBVUyUyNTIwJTI1N0MlMjUyMENPTVAlMjUyMCUyNTdDJTI1MjBERUxWRSUyNTIwJTI1N0MlMjUyMEJPRlUlMjZtc2Nsa2lkJTNkYjQyNWYxMDNkOWJkMTM1ODA3Nzk5OGViNmFhYTVjMWY&rlid=b425f103d9bd1358077998eb6aaa5c1f",
+      "https://autoraiders.com/2025/12/02/gdpr-and-connected-cars-what-new-data-rules-mean-for-automakers/",
+      "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2024/driving-trust.pdf",
+      "https://www.morganlewis.com/pubs/2024/11/automotive-information-governance-and-data-privacy-trends",
+      "https://privacypillar.com/automotive-industry-protecting-connected-vehicle-data/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks, such as ARISK_003, which also deals with regulatory compliance issues.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_005",
+      "ARISK_010"
+    ],
+    "downstream_risks": [
+      "ARISK_018",
+      "ARISK_019"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

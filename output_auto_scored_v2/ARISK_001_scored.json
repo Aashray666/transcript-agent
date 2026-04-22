@@ -1,0 +1,65 @@
+{
+  "risk_id": "ARISK_001",
+  "client_description": "Huge capital required growing demand in alternative fuel market and electric vehicles",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Capital",
+    "metric": "Capex Overrun / Project Delays (% over budget)",
+    "justification": "The client has a significant investment in EV platform programs and battery cell JVs, with a total of EUR 12.7B in major capital investments. The growing demand in alternative fuel market and electric vehicles may require additional capital, potentially leading to capex overrun or project delays. The evidence quantity is EUR 12.7B, which is approximately 16% of the client's annual revenue of EUR 78.4B. According to the table, a capex overrun of 10-20% is considered High impact.",
+    "table_criteria_matched": "10-20% = High",
+    "evidence_quantity": "16%",
+    "quantity_source": "Client questionnaire"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 3/5. The external environment is driving the growth of the electric vehicle and alternative fuel markets, with the Europe electric vehicle market expected to expand significantly by 2034. The client has a significant exposure to this risk due to its investments in EV platform programs and battery cell JVs.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred in the last 2-5 years at the company, or regularly at sector peers"
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client has significant investments in EV platform programs and battery cell JVs, with a growing demand in alternative fuel market and electric vehicles. The external environment is driving this growth, and the client has a high exposure to this risk.",
+  "client_context_used": "Annual revenue, major capital investments, revenue split, and strategic priorities",
+  "market_intelligence_used": {
+    "search_queries": [
+      "electric vehicle demand growth Europe 2025 2026",
+      "automotive OEM capital investment trends 2025 2026",
+      "alternative fuel market risks automotive sector 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [],
+    "market_trends": [
+      "The Europe electric vehicle market is expected to expand from $617.34 billion in 2025 to $6147.39 billion in 2034",
+      "Plugin vehicle share of the overall European auto market was 23.2%, driving market growth",
+      "Alternative Fuel Vehicle Market to be valued at $1027.8 million in 2026, reaching $8,399.0 million by 2033"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://stamplisting.org/article/the-rise-of-electric-vehicles-in-europe-2025-26-market-stats",
+      "https://market-reporter.biz/europe-electric-vehicle-market-size-share-growth-forecast/",
+      "https://lailaiwokchampaign.com/article/the-rise-of-electric-vehicles-in-europe-2025-26-market-stats",
+      "https://www.bipbipamerica.com/Europe-Electric-Vehicle-Market",
+      "https://www.fortunebusinessinsights.com/europe-electric-vehicle-market-107689",
+      "https://globallocationstrategies.com/insights/the-2026-state-of-automotive-investment-five-shifts-shaping-capital-decisions/",
+      "https://www.bcg.com/publications/2026/the-2026-global-automotive-supplier-study",
+      "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-industry-outlook.html",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2026/01/automotive-market-trends-2026",
+      "https://www.thegpstime.com/2026-automotive-manufacturing-report-mega-projects-capex-ev-insights-gls/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks in the automotive sector, which often require significant capital investments to adapt to changing market demands.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_016",
+      "ARISK_017"
+    ],
+    "downstream_risks": [],
+    "cascade_likelihood_adjustment": null
+  }
+}

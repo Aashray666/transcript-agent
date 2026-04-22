@@ -1,0 +1,74 @@
+{
+  "risk_id": "ARISK_008",
+  "client_description": "Reliance on single suppliers",
+  "impact_assessment": {
+    "score": 5,
+    "level": "Severe/Catastrophic",
+    "dimension": "Operating Impact",
+    "sub_dimension": "Supply Chain",
+    "metric": "Critical Supplier Disruption (Days)",
+    "justification": "The client's reliance on single suppliers, particularly for battery cells, poses a significant risk to their operations. The evidence suggests that a disruption to these suppliers could have a severe impact on the client's production, with the potential for extended downtime. The client's experience with the semiconductor shortage in 2023, which resulted in a 6-week production halt, demonstrates the potential severity of such disruptions.",
+    "table_criteria_matched": "Critical Supplier Disruption (Days) >14 days = Severe/Catastrophic (5)",
+    "evidence_quantity": "42 days",
+    "quantity_source": "Client statement on semiconductor shortage impact"
+  },
+  "likelihood_assessment": {
+    "score": 4,
+    "level": "Likely",
+    "justification": "The likelihood intelligence agent has computed a 5-factor composite score of 4/5, indicating a high likelihood of this risk occurring. The client's recent experience with supply chain disruptions, including the ransomware attack on a tier-1 supplier and the semiconductor shortage, supports this assessment.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Historical Frequency: 4/5, Control Effectiveness: 3/5, External Environment: 4/5, Sector Base Rate: 4/5, Client-Specific Exposure: 3/5"
+  },
+  "inherent_risk_score": 20,
+  "risk_rating": "Critical",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's reliance on single suppliers, recent supply chain disruptions, and the potential for future disruptions due to geopolitical events or supplier insolvency.",
+  "client_context_used": "Client statements on supply chain concentration risks, recent disruptions, and the potential for future disruptions.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive lithium battery supply chain risks 2026",
+      "Automotive semiconductor shortage impact on OEMs 2025 2026",
+      "EU automotive raw material shortages cobalt lithium 2026"
+    ],
+    "recent_incidents": [
+      "Nexperia chip shortage: Honda, VW bracing for outage",
+      "U.S. auto plants could face major production slowdowns within weeks due to chip shortage"
+    ],
+    "regulatory_developments": [
+      "European Commission adopted the 'RESourceEU' Action Plan to secure the EU's supply of critical raw materials",
+      "European Battery Regulation"
+    ],
+    "market_trends": [
+      "Europe remains heavily reliant on Asian manufacturers for battery supply, exposing its automotive sector to pricing volatility and supply chain disruptions",
+      "Critical metal shortages intensify, prompting a widespread battery supply chain alert among manufacturers",
+      "Lithium carbonate prices have surged 340% over the past 18 months"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.wwf.de/fileadmin/fm-wwf/Publikationen-PDF/Politik/Battery-Report-2026.pdf",
+      "https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/767214/EPRS_BRI(2025)767214_EN.pdf",
+      "https://www.iea.org/reports/energy-technology-perspectives-2026/supply-chain-risks-and-industrial-competitiveness",
+      "https://hcss.nl/wp-content/uploads/2024/01/Increasing-Lithium-Supply-Security-HCSS-2024.pdf",
+      "https://www.deloitte.com/de/de/Industries/automotive/research/european-battery-sovereignty.html",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2025/12/dram-makers-ai-data-centers-semiconductor-shortage",
+      "https://www.cnbc.com/2025/10/30/nexperia-auto-chip-shortage-china-honda-vw.html",
+      "https://www.motor.com/2025/12/dram-makers-focus-on-ai-data-centers-fuel-auto-chip-shortage/",
+      "https://sustainableatlas.org/post/case-study-automotive-manufacturer-rebuilt-supply-networks-semiconductor-shortages-1550",
+      "https://gmauthority.com/blog/2025/10/u-s-auto-plants-could-shut-down-in-a-few-weeks-due-to-chip-shortage/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk is consistent with previously scored risks, such as ARISK_004 and ARISK_005, which also relate to supply chain disruptions and concentration risks.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_004",
+      "ARISK_005"
+    ],
+    "downstream_risks": [
+      "ARISK_007",
+      "ARISK_011"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

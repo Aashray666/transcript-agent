@@ -1,0 +1,74 @@
+{
+  "risk_id": "ARISK_007",
+  "client_description": "Suppliers may fail to deliver components according to schedules, prices, quality and volumes that are acceptable",
+  "impact_assessment": {
+    "score": 5,
+    "level": "Severe/Catastrophic",
+    "dimension": "Operating Impact",
+    "sub_dimension": "Critical Supplier Disruption",
+    "metric": "Days",
+    "justification": "The risk of suppliers failing to deliver components according to schedules, prices, quality, and volumes that are acceptable could lead to a critical supplier disruption. The client has experienced a semiconductor shortage in the past, which resulted in a 6-week production halt at two plants, causing a financial impact of over EUR 400 million. Given the client's high concentration of battery cell supply from a single source and significant exposure to raw materials like lithium, cobalt, and nickel, the potential disruption could be severe.",
+    "table_criteria_matched": "Critical Supplier Disruption (Days): >14 days = Severe/Catastrophic (5)",
+    "evidence_quantity": "42 days",
+    "quantity_source": "Client statement on semiconductor shortage impact"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood assessment is based on the composite score of 3/5 from the 5-factor assessment, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The client's experience with the semiconductor shortage and the current geopolitical tensions contribute to the likelihood of supplier failure.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Not applicable"
+  },
+  "inherent_risk_score": 15,
+  "risk_rating": "High",
+  "scoring_confidence": "HIGH",
+  "evidence_summary": "The client's statements on battery cell concentration risk, semiconductor shortage experience, and exposure to raw materials like lithium, cobalt, and nickel provide strong evidence for the impact assessment. The 5-factor likelihood assessment supports the likelihood score.",
+  "client_context_used": "Client questionnaire data, including revenue figures, percentages, and incident counts",
+  "market_intelligence_used": {
+    "search_queries": [
+      "lithium battery supply chain disruption Europe 2025 2026",
+      "automotive semiconductor shortage Europe 2025 2026",
+      "cobalt lithium nickel shortage automotive industry 2025 2026"
+    ],
+    "recent_incidents": [
+      "Global semiconductor shortages are not over, says Volkswagen",
+      "Auto semiconductor shortage worsens"
+    ],
+    "regulatory_developments": [
+      "EU battery directive increasing regulatory pressures and geopolitical tensions",
+      "Export controls announced in October 2025 are temporarily suspended"
+    ],
+    "market_trends": [
+      "Growing demand for semiconductors and batteries in the automotive industry",
+      "Increasing supply chain tensions for critical materials such as nickel and cobalt",
+      "Europe's swelling wave of battery installations set to hit barriers"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.circunomics.com/blog/europes-second-life-battery-challenge-2025-review-",
+      "https://www.iea.org/commentaries/global-battery-markets-are-growing-strongly-and-so-are-the-supply-risks",
+      "https://www.sciencedirect.com/science/article/pii/S0301420725003290",
+      "https://www.reuters.com/business/energy/europes-swelling-wave-battery-installations-set-hit-barriers--reeii-2026-02-26/",
+      "https://www.sciencedirect.com/science/article/pii/S2772427125002359",
+      "https://www.statista.com/topics/9062/global-automotive-semiconductor-industry/",
+      "https://www.torque-expo.com/hand-power-tools/semiconductor-shortage-squeezes-auto-tools",
+      "https://www.semiconductorintelligence.com/auto-semiconductor-shortage-worsens/",
+      "https://surgere.com/blog/navigating-automotive-supply-chain-challenges-in-2025/",
+      "https://www.cityam.com/global-semiconductor-shortages-not-over-volkswagen/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks, such as ARISK_004 and ARISK_005, which also have high impact and likelihood scores due to the client's exposure to supply chain disruptions and geopolitical tensions.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_004",
+      "ARISK_005"
+    ],
+    "downstream_risks": [
+      "ARISK_011",
+      "ARISK_012"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

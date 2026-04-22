@@ -1,0 +1,68 @@
+{
+  "risk_id": "ARISK_003",
+  "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline (%)",
+    "justification": "The introduction of stricter regulations to reduce vehicle emissions and fuel consumption could lead to a significant increase in production costs for VelocityAuto Group AG, potentially resulting in a revenue decline. Given the company's revenue of EUR 78.4 billion and the potential impact of these regulations, a decline of 6-12% is plausible, especially considering the company's current declining revenue trend and the need to invest in achieving Euro 7 compliance.",
+    "table_criteria_matched": "6-12% = High (4)",
+    "evidence_quantity": "6-12%",
+    "quantity_source": "Client questionnaire and external market intelligence"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood assessment is based on the composite likelihood score of 3/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The introduction of Euro 7 emissions standards and the company's significant gap in fleet average CO2 vs regulatory targets contribute to the likelihood of this risk materializing.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at peers, external environment contains active drivers, and controls exist but may have gaps."
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The evidence summary includes the client's current declining revenue trend, the need to invest in achieving Euro 7 compliance, and external market intelligence indicating increasing regulatory actions.",
+  "client_context_used": "Revenue figures, industry trends, and regulatory requirements.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "Euro 7 emissions regulation automotive compliance 2026",
+      "EU automotive OEM fuel consumption reduction targets 2025",
+      "Germany automotive industry emissions standards enforcement 2026"
+    ],
+    "recent_incidents": [],
+    "regulatory_developments": [
+      "EU regulation 2024/1257 sets Euro 7 emissions standard to come into effect from 29th November 2026",
+      "European Commission presents automotive package with CO2 emissions targets",
+      "EU Council adopts Euro 7 standards for vehicle emissions"
+    ],
+    "market_trends": [
+      "Introduction of Euro 7 emissions standards will transform how vehicles are manufactured",
+      "Stricter particulate matter regulations targeting non-exhaust sources such as brake emissions",
+      "Automotive exhaust system design is entering a new phase of complexity and precision"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.rac.co.uk/drive/advice/emissions/what-is-euro-7-and-when-does-it-start/",
+      "https://motorbeast.org/euro-7-emissions-standards-2026-the-revolutionary-new-rules-transforming-european-cars/",
+      "https://www.spglobal.com/automotive-insights/en/blogs/2026/03/euro-7-emission-standards-auto-brakes-market",
+      "https://www.automotive-iq.com/chassis-systems/how-to-guides/meeting-euro-7-regulations",
+      "https://acsindustries.com/2026/03/10/euro-7-and-new-emissions-standards/",
+      "https://www.hoganlovells.com/en/publications/update-on-automotive-regulations-in-europe",
+      "https://www.reuters.com/sustainability/climate-energy/eu-auto-group-pushes-hybrids-e-fuels-co2-emission-goal-review-2025-10-08/",
+      "https://www.noerr.com/en/insights/european-commission-presents-automotive-package-co2-emissions-targets-energy-consumption-labelling-battery-booster-and-company-cars",
+      "https://theicct.org/publication/co2-targets-for-new-hdvs-in-europe-sept25/",
+      "https://news.sustainability-directory.com/policy/eu-grants-carmakers-three-year-flexibility-on-2025-vehicle-emissions-targets/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with related risks such as ARISK_001, which also deals with the impact of regulatory changes on the automotive industry.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_022"
+    ],
+    "downstream_risks": [],
+    "cascade_likelihood_adjustment": null
+  }
+}

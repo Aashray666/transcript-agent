@@ -1,0 +1,73 @@
+{
+  "risk_id": "ARISK_026",
+  "client_description": "Increased competition in automobile financing",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Revenue Decline (% of total revenue)",
+    "metric": "Revenue Decline (%)",
+    "justification": "The client's revenue trend is declining, and the European automotive financing market is growing with increasing competition. The market was valued at USD 34.12 billion in 2025 and estimated to grow to USD 49.94 billion by 2031. Given the client's annual revenue of EUR 78.4 billion and the potential loss of market share due to increased competition, a revenue decline of 6-12% is possible.",
+    "table_criteria_matched": "6-12% = High (4)",
+    "evidence_quantity": "6-12%",
+    "quantity_source": "Client questionnaire and external market intelligence"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The client has mentioned that Chinese EV manufacturers, particularly BYD, are a significant structural threat, and the speed and scale of Chinese EV penetration in the European market was not formally assessed at the level it deserved. This indicates a possible likelihood of increased competition in the automobile financing market.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at the company or regularly at peers. External environment contains active drivers. Controls exist but may have gaps."
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The client's declining revenue trend, increasing competition in the European automotive financing market, and the potential loss of market share due to Chinese EV manufacturers' penetration.",
+  "client_context_used": "Annual revenue of EUR 78.4 billion, declining revenue trend, and investment in the EV Platform Programme.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "EU automotive financing trends 2025 2026",
+      "electric vehicle financing competition Europe 2026",
+      "automotive OEM financial services market share 2025"
+    ],
+    "recent_incidents": [
+      "Sales of fully electric cars surpassed those of gasoline-only vehicles in the European Union for the first time in December"
+    ],
+    "regulatory_developments": [
+      "Governmental support for sustainable transportation solutions in Europe"
+    ],
+    "market_trends": [
+      "The European automotive financing market was valued at USD 34.12 billion in 2025 and estimated to grow from USD 36.35 billion in 2026 to reach USD 49.94 billion by 2031, at a CAGR of 6.55% during the forecast period (2026-2031)",
+      "The European automotive market is undergoing a significant transformation, fueled by a surge in demand for electric and hybrid vehicles, technological advancements, and governmental support for sustainable transportation solutions",
+      "Europe Electric Car Market is Expected to Surpass USD 854.15"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.acea.auto/publication/the-automobile-industry-pocket-guide-2025-2026/",
+      "https://www.datainsightsmarket.com/reports/europe-automotive-finance-market-18763",
+      "https://www.mordorintelligence.com/industry-reports/europe-automotive-financing-market",
+      "https://www.coxautoinc.eu/news-insights/automotive-industry-trends-2026/",
+      "https://automotivewebwire.com/insights/europe-automotive-market/",
+      "https://www.bipbipamerica.com/Europe-Electric-Vehicle-Market",
+      "https://www.mordorintelligence.com/industry-reports/electric-vehicle-financing-market",
+      "https://finance.yahoo.com/news/europe-electric-car-market-expected-140700533.html",
+      "https://www.theglobeandmail.com/business/international-business/european-business/article-electric-vehicle-sales-in-eu-surpass-those-of-gas-powered-cars-for/",
+      "https://finbold.com/europes-electric-vehicle-2022-sales-grow-in-q3-despite-economic-challenges/"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "The score is consistent with previously scored risks, such as ARISK_002 and ARISK_013, which also relate to competition in the automotive industry.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_002",
+      "ARISK_007",
+      "ARISK_013"
+    ],
+    "downstream_risks": [
+      "ARISK_014",
+      "ARISK_016"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}

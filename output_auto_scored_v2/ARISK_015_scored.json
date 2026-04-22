@@ -1,0 +1,72 @@
+{
+  "risk_id": "ARISK_015",
+  "client_description": "Costs associated with downgrade in credit ratings",
+  "impact_assessment": {
+    "score": 4,
+    "level": "High",
+    "dimension": "Financial & Growth Impact",
+    "sub_dimension": "Cost Structure",
+    "metric": "Raw Material & Energy Cost Inflation (% cost increase)",
+    "justification": "The risk of a credit rating downgrade would lead to increased financing costs, affecting the company's cost structure. Given the company's significant debt maturities, such as the EUR 2.8B bond maturing in Q3 2027, and a net debt to EBITDA ratio of 2.4x, which is above their target range, the potential increase in financing costs due to a credit rating downgrade could significantly impact the company's cost structure. The evidence suggests that 'if credit conditions tighten or our credit rating comes under pressure the cost of financing that programme increases meaningfully.' This indicates a potential high impact on the cost structure, likely in the range of 10-20% cost increase, which aligns with a score of 4 (High) according to the impact assessment table.",
+    "table_criteria_matched": "10-20% cost increase = High (4)",
+    "evidence_quantity": "10-20%",
+    "quantity_source": "Client statement on financing cost increase due to credit rating pressure"
+  },
+  "likelihood_assessment": {
+    "score": 3,
+    "level": "Possible",
+    "justification": "The likelihood assessment is based on the composite likelihood score of 3/5 provided by the Likelihood Intelligence Agent. This score reflects the consideration of historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. Given the client's current situation, including being flagged as 'UNDERPREPARED' and facing significant debt maturities, along with external factors such as the deteriorating asset performance outlook for European auto sectors, the likelihood of this risk materializing is considered possible.",
+    "evidence_basis": "BOTH",
+    "table_criteria_matched": "Has occurred before at the company or regularly at peers, external environment contains active drivers, controls exist but may have gaps."
+  },
+  "inherent_risk_score": 12,
+  "risk_rating": "High",
+  "scoring_confidence": "MEDIUM",
+  "evidence_summary": "The evidence summary includes the client's statement on the impact of credit conditions and credit rating pressure on financing costs, the company's debt profile, and external market intelligence on the deteriorating outlook for European auto sectors.",
+  "client_context_used": "Net debt to EBITDA ratio, significant debt maturities, and the client's statement on financing costs.",
+  "market_intelligence_used": {
+    "search_queries": [
+      "European automotive credit rating trends 2025 2026",
+      "Currency fluctuation risks automotive manufacturing Europe 2026",
+      "Automotive OEM debt refinancing challenges Eurozone 2025 2026"
+    ],
+    "recent_incidents": [
+      "Fitch Ratings has changed its asset performance outlook for European auto, unsecured loan and credit card ABS sectors to 'deteriorating' from 'neutral'"
+    ],
+    "regulatory_developments": [
+      "European automotive industry faces unprecedented challenges, including potential Brexit impacts on investment and trade"
+    ],
+    "market_trends": [
+      "Weakening in recent quarters expected to persist to end-2026 for European auto ABS sectors",
+      "Traditional global OEMs experienced another year of sales and profit decline in 2025",
+      "Refinancing and dividend recapitalisation activity has deferred, but not resolved the European market's maturity challenges"
+    ],
+    "external_likelihood_signal": "INCREASING",
+    "sources": [
+      "https://www.fitchratings.com/research/corporate-finance/fitch-ratings-changes-asset-performance-outlook-for-emea-consumer-abs-to-deteriorating-20-04-2026",
+      "https://dbrs.morningstar.com/research/472002/global-automotive-outlook-2026-weak-growth-and-market-transition-keep-credit-ratings-under-pressure",
+      "https://www.acea.auto/publication/the-automobile-industry-pocket-guide-2025-2026/",
+      "https://www.alacrastore.com/s-and-p-credit-research/European-Auto-ABS-Index-Report-Q1-2025-3370976",
+      "https://www.kbra.com/",
+      "https://www.motorfinanceonline.com/features/an-automotive-view-on-a-potential-brexit-4905947/",
+      "https://www.currencytransfer.com/blog/expert-analysis/global-supply-crisis-currency-markets",
+      "https://www.archyde.com/europe-in-crisis-global-instability-and-the-imminent-threat-to-korea/",
+      "https://oseeuro.com/latest-news/automotive-manufacturing-in-the-uk-what-can-we-expect-in-the-future/",
+      "https://www.imarcgroup.com/seamless-tube-manufacturing-plant-project-report"
+    ],
+    "data_freshness": "2026-04"
+  },
+  "consistency_notes": "This risk's score is consistent with other financial and growth impact risks, considering the company's specific financial situation and external market conditions.",
+  "flags_for_review": [],
+  "cascade_scoring_impact": {
+    "upstream_risks": [
+      "ARISK_010",
+      "ARISK_011"
+    ],
+    "downstream_risks": [
+      "ARISK_024",
+      "ARISK_025"
+    ],
+    "cascade_likelihood_adjustment": null
+  }
+}
