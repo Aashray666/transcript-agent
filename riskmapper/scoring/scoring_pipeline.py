@@ -256,11 +256,16 @@ def _score_single_risk(
         likelihood.composite_score, likelihood.confidence,
     )
 
-    # Step 5: Scoring agent (LLM call — impact + final likelihood)
+    # Step 5: Dimension classifier (focused LLM call — picks primary dimension)
+    from riskmapper.scoring.dimension_classifier import classify_dimension
+    primary_dimension = classify_dimension(evidence, knowledge, llm)
+
+    # Step 6: Scoring agent (LLM call — impact + final likelihood)
     scored = score_risk(
         evidence, knowledge, likelihood, impact_table_text,
         likelihood_table, current_memory, llm,
         external_intel=ext_intel,
+        forced_dimension=primary_dimension,
     )
 
     return scored

@@ -47,17 +47,16 @@ def score_risk(
     memory: ScoringMemory,
     llm: LLMWrapper,
     external_intel=None,
+    forced_dimension: str | None = None,
 ) -> ScoredRisk:
     """Score a single risk for impact and likelihood.
 
-    The Scoring Agent receives all context and produces the final scores.
-    Impact is scored via the impact assessment table (7 dimensions).
-    Likelihood uses the composite from the Likelihood Intelligence Agent
-    as a strong prior, but the Scoring Agent can adjust ±1 with justification.
+    If forced_dimension is provided (from the Dimension Classifier),
+    the Scoring Agent MUST score within that dimension.
     """
     prompt = _build_scoring_prompt(
         evidence, knowledge, likelihood, impact_table_text,
-        likelihood_table, memory, external_intel,
+        likelihood_table, memory, external_intel, forced_dimension,
     )
 
     result = llm.call(
@@ -66,6 +65,14 @@ def score_risk(
         temperature=0.0,
         step_name=f"scoring_agent_{evidence.risk_id}",
     )
+
+    # Enforce forced dimension if provided
+    if forced_dimension and result.impact_assessment.dimension != forced_dimension:
+        logger.warning(
+            "%s: Dimension mismatch — LLM chose '%s' but classifier said '%s'. Correcting.",
+            evidence.risk_id, result.impact_assessment.dimension, forced_dimension,
+        )
+        result.impact_assessment.dimension = forced_dimension
 
     # Enforce likelihood within ±1 of the code-computed composite
     llm_likelihood = result.likelihood_assessment.score
@@ -160,8 +167,8 @@ def _validate_impact_quantity(risk_id: str, result) -> None:
     """Check if the LLM's impact score is consistent with the evidence quantity.
 
     Extracts numbers from the evidence_quantity field and checks against
-    common metric thresholds. Logs warnings for mismatches but doesn't
-    auto-correct (the LLM may have valid reasons for its choice).
+    metric-specific thresholds. Auto-corrects if the quantity clearly maps
+    to a different score than what the LLM chose.
     """
     import re
 
@@ -169,6 +176,7 @@ def _validate_impact_quantity(risk_id: str, result) -> None:
     qty_str = getattr(ia, "evidence_quantity", "") or ""
     score = ia.score
     metric_lower = ia.metric.lower()
+    sub_dim_lower = ia.sub_dimension.lower() if ia.sub_dimension else ""
 
     # Try to extract a number from the evidence quantity
     numbers = re.findall(r'[\d.]+', qty_str)
@@ -176,106 +184,78 @@ def _validate_impact_quantity(risk_id: str, result) -> None:
         return
 
     qty = float(numbers[0])
+    expected = None
 
-    # Check common metric thresholds
+    # Match against metric type
     if "days" in metric_lower or "day" in metric_lower:
-        # Supply chain / logistics disruption measured in days
         expected = _lookup_days_score(qty)
-        if expected and expected != score:
-            logger.warning(
-                "%s: Impact quantity '%s' = %.0f days → expected score %d "
-                "but LLM scored %d. Correcting.",
-                risk_id, qty_str, qty, expected, score,
-            )
-            ia.score = expected
-            ia.level = _score_to_level(expected)
-            # Recalculate inherent
-            result.inherent_risk_score = expected * result.likelihood_assessment.score
-            result.risk_rating = _get_rating(result.inherent_risk_score)
-
-    elif "% of" in metric_lower or "% revenue" in metric_lower or "% decline" in metric_lower:
-        # Percentage-based metrics
-        expected = _lookup_pct_score(qty, metric_lower)
-        if expected and expected != score:
-            logger.warning(
-                "%s: Impact quantity '%s' = %.1f%% → expected score %d "
-                "but LLM scored %d. Correcting.",
-                risk_id, qty_str, qty, expected, score,
-            )
-            ia.score = expected
-            ia.level = _score_to_level(expected)
-            result.inherent_risk_score = expected * result.likelihood_assessment.score
-            result.risk_rating = _get_rating(result.inherent_risk_score)
 
     elif "hours" in metric_lower or "hour" in metric_lower:
         expected = _lookup_hours_score(qty)
-        if expected and expected != score:
-            logger.warning(
-                "%s: Impact quantity '%s' = %.0f hours → expected score %d "
-                "but LLM scored %d. Correcting.",
-                risk_id, qty_str, qty, expected, score,
-            )
-            ia.score = expected
-            ia.level = _score_to_level(expected)
-            result.inherent_risk_score = expected * result.likelihood_assessment.score
-            result.risk_rating = _get_rating(result.inherent_risk_score)
+
+    elif "sanction" in sub_dim_lower or "fine" in metric_lower or "penalt" in metric_lower:
+        # Regulatory fines: <0.1%=1, 0.1-0.5%=2, 0.5-1%=3, 1-3%=4, >3%=5
+        expected = _lookup_sanctions_score(qty)
+
+    elif "cost" in metric_lower or "cost" in sub_dim_lower or "inflation" in metric_lower:
+        expected = _lookup_cost_score(qty)
+
+    elif "%" in qty_str:
+        # Generic percentage — use revenue decline thresholds as default
+        expected = _lookup_revenue_score(qty)
+
+    if expected is not None and expected != score:
+        logger.warning(
+            "%s: Impact quantity '%s' → expected score %d but LLM scored %d. Correcting.",
+            risk_id, qty_str, expected, score,
+        )
+        ia.score = expected
+        ia.level = _score_to_level(expected)
+        result.inherent_risk_score = expected * result.likelihood_assessment.score
+        result.risk_rating = _get_rating(result.inherent_risk_score)
 
 
-def _lookup_days_score(days: float) -> int | None:
-    """Lookup score for days-based metrics (supply chain, logistics)."""
-    if days < 1:
-        return 1
-    elif days <= 3:
-        return 2
-    elif days <= 7:
-        return 3
-    elif days <= 14:
-        return 4
-    else:
-        return 5
+def _lookup_days_score(days: float) -> int:
+    if days < 1: return 1
+    if days <= 3: return 2
+    if days <= 7: return 3
+    if days <= 14: return 4
+    return 5
 
 
-def _lookup_hours_score(hours: float) -> int | None:
-    """Lookup score for hours-based metrics (downtime, system failure)."""
-    if hours < 1:
-        return 1
-    elif hours <= 4:
-        return 2
-    elif hours <= 12:
-        return 3
-    elif hours <= 48:
-        return 4
-    else:
-        return 5
+def _lookup_hours_score(hours: float) -> int:
+    if hours < 1: return 1
+    if hours <= 4: return 2
+    if hours <= 12: return 3
+    if hours <= 48: return 4
+    return 5
 
 
-def _lookup_pct_score(pct: float, metric: str) -> int | None:
-    """Lookup score for percentage-based metrics."""
-    # Revenue decline thresholds
-    if "revenue" in metric:
-        if pct < 1:
-            return 1
-        elif pct <= 3:
-            return 2
-        elif pct <= 6:
-            return 3
-        elif pct <= 12:
-            return 4
-        else:
-            return 5
-    # Cost increase thresholds
-    if "cost" in metric:
-        if pct < 2:
-            return 1
-        elif pct <= 5:
-            return 2
-        elif pct <= 10:
-            return 3
-        elif pct <= 20:
-            return 4
-        else:
-            return 5
-    return None
+def _lookup_revenue_score(pct: float) -> int:
+    """Revenue decline: <1%=1, 1-3%=2, 3-6%=3, 6-12%=4, >12%=5"""
+    if pct < 1: return 1
+    if pct <= 3: return 2
+    if pct <= 6: return 3
+    if pct <= 12: return 4
+    return 5
+
+
+def _lookup_cost_score(pct: float) -> int:
+    """Cost increase: <2%=1, 2-5%=2, 5-10%=3, 10-20%=4, >20%=5"""
+    if pct < 2: return 1
+    if pct <= 5: return 2
+    if pct <= 10: return 3
+    if pct <= 20: return 4
+    return 5
+
+
+def _lookup_sanctions_score(pct: float) -> int:
+    """Regulatory fines as % of revenue: <0.1%=1, 0.1-0.5%=2, 0.5-1%=3, 1-3%=4, >3%=5"""
+    if pct < 0.1: return 1
+    if pct <= 0.5: return 2
+    if pct <= 1: return 3
+    if pct <= 3: return 4
+    return 5
 
 
 def _score_to_level(score: int) -> str:
@@ -360,6 +340,7 @@ def _build_scoring_prompt(
     likelihood_table: dict,
     memory: ScoringMemory,
     external_intel=None,
+    forced_dimension: str | None = None,
 ) -> str:
     """Build the comprehensive scoring prompt."""
 
@@ -460,19 +441,7 @@ Factor breakdown:
 
 === IMPACT SCORING INSTRUCTIONS ===
 
-CRITICAL — DIMENSION SELECTION BIAS WARNING:
-Do NOT default to "Financial & Growth Impact" for every risk. Most risks have financial
-consequences eventually, but the PRIMARY impact dimension is where the MOST SEVERE and
-IMMEDIATE consequence occurs. Examples:
-- Supply chain disruption → Operating Impact (Critical Supplier Disruption, measured in Days)
-- Cyber attack → Technology & Information Impact (system downtime, data breach)
-- Tariffs/trade policy → Financial & Growth Impact (Cost Structure, not Revenue Decline)
-- Product recall → Regulatory & Compliance Impact (or Customer & Market)
-- Workforce issues → People, Health & Safety Impact
-- Software capability gap → Technology & Information Impact (or Customer & Market for competitive loss)
-
-You MUST evaluate at least 3 different dimensions before selecting one. State which dimensions
-you considered and WHY you rejected the alternatives.
+{_get_dimension_instruction(forced_dimension)}
 
 Follow this 10-step chain:
 1. Read the risk description + evidence + client context.
@@ -590,3 +559,22 @@ def _format_likelihood_levels(table: dict) -> str:
             )
 
     return "\n".join(lines)
+
+
+def _get_dimension_instruction(forced_dimension: str | None) -> str:
+    """Return the dimension instruction for the scoring prompt."""
+    if forced_dimension:
+        return (
+            f"MANDATORY DIMENSION: The Dimension Classifier has determined that the primary impact\n"
+            f"dimension for this risk is: {forced_dimension}\n"
+            f"You MUST score the impact within this dimension. Select the most relevant sub-dimension\n"
+            f"and metric from the '{forced_dimension}' section of the impact table.\n"
+            f"Do NOT override this dimension choice."
+        )
+    else:
+        return (
+            "CRITICAL — DIMENSION SELECTION BIAS WARNING:\n"
+            "Do NOT default to 'Financial & Growth Impact' for every risk.\n"
+            "The PRIMARY dimension is where the MOST SEVERE and IMMEDIATE consequence occurs.\n"
+            "Evaluate all 7 dimensions before selecting one."
+        )

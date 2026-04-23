@@ -39,10 +39,26 @@
   },
   {
     "risk_id": "ARISK_003",
-    "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption",
-    "verbatim_evidence": [],
-    "question_source": [],
-    "risk_type": "EVENT_DRIVEN",
+    "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
+    "verbatim_evidence": [
+      "Seventh I'd add regulatory compliance — specifically emissions regulations. Euro 7 standards, the US EPA rules, and equivalent standards in other markets are all tightening.",
+      "Our ICE vehicle lineup has a defined compliance window and managing that transition without stranding assets is genuinely complex.",
+      "regulatory compliance",
+      "we will always be one of the most regulated industries in the world, whether it's safety standards, emissions, or increasingly software and data regulations",
+      "The new emissions standards coming into effect create a very tight compliance window for our remaining ICE models.",
+      "The cost of compliance per vehicle is significant and we're having to decide which models to carry forward and which to discontinue.",
+      "US CAFE standards and EPA emissions rules — the regulatory posture has shifted and we're watching that carefully in terms of what it means for our North American ICE lineup.",
+      "And the EU Corporate Sustainability Reporting Directive — CSRD — is imposing significant new disclosure obligations on us.",
+      "Our data infrastructure isn't ready for the granularity of reporting required.",
+      "Product safety — strong controls."
+    ],
+    "question_source": [
+      "Q1",
+      "Q3",
+      "Q7",
+      "Q16"
+    ],
+    "risk_type": "INHERENT",
     "flags": [],
     "cascade_context": null,
     "registry_matches": [],
@@ -50,11 +66,17 @@
     "human_review": false,
     "human_review_reason": null,
     "cascade_links": [],
-    "_asset_risk_name": "Stricter regulations to reduce vehicle emissions and fuel consumption",
-    "_client_signal": "NO",
+    "_asset_risk_name": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
+    "_client_signal": "YES",
     "_external_signal": "YES",
-    "_matched_client_risks": [],
-    "_evidence_source": "questionnaire+external_only"
+    "_matched_client_risks": [
+      {
+        "risk_id": "RISK_007",
+        "description": "Regulatory compliance",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "_evidence_source": "transcript+questionnaire"
   },
   {
     "risk_id": "ARISK_004",
@@ -879,47 +901,6 @@
   },
   {
     "risk_id": "ARISK_022",
-    "client_description": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
-    "verbatim_evidence": [
-      "Seventh I'd add regulatory compliance — specifically emissions regulations. Euro 7 standards, the US EPA rules, and equivalent standards in other markets are all tightening.",
-      "Our ICE vehicle lineup has a defined compliance window and managing that transition without stranding assets is genuinely complex.",
-      "regulatory compliance",
-      "we will always be one of the most regulated industries in the world, whether it's safety standards, emissions, or increasingly software and data regulations",
-      "The new emissions standards coming into effect create a very tight compliance window for our remaining ICE models.",
-      "The cost of compliance per vehicle is significant and we're having to decide which models to carry forward and which to discontinue.",
-      "US CAFE standards and EPA emissions rules — the regulatory posture has shifted and we're watching that carefully in terms of what it means for our North American ICE lineup.",
-      "And the EU Corporate Sustainability Reporting Directive — CSRD — is imposing significant new disclosure obligations on us.",
-      "Our data infrastructure isn't ready for the granularity of reporting required.",
-      "Product safety — strong controls."
-    ],
-    "question_source": [
-      "Q1",
-      "Q3",
-      "Q7",
-      "Q16"
-    ],
-    "risk_type": "INHERENT",
-    "flags": [],
-    "cascade_context": null,
-    "registry_matches": [],
-    "unmapped": false,
-    "human_review": false,
-    "human_review_reason": null,
-    "cascade_links": [],
-    "_asset_risk_name": "Stricter regulations to reduce vehicle emissions and fuel consumption.",
-    "_client_signal": "YES",
-    "_external_signal": "NO",
-    "_matched_client_risks": [
-      {
-        "risk_id": "RISK_007",
-        "description": "Regulatory compliance",
-        "confidence": "MEDIUM"
-      }
-    ],
-    "_evidence_source": "transcript+questionnaire"
-  },
-  {
-    "risk_id": "ARISK_023",
     "client_description": "Product testing risk",
     "verbatim_evidence": [
       "product safety and recall risk",
@@ -958,7 +939,7 @@
     "_evidence_source": "transcript+questionnaire"
   },
   {
-    "risk_id": "ARISK_024",
+    "risk_id": "ARISK_023",
     "client_description": "Residual value risk on leases and finance assets",
     "verbatim_evidence": [
       "cyclicality",
@@ -1000,7 +981,7 @@
     "_evidence_source": "transcript+questionnaire"
   },
   {
-    "risk_id": "ARISK_025",
+    "risk_id": "ARISK_024",
     "client_description": "Higher credit risk due to customer insolvency",
     "verbatim_evidence": [
       "cyclicality",
@@ -1042,7 +1023,7 @@
     "_evidence_source": "transcript+questionnaire"
   },
   {
-    "risk_id": "ARISK_026",
+    "risk_id": "ARISK_025",
     "client_description": "Increased competition in automobile financing",
     "verbatim_evidence": [
       "The complexity of that program — new battery architecture, new software stack, new manufacturing process — all at once is significant execution risk.",

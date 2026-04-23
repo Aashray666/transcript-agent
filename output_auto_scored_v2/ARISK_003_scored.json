@@ -14,6 +14,7 @@
   },
   "likelihood_assessment": {
     "score": 3,
+    
     "level": "Possible",
     "justification": "The likelihood assessment is based on the composite likelihood score of 3/5, which considers historical frequency, control effectiveness, external environment, sector base rate, and client-specific exposure. The introduction of Euro 7 emissions standards and the company's significant gap in fleet average CO2 vs regulatory targets contribute to the likelihood of this risk materializing.",
     "evidence_basis": "BOTH",

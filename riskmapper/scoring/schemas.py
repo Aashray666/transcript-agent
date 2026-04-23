@@ -124,23 +124,29 @@ class LikelihoodIntelligence(BaseModel):
 class _LLMLikelihoodEvidence(BaseModel):
     """LLM answers specific evidence questions — scores computed in code.
 
-    Instead of asking the LLM to pick 1-5 (which it anchors at 4),
-    we ask factual yes/no/specific questions and map to scores in code.
+    Uses binary (yes/no) questions to force commitment, plus categorical
+    questions for calibration. The middle option is harder to reach because
+    the binary questions push scores up or down.
     """
 
     # Factor 1: Historical Frequency
     has_occurred_at_client: bool
+    has_occurred_at_client_recently: bool  # within last 2 years?
+    has_occurred_multiple_times: bool
     how_recently: str  # "never", "over_5_years_ago", "3_to_5_years", "1_to_2_years", "currently_occurring"
     occurrence_details: str
 
     # Factor 2: Control Effectiveness
     controls_exist: bool
     controls_tested: bool
-    client_control_confidence: str  # "high", "moderate", "low", "none"
+    client_explicitly_said_strong: bool  # did client use words like "strong", "mature", "confident"?
+    client_acknowledged_gaps: bool  # did client say "gap", "weak", "untested", "underprepared"?
     control_details: str
 
     # Factor 3: External Environment
     external_drivers_present: bool
+    client_called_it_overnight_risk: bool  # did client say "overnight", "24-48 hours", "crisis"?
+    client_called_it_slow_build: bool  # did client say "slow-build", "gradual", "over time"?
     risk_velocity: str  # "stable", "slow_build", "moderate", "rapid", "imminent"
     external_details: str
 
@@ -149,6 +155,7 @@ class _LLMLikelihoodEvidence(BaseModel):
     sector_details: str
 
     # Factor 5: Client-Specific Exposure
+    client_has_concentration_risk: bool  # single supplier, single geography, etc.
     client_exposure_vs_peers: str  # "below_average", "average", "above_average", "significantly_above", "extreme"
     exposure_details: str
 

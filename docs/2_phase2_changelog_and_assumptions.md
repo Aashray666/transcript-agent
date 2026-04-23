@@ -78,6 +78,71 @@ MVP scoring pipeline for VelocityAuto Group (fictional automotive OEM). Produces
 - 5s minimum call interval (vs 30s on Groq)
 - ~60-90s per risk (vs 80-120s on Groq with retries)
 
+### v9 — Dimension Classifier Mini-Agent
+- New module: `riskmapper/scoring/dimension_classifier.py`
+- Separate focused LLM call BEFORE the Scoring Agent — picks the primary impact dimension
+- Scoring Agent receives the dimension as a mandatory constraint
+- Code enforces the dimension if the Scoring Agent ignores it
+- Fixed Financial & Growth overrepresentation (13/26 → now 6 dimensions used)
+- Generic prompt — works for any client/sector, no hardcoded rules
+
+### v10 — Impact Quantity Validation Expanded
+- Expanded `_validate_impact_quantity` to detect more metric types: sanctions, cost, generic %
+- Uses `sub_dimension` in addition to `metric` for matching
+- Added `_lookup_sanctions_score` (fines as % of revenue: <0.1%=1, 0.1-0.5%=2, 0.5-1%=3, 1-3%=4, >3%=5)
+- Added `_lookup_cost_score` and `_lookup_revenue_score` as separate functions
+- Fixes: ARISK_001 (16% → score 5), ARISK_010 (0.5% sanctions → score 2-3)
+
+### v11 — Likelihood Binary Questions + Inherent Risk Correction
+- Replaced categorical questions with binary yes/no questions that force LLM commitment
+- Added: `has_occurred_at_client_recently`, `has_occurred_multiple_times`, `client_explicitly_said_strong`, `client_acknowledged_gaps`, `client_called_it_overnight_risk`, `client_called_it_slow_build`, `client_has_concentration_risk`
+- Binary answers push scores away from the middle (3) via code logic
+- **Critical fix: Removed Control Effectiveness (F2) from inherent likelihood composite**
+  - Inherent risk = risk BEFORE controls. Controls are for residual risk.
+  - New weights: F1=30%, F3=30%, F4=20%, F5=20% (F2 captured but excluded)
+  - F2 stored in output for future residual risk calculation
+
+### v12 — External Intelligence Search Quality
+- Added `timelimit="y"` to DuckDuckGo — last 12 months only
+- Prompt: "do NOT use company/supplier names (fictional → zero results)"
+- Queries use real-world terms: materials, geographies, regulations
+
+### v13 — Residual Risk Calculator
+- New script: `run_residual_scoring.py` — runs AFTER inherent scoring pipeline
+- Maps controls from client RCM (`data/VelocityAuto_RCM.xlsx`) to scored risks
+- Three scenarios: direct match, cross-mapped (expert agent), no control
+- Residual formula from `data/ERM_RCM_Residual_Risk_Guide.docx`:
+  - Composite 20-25 (Strong): L-2, I-2
+  - Composite 12-19 (Satisfactory): L-1, I-1
+  - Composite 6-11 (Needs Improvement): L-1, I unchanged
+  - Composite 1-5 (Unsatisfactory): no reduction
+- Full audit trail per risk: control source, match method, formula applied
+
+### v14 — Two-Stage Control Matcher + Verifier
+- Replaced single batch LLM call (25 risks × 16 controls → hallucinations) with per-risk approach
+- **Stage 1 — Matcher**: 1 LLM call per risk, sees ONE risk + 16 controls, picks best or NONE
+- **Stage 2 — Verifier**: 1 LLM call per matched risk, confirms the match is correct (YES/NO)
+- Rejected matches → residual = inherent (no forced weak matches)
+- Fixed: "Product testing risk" no longer mapped to Financial controls
+- Fixed: "Emissions regulations" no longer mapped to Product Safety controls
+- Stricter cross-mapping: composite < 6 threshold rejects weak cross-maps
+- Result: 13 direct, 10 cross-mapped, 3 uncontrolled (all correct)
+
+### v15 — Asset Risk Universe Builder
+- New script: `scripts/build_asset_risk_universe.py`
+- Builds scoring-ready universe from asset risks + client evidence mapping
+- Deduplicates by normalized name (26 → 25 risks)
+- Maps transcript evidence from client risks to asset risks via `registry_matches` linkage
+- External-only risks get empty evidence (scored via questionnaire + web search)
+
+### v16 — RCM Generator
+- New script: `scripts/generate_rcm.py`
+- Generates `data/VelocityAuto_RCM.xlsx` matching Tata Motors RCM format
+- 16 risks × 25 columns (risk info, controls, inherent, control effectiveness, residual)
+- Controls modeled for EUR 78B automotive MNC (BMW/Stellantis/VW class)
+- 4 sheets: Cover Page, Risk Control Matrix, Scoring Legend, Risk Summary
+- Ranked by inherent score (highest first)
+
 ---
 
 ## Assumptions

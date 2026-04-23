@@ -156,9 +156,15 @@ def main():
             likelihood = assess_likelihood(evidence, knowledge, likelihood_table, current_memory, llm, external_intel=ext_intel)
             logger.info("  → %d/5 (raw=%.2f), confidence=%s", likelihood.composite_rounded, likelihood.composite_score, likelihood.confidence)
 
-            # Step 5: Scoring agent (LLM call 4)
-            logger.info("  [4/4] Scoring agent...")
-            scored = score_risk(evidence, knowledge, likelihood, impact_table_text, likelihood_table, current_memory, llm, external_intel=ext_intel)
+            # Step 5: Dimension classifier (focused LLM call)
+            logger.info("  [4/5] Dimension classifier...")
+            from riskmapper.scoring.dimension_classifier import classify_dimension
+            primary_dimension = classify_dimension(evidence, knowledge, llm)
+            logger.info("  → dimension: %s", primary_dimension)
+
+            # Step 6: Scoring agent (LLM call 5)
+            logger.info("  [5/5] Scoring agent...")
+            scored = score_risk(evidence, knowledge, likelihood, impact_table_text, likelihood_table, current_memory, llm, external_intel=ext_intel, forced_dimension=primary_dimension)
 
             # Save immediately
             save_risk(scored, OUTPUT_DIR)

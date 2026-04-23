@@ -4,12 +4,15 @@ Instead of asking the LLM to pick scores 1-5 (which it anchors at 4),
 this module asks the LLM specific factual questions about the evidence,
 then maps the answers to scores deterministically in Python.
 
-Uses 5-factor methodology:
-  F1: Historical Frequency (25%)
-  F2: Control Effectiveness (25%)
-  F3: External Environment / Velocity (20%)
-  F4: Sector Base Rate (15%)
-  F5: Client-Specific Exposure (15%)
+INHERENT risk likelihood uses 4 factors (controls excluded):
+  F1: Historical Frequency (30%)
+  F3: External Environment / Velocity (30%)
+  F4: Sector Base Rate (20%)
+  F5: Client-Specific Exposure (20%)
+
+F2 (Control Effectiveness) is captured for future RESIDUAL risk
+calculation but NOT included in the inherent likelihood composite.
+Inherent risk = risk BEFORE controls. Controls reduce residual risk.
 """
 
 from __future__ import annotations
@@ -30,13 +33,14 @@ from riskmapper.scoring.external_intelligence import ExternalIntelligence
 
 logger = logging.getLogger(__name__)
 
-# Weights for the 5-factor composite
+# Weights for INHERENT risk likelihood (no controls — controls are for residual)
+# F2 (Control Effectiveness) is captured but NOT included in the composite.
+# It's stored for future residual risk calculation.
 _WEIGHTS = {
-    "historical_frequency": 0.25,
-    "control_effectiveness": 0.25,
-    "external_environment": 0.20,
-    "sector_base_rate": 0.15,
-    "client_specific_exposure": 0.15,
+    "historical_frequency": 0.30,
+    "external_environment": 0.30,
+    "sector_base_rate": 0.20,
+    "client_specific_exposure": 0.20,
 }
 
 # Deterministic mappings: LLM answer → score
@@ -73,23 +77,6 @@ _EXPOSURE_MAP = {
 }
 
 
-def _compute_control_score(evidence: _LLMLikelihoodEvidence) -> int:
-    """Map control evidence to a score deterministically."""
-    if not evidence.controls_exist:
-        return 5
-    if evidence.client_control_confidence == "none":
-        return 5
-    if not evidence.controls_tested:
-        if evidence.client_control_confidence == "low":
-            return 4
-        return 3
-    if evidence.client_control_confidence == "high":
-        return 1
-    if evidence.client_control_confidence == "moderate":
-        return 2
-    return 3
-
-
 def assess_likelihood(
     evidence: EvidenceContext,
     knowledge: KnowledgeContext,
@@ -113,19 +100,44 @@ def assess_likelihood(
     )
 
     # Map LLM answers to scores IN CODE
+    # F1: Historical Frequency — binary questions disambiguate the middle
     f1 = _RECENCY_MAP.get(result.how_recently, 3)
     if not result.has_occurred_at_client and f1 > 2:
         f1 = 2  # Cap at 2 if never occurred at client
+    if result.has_occurred_at_client_recently and f1 < 4:
+        f1 = 4  # Boost if occurred in last 2 years
+    if result.has_occurred_multiple_times and f1 < 4:
+        f1 = max(f1, 4)  # Multiple occurrences = at least 4
 
-    f2 = _compute_control_score(result)
+    # F2: Control Effectiveness — binary questions override the middle
+    if not result.controls_exist:
+        f2 = 5
+    elif result.client_explicitly_said_strong and result.controls_tested:
+        f2 = 1  # Client said "strong" AND tested = 1
+    elif result.client_explicitly_said_strong:
+        f2 = 2  # Client said "strong" but not tested = 2
+    elif result.client_acknowledged_gaps:
+        f2 = 4  # Client acknowledged gaps = 4
+    elif result.controls_tested:
+        f2 = 2  # Tested but no strong/gap signal = 2
+    else:
+        f2 = 3  # Controls exist, not tested, no strong signal = 3
 
+    # F3: External Environment — binary questions push away from middle
     f3 = _VELOCITY_MAP.get(result.risk_velocity, 3)
+    if result.client_called_it_overnight_risk and f3 < 5:
+        f3 = 5  # "Overnight risk" = imminent
+    elif result.client_called_it_slow_build and f3 > 2:
+        f3 = 2  # "Slow build" = not acute
     if not result.external_drivers_present and f3 > 2:
         f3 = 2
 
     f4 = _SECTOR_MAP.get(result.common_in_sector, 3)
 
+    # F5: Client Exposure — concentration risk pushes up
     f5 = _EXPOSURE_MAP.get(result.client_exposure_vs_peers, 3)
+    if result.client_has_concentration_risk and f5 < 4:
+        f5 = 4  # Concentration risk = at least significantly above average
 
     # Clamp all to 1-5
     factors = {
@@ -169,9 +181,9 @@ def assess_likelihood(
             data_sources_used=["transcript", "questionnaire"],
         ),
         LikelihoodFactorScore(
-            factor="Control Effectiveness",
+            factor="Control Effectiveness (NOT in inherent — for residual use)",
             score=factors["control_effectiveness"],
-            justification=f"Controls {'exist' if result.controls_exist else 'do not exist'}, {'tested' if result.controls_tested else 'untested'}, confidence={result.client_control_confidence}. {result.control_details}",
+            justification=f"Controls {'exist' if result.controls_exist else 'do not exist'}, {'tested' if result.controls_tested else 'untested'}. Strong={result.client_explicitly_said_strong}, Gaps={result.client_acknowledged_gaps}. {result.control_details}. NOTE: This factor is captured for residual risk calculation but EXCLUDED from the inherent likelihood composite.",
             data_sources_used=["transcript", "questionnaire"],
         ),
         LikelihoodFactorScore(
@@ -246,45 +258,41 @@ PREVIOUSLY SCORED RISKS (for context):
 
 QUESTION 1 — HISTORICAL FREQUENCY:
 - has_occurred_at_client: Has this SPECIFIC risk actually materialized at this client? (true/false)
+- has_occurred_at_client_recently: Did it happen within the last 2 years? (true/false)
+- has_occurred_multiple_times: Has it happened more than once? (true/false)
 - how_recently: When? Choose ONE: "never", "over_5_years_ago", "3_to_5_years", "1_to_2_years", "currently_occurring"
-  - "never" = no evidence it happened at this client
-  - "over_5_years_ago" = happened but >5 years ago
-  - "3_to_5_years" = happened 3-5 years ago
-  - "1_to_2_years" = happened in last 1-2 years
-  - "currently_occurring" = happening right now or multiple recent times
 - occurrence_details: One sentence citing the specific evidence.
 
 QUESTION 2 — CONTROL EFFECTIVENESS:
 - controls_exist: Does the client have controls for this risk? (true/false)
 - controls_tested: Have those controls been tested under real conditions? (true/false)
-- client_control_confidence: What confidence level did the CLIENT express? Choose ONE: "high", "moderate", "low", "none"
-  - "high" = client said "strong controls, tested constantly" or similar
-  - "moderate" = client said controls exist but with some gaps
-  - "low" = client said controls are weak, untested, or incomplete
-  - "none" = client said no controls or explicitly underprepared
+- client_explicitly_said_strong: Did the client use words like "strong", "mature", "confident", "tested constantly" about controls for THIS risk? (true/false — must be explicitly stated, not inferred)
+- client_acknowledged_gaps: Did the client say "gap", "weak", "untested", "underprepared", "not where it needs to be" about THIS risk? (true/false — must be explicitly stated)
 - control_details: One sentence citing what the client said about controls.
 
 QUESTION 3 — EXTERNAL ENVIRONMENT:
 - external_drivers_present: Are there active external factors driving this risk? (true/false)
-- risk_velocity: How fast could this risk materialize? Choose ONE: "stable", "slow_build", "moderate", "rapid", "imminent"
-  - "stable" = no change expected
-  - "slow_build" = gradual, over months/years
-  - "moderate" = could develop over weeks/months
-  - "rapid" = could develop in days/weeks
-  - "imminent" = could happen within 24-48 hours (client said "overnight risk")
-- external_details: One sentence citing external factors from the evidence or market intelligence.
+- client_called_it_overnight_risk: Did the client describe this as an "overnight risk", "24-48 hours", "crisis", or "immediate"? (true/false)
+- client_called_it_slow_build: Did the client describe this as "slow-build", "gradual", "erode over time", "quarter by quarter"? (true/false)
+- risk_velocity: Choose ONE: "stable", "slow_build", "moderate", "rapid", "imminent"
+- external_details: One sentence citing external factors.
 
 QUESTION 4 — SECTOR BASE RATE:
-- common_in_sector: How common is this risk in the automotive sector? Choose ONE: "extremely_rare", "uncommon", "periodic", "common", "systemic"
+- common_in_sector: Choose ONE: "extremely_rare", "uncommon", "periodic", "common", "systemic"
 - sector_details: One sentence explaining why.
 
 QUESTION 5 — CLIENT-SPECIFIC EXPOSURE:
-- client_exposure_vs_peers: How exposed is THIS client compared to peers? Choose ONE: "below_average", "average", "above_average", "significantly_above", "extreme"
-- exposure_details: One sentence citing specific client data (geography, concentration, dependencies).
+- client_has_concentration_risk: Does the client have concentration risk for this (single supplier, single geography, single customer, etc.)? (true/false)
+- client_exposure_vs_peers: Choose ONE: "below_average", "average", "above_average", "significantly_above", "extreme"
+- exposure_details: One sentence citing specific client data.
 
-CONFIDENCE: Overall confidence in your answers — "HIGH", "MEDIUM", or "LOW".
+CONFIDENCE: "HIGH", "MEDIUM", or "LOW".
 
-IMPORTANT: Answer based on EVIDENCE, not assumptions. If the client said "strong controls, tested constantly" for this risk, then controls_tested MUST be true and client_control_confidence MUST be "high". If there is NO evidence of this risk occurring at the client, has_occurred_at_client MUST be false."""
+IMPORTANT: The boolean questions MUST be answered based on EXPLICIT evidence only.
+- client_explicitly_said_strong = true ONLY if the client literally said "strong controls" or "tested constantly" for THIS risk.
+- client_acknowledged_gaps = true ONLY if the client literally said "gap", "weak", "untested", or "underprepared" for THIS risk.
+- client_called_it_overnight_risk = true ONLY if the client literally said "overnight", "24-48 hours", or "crisis" for THIS risk.
+- Do NOT set these to true based on inference. If the evidence doesn't contain these exact words, set to false."""
 
 
 def _format_quotes(quotes: list[str]) -> str:
