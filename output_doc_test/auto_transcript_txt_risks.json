@@ -1,0 +1,87 @@
+[
+  {
+    "risk_id": "DOC_RISK_001",
+    "client_description": "EV transition execution risk",
+    "verbatim_evidence": [
+      "we have committed heavily to electrification"
+    ],
+    "source_sections": [
+      "Sample ERM Engagement Call Transcript"
+    ],
+    "chunk_ids": [
+      "chunk_001",
+      "chunk_002",
+      "chunk_003",
+      "chunk_004",
+      "chunk_005",
+      "chunk_006",
+      "chunk_007",
+      "chunk_008",
+      "chunk_009"
+    ],
+    "risk_type": "INHERENT",
+    "risk_category": "Strategic",
+    "severity_signal": "HIGH",
+    "financial_quantification": null,
+    "management_response": null,
+    "flags": [
+      "FORWARD_LOOKING"
+    ],
+    "cascade_context": null,
+    "merged_from": [
+      "8ae056a5-ee58-4f37-a486-c906983c96a5",
+      "b62da78b-a850-4160-a053-b4cd1df936fe",
+      "89a7676f-6e9d-4e83-a56c-110a7a002029",
+      "a4a03a06-ed94-4a37-85d9-4759fdbf8406",
+      "66fd7938-0761-4599-ba2a-945a3d91a1e2",
+      "dc712f54-1241-41d5-a20f-fdbcea3b384c",
+      "ec33de02-cc76-45ae-8a6a-a8d1010d38e2",
+      "54ee6ec4-d238-4a30-8769-f7d325e9fe88",
+      "9fdcef5d-83c8-4387-8a63-0d78b39f9327"
+    ],
+    "occurrence_count": 9
+  },
+  {
+    "risk_id": "DOC_RISK_002",
+    "client_description": "Supply chain concentration risk",
+    "verbatim_evidence": [
+      "22% of components are single-sourced"
+    ],
+    "source_sections": [
+      "Sample ERM Engagement Call Transcript"
+    ],
+    "chunk_ids": [
+      "chunk_001",
+      "chunk_002",
+      "chunk_003",
+      "chunk_004",
+      "chunk_005",
+      "chunk_006",
+      "chunk_007",
+      "chunk_008",
+      "chunk_009"
+    ],
+    "risk_type": "INHERENT",
+    "risk_category": "Operational",
+    "severity_signal": "HIGH",
+    "financial_quantification": "22% single-sourced components",
+    "management_response": null,
+    "flags": [
+      "QUANTIFIED",
+      "UNMITIGATED"
+    ],
+    "cascade_context": null,
+    "merged_from": [
+      "ed7f703a-85c8-44b5-a7ba-82c7585c7df5",
+      "7cf9ca9f-bcc9-4046-ab41-32c052d90050",
+      "8af586ff-9168-4055-a96e-6a569ee3f187",
+      "fafd6625-b79b-4c83-b8c0-7110077fa46f",
+      "d8c11828-9830-4ae5-9741-9c4f9ffe36ec",
+      "f240c433-24d2-4849-b553-241ba5f998ec",
+      "3281f80c-729a-498a-8d48-a78d0e91a6f2",
+      "856f2307-2b9f-43a6-9922-232f0e41123e",
+      "448e4bbb-d84f-4c63-8fb9-de0d14d4bfd5"
+    ],
+    "occurrence_count": 9
+  }
+]
